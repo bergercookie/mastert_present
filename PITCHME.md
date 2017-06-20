@@ -179,7 +179,7 @@ TODO
 
 ### Simulation Demo
 
-![MRPT graphslam-engine demo](https://www.youtube.com/watch?v=Pv0yvlzrcXk)
+![](https://www.youtube.com/watch?v=Pv0yvlzrcXk)
 
 
 ### Real-time setup and experiment
@@ -249,12 +249,13 @@ We conducted multi-robot simulations in **Gazebo**.
 ---
 
 ---?image=assets/figures/bulk/simulation_env_gazebo.png&size=contain
-<!-- .slide: data-background-transition="none" -->
+
+---
 
 #### Simulation Video
 ---
 
-![Multi-robot Demo](https://www.youtube.com/watch?v=4RKS2jrvsYE)
+![](https://www.youtube.com/watch?v=4RKS2jrvsYE)
 
 ### Experimental Results
 
