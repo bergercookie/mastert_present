@@ -9,7 +9,7 @@ theme-override: assets/css/PITCHME.css
 revealjs: 3.4.1
 
 
-logo: assets/figures/MoreGraphics/csl_ntua.jpg
+#logo: assets/figures/MoreGraphics/csl_ntua.jpg
 slide-number: false
 
 # Overrides the default "git-repository" text

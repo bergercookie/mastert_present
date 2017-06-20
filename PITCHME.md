@@ -22,6 +22,8 @@ Master Thesis Presentation
 
 <!--TODO Add a date -->
 <!--TODO Add current section in right/left footer-->
+<!--TODO Make this an offline version-->
+<!--TODO Test presenter mode-->
 
 TODO
 
@@ -154,6 +156,12 @@ TODO
 
 ---
 
+
+### MRPT Single-robot simulation examples
+
+---?image=assets/figures/gimp/mrpt_sr_slam_combined.png
+
+---?image=assets/figures/gimp/mrpt_sr_slam_combined2.png
 
 <!--- --------- End of Single-robot graphSLAM-->
 
