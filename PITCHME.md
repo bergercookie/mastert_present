@@ -1,5 +1,6 @@
-# Design and Development of Single and Multi-Robot Simultaneous Localization and Mapping (SLAM) Algorithms
+### Design and Development of SLAM Algorithms
 
-## Nikolaos Koukis
+#### Nikolaos Koukis
 
-Kalimera!
+---
+
