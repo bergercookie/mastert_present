@@ -58,6 +58,26 @@ TODO
 
 ---
 
+<table>
+<tr>
+<td align="center" valign="top"> <a href="assets/figures/bulk/neato.jpg"><img alt="Neato" src="assets/figures/bulk/neato.jpg"></a></td>
+<td align="center" valign="top"> <a href="https://app.shippable.com/github/MRPT/mrpt"><img alt="Run status" src="https://api.shippable.com/projects/58cf0760a99a110500e3164b/badge?branch=master"></a></td>
+<td rowspan="2" valign="middle">
+<a href="https://github.com/MRPT/mrpt/blob/master/doc/LICENSE.txt"><img alt="BSD3 License" src="http://img.shields.io/badge/license-BSD3-brightgreen.svg"></a>
+<br>
+<a href="https://gitter.im/MRPT/mrpt"><img alt="[Join the chat at https://gitter.im/MRPT/mrpt" src="https://badges.gitter.im/Join%20Chat.svg"></a>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">CI: GNU/Linux & OSX</td>
+<td align="center">CI: Windows</td>
+</tr>
+</table>
+
+
+
+---
+
 <!--- --------- End of Intro - What is SLAM?-->
 
 
@@ -177,6 +197,14 @@ TODO
 ### Multi-hypothesis Map-matching
 
 TODO
+
+
+---?image=assets/figures/bulk/map_merger_node_2_robots&size=contain
+<!-- .slide: data-background-transition="none" -->
+---?image=assets/figures/bulk/map_merger_node_3_robots&size=contain
+<!-- .slide: data-background-transition="none" -->
+
+---
 
 ### Simulation Results
 
