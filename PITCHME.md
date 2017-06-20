@@ -1,5 +1,5 @@
 <center><div style="width:10%">
-![](assets/figures/MoreGraphics/figures/MoreGraphics/NTUA.png)
+![](assets/figures/MoreGraphics/figures/MoreGraphics/NTUA.jpg)
 </div></center>
 
 <div style="color:gray; font-size:0.5em; height:3em;">
