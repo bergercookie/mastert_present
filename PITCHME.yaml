@@ -15,4 +15,4 @@ slide-number: false
 # Overrides the default "git-repository" text
 footnote: "Multi-robot graphSLAM"
 
-transition: fade # convex, concave, default, fade, none, slide and zoo
+transition: zoo # convex, concave, default, fade, none, slide and zoo
