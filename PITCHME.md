@@ -159,7 +159,7 @@ TODO
 
 ### MRPT Single-robot simulation examples
 
----?image=assets/figures/gimp/mrpt_sr_slam_combined.png
+---?image=assets/figures/gimp/mrpt_sr_slam_combined.png&size=contain
 
 ---?image=assets/figures/gimp/mrpt_sr_slam_combined2.png
 
