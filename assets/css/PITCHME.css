@@ -13,9 +13,9 @@ br {
  body {
     font-size: 100%;
 }
-/*h1 {*/
-    /*font-size: 2.5em; [> 40px/16=2.5em <]*/
-/*}*/
+h1 {
+    font-size: 2.5em; /* 40px/16=2.5em */
+}
 
 /*h2 {*/
     /*font-size: 1.875em; [> 30px/16=1.875em <]*/
