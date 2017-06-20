@@ -9,18 +9,18 @@ Section of Mechanical Design and Automatic Control<br>
 Control Systems Laboratory<br>
 </div>
 
-<br><br><br>
+<br><br>
 
 
 ### Design and Development of SLAM Algorithms
 
-<span style="color:gray; font-size:0.8em; font-size: 0.5em">
-Nikolaos Koukis
+<span style="color:gray; font-size:2em; font-size: 0.5em">
+Nikolaos Koukis<br>
 Thesis presentation
 </span>
 
 
-<!-- Add a date -->
+<!--TODO Add a date -->
 
 
 ---
