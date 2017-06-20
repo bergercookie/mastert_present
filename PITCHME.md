@@ -73,7 +73,7 @@ TODO
 
 <table>
 <tr>
-<td align="center" valign="top"><img alt="Neato" src="/assets/figures/bulk/neato.jpg"></td>
+<td align="center" valign="top"><img alt="Neato" src="/assets/figures/bulk/neato.jpg" width="12px"></td>
 <td align="center" valign="top"><img alt="roomba" src="/assets/figures/bulk/roomba.jpg"></td>
 <td rowspan="2" valign="middle">
 <img alt="BSD3 License" src="http://img.shields.io/badge/license-BSD3-brightgreen.svg">
