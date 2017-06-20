@@ -33,8 +33,8 @@ TODO
 
 - Intro - What is SLAM? |
 - SLAM Algorithms - Why choose graphSLAM? |
-- Single-robot graphSLAM |
-- Multi-robot graphSLAM |
+- Single-Robot graphSLAM |
+- Multi-Robot graphSLAM |
 - Conclusions - Future Directions |
 
 ---
@@ -57,22 +57,16 @@ TODO
 
 ---
 
-### SLAM Examples
-
-TODO
-
----
-
 <!--- --------- End of Intro - What is SLAM?-->
 
 
-## SLAM Algorithms - Why choose graphSLAM?
+## SLAM Algorithms - Why Choose graphSLAM?
 
 TODO
 
 ---
 
-### SLAM map representation
+### Map Representation
 
 - Feature-based SLAM |
 - View-based SLAM |
@@ -87,7 +81,7 @@ describe **briefly** the two variants
 ---
 
 
-### SLAM processing scheme
+### Processing Scheme
 
 - Kalman Filter (KF) |
 - Particle-Filtering (PF) |
@@ -104,18 +98,12 @@ describe **briefly** the KF, PF. GraphSLAM is on its own in the next
 <!--- --------- End of SLAM Algorithms - Why choose graphSLAM?-->
 
 
-## Single-robot graphSLAM
+## Single-Robot graphSLAM
 
 - Goals |
 - Mathematical Formulation |
 - Simulations |
 - Real-time Experiments |
-
-TODO
-
----
-
-### Single-robot Goals
 
 TODO
 
@@ -157,21 +145,44 @@ TODO
 ---
 
 
-### MRPT Single-robot simulation examples
+### MRPT Simulation Examples
 
 ---?image=assets/figures/gimp/mrpt_sr_slam_combined.png&size=contain
 
+<!--TODO Build this.-->
 ---?image=assets/figures/gimp/mrpt_sr_slam_combined2.png
 
-<!--- --------- End of Single-robot graphSLAM-->
+<!--- --------- End of Single-Robot graphSLAM-->
 
-## Multi-robot graphSLAM
+## Inter-Robot Communication
+
+TODO
+
+<!--- --------- End of Inter-Robot Communication-->
+
+## Multi-Robot graphSLAM
 
 TODO
 
 ---
 
-<!--- --------- End of Multi-robot graphSLAM-->
+### Multi-hypothesis Map-matching
+
+TODO
+
+### Simulation Results
+
+TODO
+
+---
+
+### Experimental Results
+
+TODO
+
+---
+
+<!--- --------- End of Multi-Robot graphSLAM-->
 
 ## Conclusions - Future Directions
 
