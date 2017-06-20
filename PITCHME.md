@@ -3,9 +3,9 @@
 </div></center>
 
 <span style="color:gray; font-size:0.3em">
-National Technical University of Athens<br>
-School of Mechanical Engineering<br>
-Section of Mechanical Design and Automatic Control<br>
+National Technical University of Athens\n
+School of Mechanical Engineering\n
+Section of Mechanical Design and Automatic Control\n
 Control Systems Laboratory
 </span>
 
