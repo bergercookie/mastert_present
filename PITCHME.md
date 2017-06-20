@@ -1,5 +1,3 @@
-<!--NOTE: Use 3 *dashes* for switching between slides of the same section-->
-<!--NOTE: Use 3 *crosses* for switching between slides of the same section-->
 
 <center><div style="width:10%">
 ![](assets/figures/MoreGraphics/NTUA.jpg)
@@ -35,12 +33,12 @@ TODO
 ### Presentation Contents
 
 - Intro - What is SLAM? |
-- SLAM Algorithms - Why choose graphSLAM? |
+- Review of SLAM Algorithms |
 - Single-Robot graphSLAM |
 - Multi-Robot graphSLAM |
 - Conclusions - Future Directions |
 
-+++
+---
 
 ## Intro - What is SLAM?
 
@@ -58,7 +56,7 @@ TODO
 
 TODO
 
-+++
+---
 
 <!--- --------- End of Intro - What is SLAM?-->
 
@@ -73,7 +71,7 @@ TODO
 
 - Feature-based SLAM |
 - View-based SLAM |
-- ...
+- ... |
 
 TODO
 
@@ -114,10 +112,10 @@ TODO
 
 #### Development Goals
 
-- Generic/Extensible design
+- Generic/Extensible design |
   - Handle odometry, laser scans, monocular/stereo images etc. |
   - 2D/3D SLAM |
-- Offline/online use
+- Offline/online use |
   - Offline use with simulated or prerecorded datasets |
   - Integration with ROS for real-time graphSLAM |
 
@@ -157,7 +155,7 @@ TODO
 ---?image=assets/figures/gimp/mrpt_sr_slam_combined2.png&size=contain
 <!-- .slide: data-background-transition="none" -->
 
-+++
+---
 
 <!--- --------- End of Single-Robot graphSLAM-->
 
@@ -165,7 +163,7 @@ TODO
 
 TODO
 
-+++
+---
 
 <!--- --------- End of Inter-Robot Communication-->
 
@@ -201,9 +199,9 @@ TODO
 
 - Thorough analysis of single, multi-robot graphSLAM strategies |
 - Framework for single, multi-robot graphSLAM - offline or
-    real-time
-- Communication scheme for multi-robot real-time experiment
-- Multiple tests in simulations and real-time
+    real-time |
+- Communication scheme for multi-robot real-time experiment |
+- Multiple tests in simulations and real-time |
 
 
 note:
@@ -213,29 +211,29 @@ Tell the details as described in thesis text
 
 ### Future Directions
 
-<tr class="fragment">
+<div class="fragment">
 - Integration of 3rd party optimization framework |
   - g2o |
   - iSAM, iSAM2 |
   - SE-Sync |
-</tr>
+</div>
 
-<tr class="fragment">
+<div class="fragment">
 - Adaptive node registration decider / Node Reduction Scheme
-</tr>
+</div>
 
 
-<tr class="fragment">
+<div class="fragment">
 - Implement deciders based on Visual sensors (Monocular, Stereo images)
-</tr>
+</div>
 
-<tr class="fragment">
+<div class="fragment">
 - Add full support for 3D Slam
-</tr>
+</div>
 
-<tr class="fragment">
+<div class="fragment">
 - Support for active exploration
-</tr>
+</div>
 
 <!--- --------- End of Conclusions - Future Directions-->
 
