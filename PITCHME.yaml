@@ -10,3 +10,7 @@ theme-override: assets/css/PITCHME.css
 
 
 logo: assets/figures/MoreGraphics/csl_ntua.jpg
+slide-number: false
+
+# Overrides the default "git-repository" text
+footnote : "Multi-robot graphSLAM"
