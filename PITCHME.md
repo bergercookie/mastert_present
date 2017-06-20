@@ -9,20 +9,31 @@ Section of Mechanical Design and Automatic Control<br>
 Control Systems Laboratory<br>
 </div>
 
-<br><br>
+<br>
 
 
 ### Design and Development of SLAM Algorithms
 
 <div style="color:gray; font-size:2em; font-size: 0.5em">
 Nikolaos Koukis<br>
-Thesis presentation
+Master Thesis Presentation
 </div>
 
 
 <!--TODO Add a date -->
-
+<!--TODO Add current section in right/left footer-->
 
 ---
+
+<left><div>
+### Presentation Contents
+
+- Intro - What is SLAM? |
+- SLAM Algorithms - Why choose graphSLAM? |
+- Single-robot graphSLAM |
+
+
+
+</left></div>
 
 
