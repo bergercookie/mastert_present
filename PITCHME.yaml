@@ -4,4 +4,8 @@
 theme: white
 theme-override: assets/css/PITCHME.css
 
+# https://github.com/gitpitch/gitpitch/wiki/Speaker-Notes-Window
+# Use a more recent revealjs version
+#revealjs: 3.4.1
+
 
