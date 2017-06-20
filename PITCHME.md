@@ -1,4 +1,4 @@
-![](http://147.102.51.10:3000/bergercookie/mr-slam-thesis-text/src/master/figures/MoreGraphics/NTUA.png)
+![NTUA](http://147.102.51.10:3000/bergercookie/mr-slam-thesis-text/src/master/figures/MoreGraphics/NTUA.png)
 <span style="color:gray; font-size:0.7em">
 
 National Technical University of Athens
