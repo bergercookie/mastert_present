@@ -25,15 +25,13 @@ Master Thesis Presentation
 
 ---
 
-<left><div>
+<div align="left">
 ### Presentation Contents
 
 - Intro - What is SLAM? |
 - SLAM Algorithms - Why choose graphSLAM? |
 - Single-robot graphSLAM |
 
-
-
-</left></div>
+</div>
 
 
