@@ -250,6 +250,6 @@ Dr. George Karras
 
 ---
 
-### Thanks for your attention :-)
+### Thanks for your attention :smile:
 
 ## Q&A
