@@ -1,4 +1,7 @@
-![NTUA](http://147.102.51.10:3000/bergercookie/mr-slam-thesis-text/raw/master/figures/MoreGraphics/NTUA.png)
+<div style="width:50%">
+![](http://147.102.51.10:3000/bergercookie/mr-slam-thesis-text/raw/master/figures/MoreGraphics/NTUA.png)
+</div>
+
 <span style="color:gray; font-size:0.7em">
 National Technical University of Athens
 School of Mechanical Engineering
