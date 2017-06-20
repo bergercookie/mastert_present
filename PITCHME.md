@@ -212,29 +212,33 @@ Tell the details as described in thesis text
 
 ### Future Directions
 
-<div class="fragment">
-- Integration of 3rd party optimization framework |
-  - g2o |
-  - iSAM, iSAM2 |
-  - SE-Sync |
-</div>
+<ul>
+  <div class="fragment">
+    <li>Integration of 3rd party optimization framework</li>
+    <ul>
+      <li>g2o</li>
+      <li>iSAM, iSAM2</li>
+      <li>SE-Sync</li>
+    </ul>
+  </div>
 
-<div class="fragment">
-- Adaptive node registration decider / Node Reduction Scheme
-</div>
+  <div class="fragment">
+    <li>Adaptive node registration decider / Node Reduction Scheme</li>
+  </div>
 
 
-<div class="fragment">
-- Implement deciders based on Visual sensors (Monocular, Stereo images)
-</div>
+  <div class="fragment">
+    <li>Implement deciders based on Visual sensors (Monocular, Stereo images)</li>
+  </div>
 
-<div class="fragment">
-- Add full support for 3D Slam
-</div>
+  <div class="fragment">
+    <li>Add full support for 3D Slam</li>
+  </div>
 
-<div class="fragment">
-- Support for active exploration
-</div>
+  <div class="fragment">
+    <li>Support for active exploration</li>
+  </div>
+</ul>
 
 <!--- --------- End of Conclusions - Future Directions-->
 
