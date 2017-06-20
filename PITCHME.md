@@ -48,7 +48,13 @@ TODO
 
 ### Definition
 
-TODO
+<!--TODO How should I handle citations?-->
+
+>Simultaneous localization and mapping (SLAM) is a process that aims
+>to localize an autonomous mobile robot in a previously unexplored environment while
+>constructing a consistent and incremental map of its environment
+>
+> -- <cite>Saeedi2016</cite>
 
 ---
 
@@ -59,7 +65,15 @@ TODO
 ---
 
 ---?image=assets/figures/bulk/roomba.jpg&size=contain
----?image=assets/figures/bulk/neato.jpg&size=contain
+<!-- .slide: data-background-transition="none" -->
+---?image=assets/figures/bulk/stanley.jpg&size=contain
+<!-- .slide: data-background-transition="none" -->
+
+<!--Just in case... https://www.sbir.gov/sbirsearch/detail/369703 -->
+<!--Also see the Downloaded files -->
+
+---?image=assets/figures/bulk/mars_rover.jpg&size=contain
+<!-- .slide: data-background-transition="none" -->
 
 <!--- --------- End of Intro - What is SLAM?-->
 
@@ -161,6 +175,18 @@ TODO
 
 ---
 
+### Simulation Demo
+
+![MRPT graphslam-engine demo](https://www.youtube.com/watch?v=Pv0yvlzrcXk)
+
+
+### Real-time setup and experiment
+
+<!--TODO mention the automation level and what does the user have to do with the shell files-->
+
+---
+
+
 <!--- --------- End of Single-Robot graphSLAM-->
 
 ## Inter-Robot Communication
@@ -181,19 +207,53 @@ TODO
 
 TODO
 
+---
+
+
+## Example with 2 agents
+---
 
 ---?image=assets/figures/bulk/map_merger_node_2_robots.png&size=contain
 <!-- .slide: data-background-transition="none" -->
+
+## Example with 3 agents
+---
+
 ---?image=assets/figures/bulk/map_merger_node_3_robots.png&size=contain
 <!-- .slide: data-background-transition="none" -->
 
 ---
 
-### Simulation Results
+### Simulation Setup & Results
 
-TODO
+We conducted multi-robot simulations in **Gazebo**.
+
+- 2 Mobile robots (Pioneer 2dx)
+- Measurements utilized
+  - Odometry
+    - Odometry covariance (same for *x*, *y*, *yaw*):
+  - Laser scanner:
+    - Sensor range
+      - min: 0.20
+      - min: 5.60
+      - resolution: 0.01
+    - Sensor noise
+      - Type: *Gaussian*
+      - Mean: $$0.0$$
+      - Std. deviation: $$0.01$$
 
 ---
+
+## Gazebo World
+---
+
+---?image=assets/figures/bulk/simulation_env_gazebo.png&size=contain
+<!-- .slide: data-background-transition="none" -->
+
+#### Simulation Video
+---
+
+![Multi-robot Demo](https://www.youtube.com/watch?v=4RKS2jrvsYE)
 
 ### Experimental Results
 
@@ -251,6 +311,18 @@ Tell the details as described in thesis text
 </ul>
 
 <!--- --------- End of Conclusions - Future Directions-->
+
+---
+### References
+
+  <div style="font-size:0.5em">
+    <li>
+      (Saeedi 2016) Multiple-Robot Simultaneous Localization and Mapping: A Review
+      - Saeedi, Sajad and Trentini, Michael and Seto, Mae and Li, Howard
+    </li>
+  </div>
+
+
 
 ---
 
