@@ -76,12 +76,11 @@ TODO
 - View-based SLAM |
 - ...
 
+TODO
+
 Note:
 describe **briefly** the two variants
 ~2min
-
-TODO
-
 
 ---
 
@@ -92,11 +91,11 @@ TODO
 - Particle-Filtering (PF) |
 - Graph-based approaches |
 
+TODO
+
 Note:
 describe **briefly** the KF, PF. GraphSLAM is on its own in the next
 ~2min
-
-TODO
 
 ---
 
@@ -105,10 +104,10 @@ TODO
 
 ## Single-robot graphSLAM
 
-+ Goals |
-+ Mathematical Formulation |
-+ Simulations |
-+ Real-time Experiments |
+- Goals |
+- Mathematical Formulation |
+- Simulations |
+- Real-time Experiments |
 
 TODO
 
@@ -129,14 +128,11 @@ TODO
   - Offline use with simulated or prerecorded datasets |
   - Integration with ROS for real-time graphSLAM |
 
-Note: How much am I going to write here?
-
 Note:
+How much am I going to write here?
 Why exactly did I implement these things?
 This should provide the **end product** of your work in sr-graphSLAM so that,
 when you show them the specific math steps below, to know what they are about!
-
-TODO
 
 ---
 
