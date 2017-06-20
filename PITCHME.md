@@ -15,8 +15,8 @@ Control Systems Laboratory<br>
 
 ### Design and Development of SLAM Algorithms
 
-<div style="color:gray; font-size:2em; font-size: 0.5em">
-Nikolaos Koukis<br>
+<div style="color:gray; font-size:2em; font-size: 1em">
+Nikos Koukis<br>
 Master Thesis Presentation
 </div>
 
@@ -241,7 +241,7 @@ Tell the details as described in thesis text
 
 ### Acknowledgements
 
-<div style="color:gray; font-size:2em; font-size: 0.5em">
+<div style="color:gray; font-size:2em; font-size: 1em">
 Prof. Kostas J. Kyriakopoulos<br>
 Dr. George Karras
 </div>
