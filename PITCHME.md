@@ -216,13 +216,13 @@ TODO
 ---
 
 ---?image=assets/figures/bulk/map_merger_node_2_robots.png&size=contain
-<!-- .slide: data-background-transition="none" -->
+
+---
 
 ## Example with 3 agents
 ---
 
 ---?image=assets/figures/bulk/map_merger_node_3_robots.png&size=contain
-<!-- .slide: data-background-transition="none" -->
 
 ---
 
@@ -233,12 +233,11 @@ We conducted multi-robot simulations in **Gazebo**.
 - 2 Mobile robots (Pioneer 2dx)
 - Measurements utilized
   - Odometry
-    - Odometry covariance (same for *x*, *y*, *yaw*):
+    - Odometry covariance (same for *x*, *y*, *yaw*): $$0.1m$$
   - Laser scanner:
     - Sensor range
-      - min: 0.20
-      - min: 5.60
-      - resolution: 0.01
+      -  $$0.20 - 5.60$$
+      - resolution: $$0.01$$
     - Sensor noise
       - Type: *Gaussian*
       - Mean: $$0.0$$
