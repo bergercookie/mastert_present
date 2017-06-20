@@ -68,6 +68,8 @@ TODO
 <!-- .slide: data-background-transition="none" -->
 ---?image=assets/figures/bulk/stanley.jpg&size=contain
 <!-- .slide: data-background-transition="none" -->
+---?image=assets/figures/bulk/mars_rover.jpg&size=contain
+<!-- .slide: data-background-transition="none" -->
 
 <!--Just in case... https://www.sbir.gov/sbirsearch/detail/369703 -->
 <!--Also see the Downloaded files -->
