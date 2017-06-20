@@ -3,13 +3,10 @@
 </div></center>
 
 <span style="color:gray; font-size:0.3em; line-height: 1.1">
-National Technical University of Athens
-
-School of Mechanical Engineering
-
-Section of Mechanical Design and Automatic Control
-
-Control Systems Laboratory
+National Technical University of Athens<br>
+School of Mechanical Engineering<br>
+Section of Mechanical Design and Automatic Control<br>
+Control Systems Laboratory<br>
 </span>
 
 <br>
