@@ -59,6 +59,16 @@ TODO
 ---
 
 <table>
+  <tr>
+    <td>
+      ![](assets/figures/bulk/neato.jpg)
+    </td>
+      ![](assets/figures/bulk/roomba.jpg)
+    </td>
+  </tr>
+</table>
+
+<table>
 <tr>
 <td align="center" valign="top"><img alt="Neato" src="/assets/figures/bulk/neato.jpg"></td>
 <td align="center" valign="top"><img alt="roomba" src="/assets/figures/bulk/roomba.jpg"></td>
