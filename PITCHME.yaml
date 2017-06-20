@@ -1,2 +1,8 @@
 background : assets/agents_used.jpg
 background-size: cover # cover, contain, auto
+
+.reveal section img {
+  border: 0;
+  box-shadow: none;
+}
+

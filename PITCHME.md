@@ -1,8 +1,3 @@
-.reveal section img {
-  border: 0;
-  box-shadow: none;
-}
-
 <center><div style="width:30%">
 ![](http://147.102.51.10:3000/bergercookie/mr-slam-thesis-text/raw/master/figures/MoreGraphics/NTUA.png)
 </div></center>
