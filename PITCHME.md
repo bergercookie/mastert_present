@@ -59,37 +59,7 @@ TODO
 ---
 
 ---?image=assets/figures/bulk/roomba.jpg&size=contain
----
-
-<table>
-  <tr>
-    <td>
-      ![](assets/figures/bulk/neato.jpg)
-    </td>
-      ![](assets/figures/bulk/roomba.jpg)
-    </td>
-  </tr>
-</table>
-
-<table>
-<tr>
-<td align="center" valign="top"><img alt="Neato" src="assets/figures/bulk/neato.jpg" width="12px"></td>
-<td align="center" valign="top"><img alt="roomba" src="/assets/figures/bulk/roomba.jpg"></td>
-<td rowspan="2" valign="middle">
-<img alt="BSD3 License" src="http://img.shields.io/badge/license-BSD3-brightgreen.svg">
-<br>
-<img alt="[Join the chat at https://gitter.im/MRPT/mrpt" src="https://badges.gitter.im/Join%20Chat.svg">
-</td>
-</tr>
-<tr>
-<td colspan="2" align="center">CI: GNU/Linux & OSX</td>
-<td align="center">CI: Windows</td>
-</tr>
-</table>
-
-
-
----
+---?image=assets/figures/bulk/neato.jpg&size=contain
 
 <!--- --------- End of Intro - What is SLAM?-->
 
@@ -212,9 +182,9 @@ TODO
 TODO
 
 
----?image=assets/figures/bulk/map_merger_node_2_robots&size=contain
+---?image=assets/figures/bulk/map_merger_node_2_robots.png&size=contain
 <!-- .slide: data-background-transition="none" -->
----?image=assets/figures/bulk/map_merger_node_3_robots&size=contain
+---?image=assets/figures/bulk/map_merger_node_3_robots.png&size=contain
 <!-- .slide: data-background-transition="none" -->
 
 ---
