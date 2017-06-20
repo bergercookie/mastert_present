@@ -54,7 +54,7 @@ TODO
 >to localize an autonomous mobile robot in a previously unexplored environment while
 >constructing a consistent and incremental map of its environment
 >
-> -- <cite>Saeedi2016</cite>
+> <cite>Saeedi2016</cite>
 
 ---
 
