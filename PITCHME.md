@@ -249,8 +249,9 @@ Dr. George Karras
 <br><br>
 
 <div style="color:gray; font-size:2em; font-size: 1em">
-Dr. Jose-Luis Blanco Claraco - University of Almeria, MRPT Lead<br>
+Dr. Jose-Luis Blanco - University of Almeria, MRPT Lead<br>
 </div>
+<br><br>
 
 <div style="color:gray; font-size:2em; font-size: 1em">
 CSL Team<br>
