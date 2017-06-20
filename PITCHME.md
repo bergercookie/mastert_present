@@ -1,5 +1,5 @@
 <center><div style="width:10%">
-![](http://147.102.51.10:3000/bergercookie/mr-slam-thesis-text/raw/master/figures/MoreGraphics/NTUA.png)
+![](assets/figures/MoreGraphics/figures/MoreGraphics/NTUA.png)
 </div></center>
 
 <div style="color:gray; font-size:0.5em; height:3em;">
@@ -41,6 +41,7 @@ Master Thesis Presentation
 
 
 ## SLAM Algorithms - Why choose graphSLAM?
+
 ---
 
 
