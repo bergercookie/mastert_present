@@ -58,6 +58,9 @@ TODO
 
 ---
 
+---?image=assets/figures/bulk/roomba.jpg&size=contain
+---
+
 <table>
   <tr>
     <td>
