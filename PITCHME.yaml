@@ -1,8 +1,7 @@
-background : assets/agents_used.jpg
-background-size: cover # cover, contain, auto
+#background : assets/agents_used.jpg
+#background-size: cover # cover, contain, auto
 
-.reveal section img {
-  border: 0;
-  box-shadow: none;
-}
+theme: white
+theme-override : assets/css/PITCHME.css
+
 
