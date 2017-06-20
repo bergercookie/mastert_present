@@ -1,3 +1,6 @@
+<!--NOTE: Use 3 *dashes* for switching between slides of the same section-->
+<!--NOTE: Use 3 *crosses* for switching between slides of the same section-->
+
 <center><div style="width:10%">
 ![](assets/figures/MoreGraphics/NTUA.jpg)
 </div></center>
@@ -37,7 +40,7 @@ TODO
 - Multi-Robot graphSLAM |
 - Conclusions - Future Directions |
 
----
++++
 
 ## Intro - What is SLAM?
 
@@ -55,7 +58,7 @@ TODO
 
 TODO
 
----
++++
 
 <!--- --------- End of Intro - What is SLAM?-->
 
@@ -148,15 +151,17 @@ TODO
 ### MRPT Simulation Examples
 
 ---?image=assets/figures/gimp/mrpt_sr_slam_combined.png&size=contain
+---?image=assets/figures/gimp/mrpt_sr_slam_combined2.png&size=contain
 
-<!--TODO Build this.-->
----?image=assets/figures/gimp/mrpt_sr_slam_combined2.png
++++
 
 <!--- --------- End of Single-Robot graphSLAM-->
 
 ## Inter-Robot Communication
 
 TODO
+
++++
 
 <!--- --------- End of Inter-Robot Communication-->
 
