@@ -199,8 +199,7 @@ TODO
 ### Thesis summary
 
 - Thorough analysis of single, multi-robot graphSLAM strategies |
-- Framework for single, multi-robot graphSLAM - offline or
-    real-time |
+- Framework for single, multi-robot graphSLAM - offline or real-time |
 - Communication scheme for multi-robot real-time experiment |
 - Multiple tests in simulations and real-time |
 
@@ -250,15 +249,15 @@ Tell the details as described in thesis text
 Prof. Kostas J. Kyriakopoulos<br>
 Dr. George Karras
 </div>
-<br><br>
+<br>
 
 <div style="color:gray; font-size:2em; font-size: 1em">
 Dr. Jose-Luis Blanco - University of Almeria, MRPT Lead<br>
 </div>
-<br><br>
+<br>
 
 <div style="color:gray; font-size:2em; font-size: 1em">
-CSL Team<br>
+CSL Team
 </div>
 
 <!--- --------- End of Acknowledgements-->
