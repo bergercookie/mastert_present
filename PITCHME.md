@@ -150,8 +150,12 @@ TODO
 
 ### MRPT Simulation Examples
 
+<!--https://github.com/gitpitch/gitpitch/wiki/Image-Animations-Workflows -->
+
 ---?image=assets/figures/gimp/mrpt_sr_slam_combined.png&size=contain
+<!-- .slide: data-background-transition="none" -->
 ---?image=assets/figures/gimp/mrpt_sr_slam_combined2.png&size=contain
+<!-- .slide: data-background-transition="none" -->
 
 +++
 
