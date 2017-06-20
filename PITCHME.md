@@ -250,6 +250,6 @@ Dr. George Karras
 
 ---
 
-### Thanks for your attention ![](https://github.com/github/gemoji/blob/master/images/bowtie.png)
+### Thanks for your attention ![](https://raw.githubusercontent.com/github/gemoji/master/images/bowtie.png)
 
 ## Q&A
