@@ -31,7 +31,7 @@ Master Thesis Presentation
 - SLAM Algorithms - Why choose graphSLAM? |
 - Single-robot graphSLAM |
 - Multi-robot graphSLAM |
-- Conclusions - Future Directions
+- Conclusions - Future Directions |
 
 ---
 
