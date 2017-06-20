@@ -17,6 +17,8 @@ Control Systems Laboratory<br>
 
 <div style="color:gray; font-size:2em; font-size: 1em">
 Nikos Koukis<br>
+</div>
+<div style="color:gray; font-size:2em; font-size: 0.8em">
 Master Thesis Presentation
 </div>
 
@@ -25,8 +27,6 @@ Master Thesis Presentation
 <!--TODO Add current section in right/left footer-->
 <!--DONE-Works fine- Make this an offline version-->
 <!--DONE-Works-fine- Test presenter mode-->
-
-TODO
 
 ---
 
@@ -61,7 +61,8 @@ TODO
 <!--- --------- End of Intro - What is SLAM?-->
 
 
-## SLAM Algorithms - Why Choose graphSLAM?
+## Review of SLAM Algorithms
+
 
 TODO
 
@@ -96,7 +97,7 @@ describe **briefly** the KF, PF. GraphSLAM is on its own in the next
 
 ---
 
-<!--- --------- End of SLAM Algorithms - Why choose graphSLAM?-->
+<!--- --------- End of Review of SLAM Algorithms-->
 
 
 ## Single-Robot graphSLAM
@@ -245,6 +246,15 @@ Tell the details as described in thesis text
 Prof. Kostas J. Kyriakopoulos<br>
 Dr. George Karras
 </div>
+<br><br>
+
+<div style="color:gray; font-size:2em; font-size: 1em">
+Dr. Jose-Luis Blanco Claraco - University of Almeria, MRPT Lead<br>
+</div>
+
+<div style="color:gray; font-size:2em; font-size: 1em">
+CSL Team<br>
+</div>
 
 <!--- --------- End of Acknowledgements-->
 
@@ -252,4 +262,4 @@ Dr. George Karras
 
 ### Thanks for your attention ![](https://raw.githubusercontent.com/github/gemoji/master/images/bowtie.png)
 
-## Q&A
+# Q&A
