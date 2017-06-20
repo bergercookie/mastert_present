@@ -1,4 +1,4 @@
-<center><div style="width:30%">
+<center><div style="width:10%">
 ![](http://147.102.51.10:3000/bergercookie/mr-slam-thesis-text/raw/master/figures/MoreGraphics/NTUA.png)
 </div></center>
 
@@ -12,9 +12,9 @@ Control Systems Laboratory<br>
 <br>
 
 
-### Design and Development of SLAM Algorithms
+# Design and Development of SLAM Algorithms
 
-<span style="color:gray; font-size:0.7em"> Nikolaos Koukis </span>
+<span style="color:gray; font-size:0.8em"> Nikolaos Koukis </span>
 
 ---
 
