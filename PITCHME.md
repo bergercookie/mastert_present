@@ -1,6 +1,6 @@
-<div style="width:50%">
+<center><div style="width:30%">
 ![](http://147.102.51.10:3000/bergercookie/mr-slam-thesis-text/raw/master/figures/MoreGraphics/NTUA.png)
-</div>
+</div></center>
 
 <span style="color:gray; font-size:0.7em">
 National Technical University of Athens
