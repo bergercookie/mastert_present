@@ -16,9 +16,8 @@ Control Systems Laboratory<br>
 
 <span style="color:gray; font-size:0.8em"> Nikolaos Koukis </span>
 
-<div id=footer>
-03/07/2017
-</div>
+
+<!-- Add a date -->
 
 
 ---
