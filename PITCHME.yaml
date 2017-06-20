@@ -13,6 +13,6 @@ revealjs: 3.4.1
 slide-number: false
 
 # Overrides the default "git-repository" text
-footnote : "Multi-robot graphSLAM"
+footnote: "Multi-robot graphSLAM"
 
-transition: zoo # convex, concave, default, fade, none, slide and zoo
+transition: fade # convex, concave, default, fade, none, slide and zoo
