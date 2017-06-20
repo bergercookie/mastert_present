@@ -1,12 +1,12 @@
-![NTUA](http://147.102.51.10:3000/bergercookie/mr-slam-thesis-text/src/master/figures/MoreGraphics/NTUA.png)
+![NTUA](http://147.102.51.10:3000/bergercookie/mr-slam-thesis-text/raw/master/figures/MoreGraphics/NTUA.png)
 <span style="color:gray; font-size:0.7em">
-
 National Technical University of Athens
 School of Mechanical Engineering
 Section of Mechanical Design and Automatic Control
 Control Systems Laboratory
+</span>
 
-</b></span>
+<br>
 
 
 ### Design and Development of SLAM Algorithms
