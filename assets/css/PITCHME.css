@@ -3,3 +3,7 @@
   box-shadow: none;
 }
 
+br {
+    margin: 0px;
+    line-height: 0px;
+}
