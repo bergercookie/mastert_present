@@ -2,6 +2,6 @@
 #background-size: cover # cover, contain, auto
 
 theme: white
-theme-override : assets/css/PITCHME.css
+theme-override: assets/css/PITCHME.css
 
 
