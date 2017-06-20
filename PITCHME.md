@@ -25,8 +25,8 @@ Master Thesis Presentation
 
 <!--TODO Add a date -->
 <!--TODO Add current section in right/left footer-->
-<!--TODO Make this an offline version-->
-<!--TODO Test presenter mode-->
+<!--DONE-Works fine- Make this an offline version-->
+<!--DONE-Works-fine- Test presenter mode-->
 
 TODO
 
@@ -115,7 +115,7 @@ TODO
 #### Development Goals
 
 - Generic/Extensible design
-  - Handle odometry, laser scans, monocular/stero images etc. |
+  - Handle odometry, laser scans, monocular/stereo images etc. |
   - 2D/3D SLAM |
 - Offline/online use
   - Offline use with simulated or prerecorded datasets |
@@ -191,8 +191,63 @@ TODO
 
 ## Conclusions - Future Directions
 
-TODO
+---
+
+### Thesis summary
+
+- Thorough analysis of single, multi-robot graphSLAM strategies |
+- Framework for single, multi-robot graphSLAM - offline or
+    real-time
+- Communication scheme for multi-robot real-time experiment
+- Multiple tests in simulations and real-time
+
+
+note:
+Tell the details as described in thesis text
 
 ---
 
+### Future Directions
+
+<tr class="fragment">
+- Integration of 3rd party optimization framework |
+  - g2o |
+  - iSAM, iSAM2 |
+  - SE-Sync |
+</tr>
+
+<tr class="fragment">
+- Adaptive node registration decider / Node Reduction Scheme
+</tr>
+
+
+<tr class="fragment">
+- Implement deciders based on Visual sensors (Monocular, Stereo images)
+</tr>
+
+<tr class="fragment">
+- Add full support for 3D Slam
+</tr>
+
+<tr class="fragment">
+- Support for active exploration
+</tr>
+
 <!--- --------- End of Conclusions - Future Directions-->
+
+---
+
+### Acknowledgements
+
+<div style="color:gray; font-size:2em; font-size: 0.5em">
+Prof. Kostas J. Kyriakopoulos<br>
+Dr. George Karras
+</div>
+
+<!--- --------- End of Acknowledgements-->
+
+---
+
+### Thanks for your attention :-)
+
+## Q&A
