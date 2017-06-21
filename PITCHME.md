@@ -68,8 +68,6 @@ TODO
 <!-- .slide: data-background-transition="none" -->
 ---?image=assets/figures/bulk/stanley.jpg&size=contain
 <!-- .slide: data-background-transition="none" -->
----?image=assets/figures/bulk/mars_rover.jpg&size=contain
-<!-- .slide: data-background-transition="none" -->
 
 <!--Just in case... https://www.sbir.gov/sbirsearch/detail/369703 -->
 <!--Also see the Downloaded files -->
@@ -166,6 +164,15 @@ TODO
 
 ---
 
+### Configuring the Application
+
+- Don't have to meddle with the source code
+- Use of `.ini` files to tweak the application behavior
+
+---?code=codes/sample.ini
+
+---
+
 
 ### MRPT Simulation Examples
 
@@ -178,6 +185,7 @@ TODO
 ---
 
 ### Simulation Demo
+---
 
 ![](https://www.youtube.com/embed/Pv0yvlzrcXk)
 
@@ -235,7 +243,7 @@ We conducted multi-robot simulations in **Gazebo**.
   - Odometry
     - Odometry covariance (same for *x*, *y*, *yaw*): 0.1m
   - Laser scanner:
-    - Sensor range [0.20 - 5.60]
+    - Sensor range: [0.20 - 5.60]
     - resolution: 0.01
     - Sensor noise (Gaussian)
       - Mean: 0.0

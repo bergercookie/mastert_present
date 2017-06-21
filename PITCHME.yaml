@@ -20,3 +20,6 @@ mathjax: TeX-MML-AM_HTMLorMML-full
 
 loop: false
 mousewheel: true
+
+# https://github.com/gitpitch/gitpitch/wiki/Vertical-Center-Setting
+vertical-center : false
