@@ -30,7 +30,7 @@ Master Thesis Presentation
 
 ---
 
-### Presentation Contents
+## Presentation Contents
 
 - Intro - What is SLAM? |
 - Review of SLAM Algorithms |
@@ -46,7 +46,7 @@ TODO
 
 ---
 
-### Definition
+## Definition
 
 <!--TODO How should I handle citations?-->
 
@@ -86,7 +86,7 @@ TODO
 
 ---
 
-### Map Representation
+## Map Representation
 
 - Feature-based SLAM |
 - View-based SLAM |
@@ -101,7 +101,7 @@ describe **briefly** the two variants
 ---
 
 
-### Processing Scheme
+## Processing Scheme
 
 - Kalman Filter (KF) |
 - Particle-Filtering (PF) |
@@ -129,7 +129,7 @@ TODO
 
 ---
 
-#### Development Goals
+## Development Goals
 
 - Generic/Extensible design |
   - Handle odometry, laser scans, monocular/stereo images etc. |
@@ -146,13 +146,13 @@ when you show them the specific math steps below, to know what they are about!
 
 ---
 
-### Levenberg-Marquardt Least-Squares Optimization
+#### Levenberg-Marquardt Least-Squares Optimization
 
 TODO
 
 ---
 
-### Iterative Closest Point - ICP
+## Iterative Closest Point - ICP
 
 TODO
 
@@ -174,7 +174,7 @@ TODO
 
 ---
 
-### Simulation Demo
+# Simulation Demo
 ---
 
 ![](https://www.youtube.com/embed/Pv0yvlzrcXk)
@@ -193,7 +193,7 @@ TODO
 
 ---
 
-### Launching Application from the command line
+#### Launching Application from the command line
 
 - Specify the following:
   - dataset file
@@ -202,9 +202,9 @@ TODO
   - 2D/3D SLAM
 
 ```sh
-graphslam-engine -r dataset.rawlog \
+$ graphslam-engine -r dataset.rawlog \
                  -g dataset.rawlog.GT.txt \
-                 -i $cfg_file/odometry_2DRangeScans.ini
+                 -i $cfg_file/odometry_2DRangeScans.ini \
                  --2d
 ```
 
@@ -261,11 +261,11 @@ We conducted multi-robot simulations in **Gazebo**.
   - Odometry
     - Odometry covariance (same for *x*, *y*, *yaw*): 0.1m
   - Laser scanner:
-    - Sensor range: [0.20 - 5.60]
-    - resolution: 0.01
+    - Sensor range: [0.20 - 5.60]m
+    - resolution: 0.01m
     - Sensor noise (Gaussian)
-      - Mean: 0.0
-      - Std. deviation: 0.01
+      - Mean: 0.0m
+      - Std. deviation: 0.01m
 
 ---
 
@@ -275,14 +275,14 @@ We conducted multi-robot simulations in **Gazebo**.
 
 ---
 
-## Simulation Demo
+# Simulation Demo
 ---
 
 ![](https://www.youtube.com/embed/4RKS2jrvsYE)
 
 ---
 
-### Experimental Results
+## Experimental Results
 
 TODO
 
@@ -290,11 +290,11 @@ TODO
 
 <!--- --------- End of Multi-Robot graphSLAM-->
 
-## Conclusions - Future Directions
+# Conclusions - Future Directions
 
 ---
 
-### Thesis summary
+## Thesis summary
 
 - Thorough analysis of single, multi-robot graphSLAM strategies |
 - Framework for single, multi-robot graphSLAM - offline or real-time |
@@ -307,7 +307,7 @@ Tell the details as described in thesis text
 
 ---
 
-### Future Directions
+## Future Directions
 
 <ul>
   <div class="fragment">
@@ -340,7 +340,7 @@ Tell the details as described in thesis text
 <!--- --------- End of Conclusions - Future Directions-->
 
 ---
-### References
+## References
 
   <div style="font-size:0.5em">
     <li>
@@ -353,7 +353,7 @@ Tell the details as described in thesis text
 
 ---
 
-### Acknowledgements
+## Acknowledgements
 
 <div style="color:gray; font-size:2em; font-size: 1em">
 Prof. Kostas J. Kyriakopoulos<br>
