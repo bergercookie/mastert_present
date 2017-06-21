@@ -30,7 +30,7 @@ Master Thesis Presentation
 
 ---
 
-## Presentation Contents
+# Presentation Contents
 
 - Intro - What is SLAM? |
 - Review of SLAM Algorithms |
@@ -40,13 +40,13 @@ Master Thesis Presentation
 
 ---
 
-## Intro - What is SLAM?
+# Intro - What is SLAM?
 
 TODO
 
 ---
 
-## Definition
+# Definition
 
 <!--TODO How should I handle citations?-->
 
@@ -73,6 +73,7 @@ TODO
 <!--Also see the Downloaded files -->
 
 ---?image=assets/figures/bulk/mars_rover.jpg&size=contain
+<!-- .slide: data-background-transition="none" -->
 
 ---
 
@@ -86,7 +87,7 @@ TODO
 
 ---
 
-## Map Representation
+# Map Representation
 
 - Feature-based SLAM |
 - View-based SLAM |
@@ -101,7 +102,7 @@ describe **briefly** the two variants
 ---
 
 
-## Processing Scheme
+# Processing Scheme
 
 - Kalman Filter (KF) |
 - Particle-Filtering (PF) |
@@ -129,7 +130,7 @@ TODO
 
 ---
 
-## Development Goals
+# Development Goals
 
 - Generic/Extensible design |
   - Handle odometry, laser scans, monocular/stereo images etc. |
@@ -193,7 +194,7 @@ TODO
 
 ---
 
-#### Launching Application from the command line
+#### Launching Application from the Command Line
 
 - Specify the following:
   - dataset file
@@ -203,9 +204,9 @@ TODO
 
 ```sh
 $ graphslam-engine -r dataset.rawlog \
-                 -g dataset.rawlog.GT.txt \
-                 -i $cfg_file/odometry_2DRangeScans.ini \
-                 --2d
+                   -g dataset.rawlog.GT.txt \
+                   -i odometry_2DRangeScans.ini \
+                   --2d
 ```
 
 ---
