@@ -164,23 +164,13 @@ TODO
 
 ---
 
-### Configuring the Application
-
-- Don't have to meddle with the source code
-- Use of `.ini` files to tweak the application behavior
-
----?code=codes/sample.ini&lang=ini
-
----
-
-
 ### MRPT Simulation Examples
 
 <!--https://github.com/gitpitch/gitpitch/wiki/Image-Animations-Workflows -->
 
 ---?image=assets/figures/gimp/mrpt_sr_slam_combined.png&size=contain
----?image=assets/figures/gimp/mrpt_sr_slam_combined2.png&size=contain
 <!-- .slide: data-background-transition="none" -->
+---?image=assets/figures/gimp/mrpt_sr_slam_combined2.png&size=contain
 
 ---
 
@@ -191,10 +181,36 @@ TODO
 
 ---
 
+### Configuring the Application
 
-### Real-time setup and experiment
+- Users don't have to meddle with the source code / compilation |
+- Use of `.ini` files to tweak the application behavior |
+  - Parameters of deciders, optimizer classes |
+  - Visualization parameters |
+  - ... |
 
-<!--TODO mention the automation level and what does the user have to do with the shell files-->
+---?code=codes/sample.ini&lang=ini
+
+### Launching Application from the command line
+
+- Specify the following:
+  - dataset file
+  - Ground-truth file
+  - `.ini` configuration file
+  - 2D/3D SLAM
+
+```sh
+graphslam-engine -r dataset.rawlog \
+                 -g dataset.rawlog.GT.txt \
+                 -i $cfg_file/odometry_2DRangeScans.ini
+                 --2d
+```
+
+---
+
+### Real-Time Setup & Execution
+
+TODO
 
 ---
 

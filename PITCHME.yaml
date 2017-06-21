@@ -22,6 +22,6 @@ loop: false
 mousewheel: false
 
 # https://github.com/gitpitch/gitpitch/wiki/Vertical-Center-Setting
-vertical-center : false
+vertical-center : true
 
 highlight: monokai # mono-blue
