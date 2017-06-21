@@ -30,7 +30,7 @@ Master Thesis Presentation
 
 ---
 
-# Presentation Contents
+## Presentation Contents
 
 - Intro - What is SLAM? |
 - Review of SLAM Algorithms |
@@ -40,13 +40,13 @@ Master Thesis Presentation
 
 ---
 
-# Intro - What is SLAM?
+## Intro - What is SLAM?
 
 TODO
 
 ---
 
-# Definition
+## Definition
 
 <!--TODO How should I handle citations?-->
 
@@ -87,7 +87,7 @@ TODO
 
 ---
 
-# Map Representation
+## Map Representation
 
 - Feature-based SLAM |
 - View-based SLAM |
@@ -102,7 +102,7 @@ describe **briefly** the two variants
 ---
 
 
-# Processing Scheme
+## Processing Scheme
 
 - Kalman Filter (KF) |
 - Particle-Filtering (PF) |
@@ -130,7 +130,7 @@ TODO
 
 ---
 
-# Development Goals
+## Development Goals
 
 - Generic/Extensible design |
   - Handle odometry, laser scans, monocular/stereo images etc. |
@@ -241,13 +241,13 @@ TODO
 ---
 
 
-## Example with 2 agents
+# Example with 2 agents
 
 ---?image=assets/figures/bulk/map_merger_node_2_robots.png&size=contain
 
 ---
 
-## Example with 3 agents
+# Example with 3 agents
 
 ---?image=assets/figures/bulk/map_merger_node_3_robots.png&size=contain
 
