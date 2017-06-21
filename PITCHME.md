@@ -180,7 +180,7 @@ TODO
 
 ---
 
-![lib-graphslam hierarchy](https://g.graphvizo.com/svg?
+![lib-graphslam hierarchy](https://g.gravizo.com/svg?
   digraph G {
     aize = "4,4";
     CRegistrationDeciderOrOptimizer [shape=box];
