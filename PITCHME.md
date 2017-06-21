@@ -169,7 +169,7 @@ TODO
 - Don't have to meddle with the source code
 - Use of `.ini` files to tweak the application behavior
 
----?code=codes/sample.ini
+---?code=codes/sample.ini&lang=ini
 
 ---
 
