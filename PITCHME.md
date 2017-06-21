@@ -231,15 +231,14 @@ We conducted multi-robot simulations in **Gazebo**.
 - 2 Mobile robots (Pioneer 2dx)
 - Measurements utilized
   - Odometry
-    - Odometry covariance (same for *x*, *y*, *yaw*): $$0.1m$$
+    - Odometry covariance (same for *x*, *y*, *yaw*): 0.1m
   - Laser scanner:
-    - Sensor range
-      -  $$0.20 - 5.60$$
-      - resolution: $$0.01$$
+    - Sensor range [0.20 - 5.60]
+    - resolution: 0.01
     - Sensor noise
       - Type: *Gaussian*
-      - Mean: $$0.0$$
-      - Std. deviation: $$0.01$$
+      - Mean: 0.0
+      - Std. deviation: 0.01
 
 ---
 
