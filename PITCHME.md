@@ -178,6 +178,8 @@ TODO
       criterion
 - CGraphSlamOptimizer(GSO)
 
+---
+
 <img src='https://g.gravizo.com/svg?
  digraph G {
    main -> parse -> execute;
@@ -191,6 +193,7 @@ TODO
  }
 '/>
 
+---
 
 ![Alt text](https://g.gravizo.com/svg?
   digraph G {
