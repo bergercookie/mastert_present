@@ -202,7 +202,7 @@ TODO
   - `.ini` configuration file
   - 2D/3D SLAM
 
-```sh
+```bash
 $ graphslam-engine -r dataset.rawlog \
                    -g dataset.rawlog.GT.txt \
                    -i odometry_2DRangeScans.ini \
@@ -241,13 +241,13 @@ TODO
 ---
 
 
-# Example with 2 agents
+## Example with 2 agents
 
 ---?image=assets/figures/bulk/map_merger_node_2_robots.png&size=contain
 
 ---
 
-# Example with 3 agents
+## Example with 3 agents
 
 ---?image=assets/figures/bulk/map_merger_node_3_robots.png&size=contain
 
