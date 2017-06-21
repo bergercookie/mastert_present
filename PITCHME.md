@@ -188,8 +188,8 @@ TODO
     CRegistrationDeciderOrOptimizer -> CEdgeRegistrationDecider [style=dotted];
     CRegistrationDeciderOrOptimizer -> CGraphSlamOptimizer [style=dotted];
     CNodeRegistrationDecider -> { CFixedIntervalsNRD; CICPCriteriaNRD }
-    CEdgeRegistrationDecider -> CRangegScanRegistrationDecider [style=dotted];
-    CRangeScanRegistrationDecider -> { CICPCriteriaERD; CLoopCloserERD }
+    CEdgeRegistrationDecider -> CRangeScanEdgeRegistrationDecider [style=dotted];
+    CRangeScanEdgeRegistrationDecider -> { CICPCriteriaERD; CLoopCloserERD }
     CGraphSlamOptimizer -> CLevMarqGSO;
   }
 )
