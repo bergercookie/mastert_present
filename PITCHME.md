@@ -183,13 +183,15 @@ TODO
 
 ### Configuring the Application
 
-- Users don't have to meddle with the source code / compilation |
-- Use of `.ini` files to tweak the application behavior |
-  - Parameters of deciders, optimizer classes |
-  - Visualization parameters |
-  - ... |
+- Users don't have to meddle with the source code / compilation
+- Use of `.ini` files to tweak the application behavior
+  - Parameters of deciders, optimizer classes
+  - Visualization parameters
+  - ...
 
 ---?code=codes/sample.ini&lang=ini
+
+---
 
 ### Launching Application from the command line
 
