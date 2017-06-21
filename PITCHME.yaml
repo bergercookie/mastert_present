@@ -23,3 +23,5 @@ mousewheel: false
 
 # https://github.com/gitpitch/gitpitch/wiki/Vertical-Center-Setting
 vertical-center : false
+
+highlight: monokai # mono-blue
