@@ -179,7 +179,7 @@ TODO
 
 ### Simulation Demo
 
-![](https://www.youtube.com/watch?v=Pv0yvlzrcXk)
+![](https://www.youtube.com/embed/Pv0yvlzrcXk)
 
 
 ### Real-time setup and experiment
@@ -248,10 +248,10 @@ We conducted multi-robot simulations in **Gazebo**.
 
 ---
 
-#### Simulation Video
+## Simulation Video
 ---
 
-![](https://www.youtube.com/watch?v=4RKS2jrvsYE)
+![](https://www.youtube.com/embed/4RKS2jrvsYE)
 
 ### Experimental Results
 
