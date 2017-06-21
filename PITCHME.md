@@ -195,6 +195,23 @@ TODO
 
 ---
 
+![lib-graphslam hierarchy](https://g.graphvizo.com/svg?
+  digraph G {
+    aize = "4,4";
+    CRegistrationDeciderOrOptimizer [shape=box];
+    CRegistrationDeciderOrOptimizer -> CNodeRegistrationDecider [style=dotted];
+    CRegistrationDeciderOrOptimizer -> CEdgeRegistrationDecider [style=dotted];
+    CRegistrationDeciderOrOptimizer -> CGraphSlamOptimizer [style=dotted];
+    CNodeRegistrationDecider -> { CFixedIntervalsNRD; CICPCriteriaNRD }
+    CEdgeRegistrationDecider -> CRangegScanRegistrationDecider [style=dotted];
+    CRangeScanRegistrationDecider -> { CICPCriteriaERD; CLoopCloserERD }
+    CGraphSlamOptimizer -> CLevMarqGSO;
+  }
+)
+
+
+
+
 ![Alt text](https://g.gravizo.com/svg?
   digraph G {
     aize ="4,4";
@@ -213,6 +230,8 @@ TODO
   }
 )
 
+
+---
 
 ### MRPT Simulation Examples
 
