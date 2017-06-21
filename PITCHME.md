@@ -191,6 +191,9 @@ TODO
     CEdgeRegistrationDecider -> CRangeScanEdgeRegistrationDecider [style=dotted];
     CRangeScanEdgeRegistrationDecider -> { CICPCriteriaERD; CLoopCloserERD }
     CGraphSlamOptimizer -> CLevMarqGSO;
+    {rank = same;
+     CFixedIntervalsNRD; CICPCriteriaNRD;
+     CICPCriteriaERD; CLoopCloserERD; CLevMarqGSO}
   }
 )
 
