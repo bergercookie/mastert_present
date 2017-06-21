@@ -213,14 +213,12 @@ TODO
 
 
 ## Example with 2 agents
----
 
 ---?image=assets/figures/bulk/map_merger_node_2_robots.png&size=contain
 
 ---
 
 ## Example with 3 agents
----
 
 ---?image=assets/figures/bulk/map_merger_node_3_robots.png&size=contain
 
@@ -246,7 +244,6 @@ We conducted multi-robot simulations in **Gazebo**.
 ---
 
 ## Gazebo World
----
 
 ---?image=assets/figures/bulk/simulation_env_gazebo.png&size=contain
 
