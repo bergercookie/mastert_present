@@ -17,3 +17,6 @@ footnote: "Multi-robot graphSLAM"
 
 transition: slide # convex, concave, default, fade, none, slide and zoo
 mathjax: TeX-MML-AM_HTMLorMML-full
+
+loop: false
+mousewheel: true

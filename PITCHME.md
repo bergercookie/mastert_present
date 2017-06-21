@@ -75,7 +75,8 @@ TODO
 <!--Also see the Downloaded files -->
 
 ---?image=assets/figures/bulk/mars_rover.jpg&size=contain
-<!-- .slide: data-background-transition="none" -->
+
+---
 
 <!--- --------- End of Intro - What is SLAM?-->
 
@@ -171,7 +172,6 @@ TODO
 <!--https://github.com/gitpitch/gitpitch/wiki/Image-Animations-Workflows -->
 
 ---?image=assets/figures/gimp/mrpt_sr_slam_combined.png&size=contain
-<!-- .slide: data-background-transition="none" -->
 ---?image=assets/figures/gimp/mrpt_sr_slam_combined2.png&size=contain
 <!-- .slide: data-background-transition="none" -->
 
@@ -180,6 +180,8 @@ TODO
 ### Simulation Demo
 
 ![](https://www.youtube.com/embed/Pv0yvlzrcXk)
+
+---
 
 
 ### Real-time setup and experiment
@@ -224,7 +226,7 @@ TODO
 
 ---
 
-### Simulation Setup & Results
+#### Simulation Setup & Results
 
 We conducted multi-robot simulations in **Gazebo**.
 
@@ -235,8 +237,7 @@ We conducted multi-robot simulations in **Gazebo**.
   - Laser scanner:
     - Sensor range [0.20 - 5.60]
     - resolution: 0.01
-    - Sensor noise
-      - Type: *Gaussian*
+    - Sensor noise (Gaussian)
       - Mean: 0.0
       - Std. deviation: 0.01
 
@@ -248,10 +249,12 @@ We conducted multi-robot simulations in **Gazebo**.
 
 ---
 
-## Simulation Video
+## Simulation Demo
 ---
 
 ![](https://www.youtube.com/embed/4RKS2jrvsYE)
+
+---
 
 ### Experimental Results
 
