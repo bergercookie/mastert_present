@@ -199,7 +199,6 @@ W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
 \]`
 </span>
 
-
 ---
 
 #### Extended Kalman Filter
@@ -222,26 +221,36 @@ no need to perform time-update for stationary landmarks
 
 ### Particle Filter - FastSLAM
 
-- Based on Monte Carlo sampling; directly represent the non-linear motion model,
-    non-Gaussian pose distribution.
-- Apply Rao-Blackwellisation (RB) to the joint space probability; Condition the
-    map computation on the whole robot trajectory
+<ul>
+ <li>Based on Monte Carlo sampling; directly represent the non-linear motion
+   model, non-Gaussian pose distribution.</li> 
+ <li>Apply Rao-Blackwellisation (RB) to the joint space probability; Condition
+   the map computation on the whole robot trajectory; Use a *set of particles*
+   each one representing an possible trajectory `\(X_{0:k}^{(i)}\)` and a
+   corresponding weight `\(w_k^{(i)}\)`</li>
+</ul>
 
+<span style="font-size:0.8em">
 `\[
   P(X_{0:k}, m | Z_{0:k}, U_{0:k}, x_0) =
   P(m | X_{0:k}, Z_{0:k}) \times
   P(X_{0:k} | Z_{0:k}, U_{0:k}, x_0)
 \]`
+</span>
 
-- Use a *set of particles* each one representing an possible trajectory
-    `\(X_{0:k}^{(i)}\)` and a corresponding weight `\(w_k^{(i)}\)`
+---
 
-1. **Proposal Distribution:** Draw for each particle, based on its prior poses,
-   observations and latest control input.
-2. **Sample weighting:** Samples are weighted according to an importance
-   function.
-3. **(Optional) resampling:** Select prominent particles - Eliminate the rest
+### Particle Filter - FastSLAM
 
+<ol>
+  <li> <b>Proposal Distribution:</b> Draw for each particle, based on its prior
+    poses, observations and latest control input.
+  </li>
+  <li><b>Sample weighting:</b> Samples are weighted according to an importance
+    function.</li>
+  <li><b>(Optional) resampling:</b> Select prominent particles - Eliminate the
+    rest</li>
+</ol>
 
 ---
 

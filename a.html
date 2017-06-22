@@ -1,0 +1,19 @@
+
+<ul>
+  <li><b>Sample weighting:</b> Samples are weighted according to an importance
+    function.</li>
+  <li><b>(Optional) resampling:</b> Select prominent particles - Eliminate the
+    rest</li>
+  <li> <b>Proposal Distribution:</b> Draw for each particle, based on its prior
+    poses, observations and latest control input.
+  </li>
+</ul>
+
+<ul>
+ <li>Based on Monte Carlo sampling; directly represent the non-linear motion
+   model, non-Gaussian pose distribution.</li> 
+ <li>Apply Rao-Blackwellisation (RB) to the joint space probability; Condition
+   the map computation on the whole robot trajectory; Use a *set of particles*
+   each one representing an possible trajectory `\(X_{0:k}^{(i)}\)` and a
+   corresponding weight `\(w_k^{(i)}\)`</li>
+</ul>
