@@ -119,25 +119,25 @@ Thus, we need to compute the joint posterior distribution:
 
 $$
 \begin{bmatrix}
-  \hat{x}_{k | k}\\
+  \hat{x}\_{k | k}\\
   \hat{m}
 \end{bmatrix}
 &= E
 \left[
   \begin{matrix}
-      x_k \hfill \\
-      \hat{m}_k
+      x\_k \hfill \\
+      \hat{m}\_k
   \end{matrix}
   \, | \,%
-  Z_{0:k}
+  Z\_{0:k}
 \right]
 \\[1pt]
-P_{k|k}
+P\_{k|k}
 &=%
 \begin{bmatrix}
-  P_{xx} & P_{xm}\\
-  P^T_{xm} & P_{mm}
-\end{bmatrix}_{k | k}
+  P\_{xx} & P\_{xm}\\
+  P^T\_{xm} & P\_{mm}
+\end{bmatrix}\_{k | k}
 $$
 
 $$
@@ -146,19 +146,19 @@ $$
   \begin{matrix}
       \left(
       \begin{matrix}
-          x_k - \hat{x}_k \\
-          m - \hat{m}_k
+          x\_k - \hat{x}\_k \\
+          m - \hat{m}\_k
       \end{matrix}
       \right) &
       \left(
       \begin{matrix}
-          x_k - \hat{x}_k \\
-          m - \hat{m}_k
+          x\_k - \hat{x}\_k \\
+          m - \hat{m}\_k
       \end{matrix}
       \right)^T &
   \end{matrix}
   \, |  \,%
-  Z_{0:k}
+  Z\_{0:k}
 \right]
 \end{align}
 $$
