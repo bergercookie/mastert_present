@@ -193,11 +193,13 @@ $$
 </span>
 
 <div style="float: left">
-where,
+          where,
 </div>
+
 
 <span style="font-size:0.8em">
 $$
+\\\\
 S\_k = \nabla hP\_{k|k-1} \nabla h^T + R\_k\\\\
 W\_k = P\_{k|k-1} \nabla h^TS\_k^{-1}
 $$
