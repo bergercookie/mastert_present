@@ -522,6 +522,15 @@ We conducted multi-robot simulations in **Gazebo**.
 
 ---
 
+## Map-matching
+
+---
+
+---?image=assets/figures/bulk/simulation_map_match.png&size=contain
+
+---
+
+
 # Simulation Demo
 ---
 
@@ -569,7 +578,6 @@ Tell the details as described in thesis text
   <div class="fragment">
     <li>Adaptive node registration decider / Node Reduction Scheme</li>
   </div>
-
 
   <div class="fragment">
     <li>Implement deciders based on Visual sensors (Monocular, Stereo images)</li>
