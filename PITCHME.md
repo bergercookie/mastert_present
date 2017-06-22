@@ -263,9 +263,11 @@ no need to perform time-update for stationary landmarks
 
 <span style="font-size:0.8em">
 `\[
+\begin{align}
   P(X_{0:k}, m | Z_{0:k}, U_{0:k}, x_0) =
-  P(m | X_{0:k}, Z_{0:k}) \times
-  P(X_{0:k} | Z_{0:k}, U_{0:k}, x_0)
+  &P(m | X_{0:k}, Z_{0:k}) \times \\
+  &P(X_{0:k} | Z_{0:k}, U_{0:k}, x_0)
+\end{align}
 \]`
 </span>
 
@@ -368,6 +370,9 @@ Two Options for Visualizing procedure
 </div>
 
 ---?image=assets/figures/bulk/gui_main.png&size=contain
+<!-- .slide: data-background-transition="none" -->
+---?image=assets/figures/bulk/ros_visuals.png&size=contain
+<!-- .slide: data-background-transition="none" -->
 
 #### Levenberg-Marquardt Least-Squares Optimization
 
