@@ -118,7 +118,6 @@ $$P(z\_k | x\_{k\_1}, m) \Longleftrightarrow z\_k = h(x\_{k}, m) + v\_k$$
 Thus, we need to compute the joint posterior distribution:
 
 $$
-\begin{align}
 \begin{bmatrix}
   \hat{x}_{k | k}\\
   \hat{m}
@@ -138,8 +137,11 @@ P_{k|k}
 \begin{bmatrix}
   P_{xx} & P_{xm}\\
   P^T_{xm} & P_{mm}
-\end{bmatrix}_{k | k} \notag\\
-&= E
+\end{bmatrix}_{k | k}
+$$
+
+$$
+= E
 \left[
   \begin{matrix}
       \left(
