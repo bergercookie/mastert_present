@@ -180,25 +180,27 @@ P_{xx, k|k-1} &= \nabla f P_{xx, k-1|k-1} \nabla f^T + Q_k
 **Observation Update**
 
 <span style="font-size:0.8em">
-$$
+`\[
 \begin{bmatrix}
-	\hat{x}\_{k|k} \\\\
-	\hat{m}\_k
-\end{bmatrix}=
+	\hat{x}_{k|k} \\
+	\hat{m}_k
+\end{bmatrix} &=
 \begin{bmatrix}
-	\hat{x}\_{k|k-1} \\\\
-	\hat{m}\_{k-1}
-\end{bmatrix}+W\_k\big(z(k)-h(\hat{x}\_{k|k-1},
-\hat{m}\_{k-1})  \big)\\\\
-P\_{k|k} = P\_{k|k-1}-W\_kS\_kW\_k^T
-$$
+	\hat{x}_{k|k-1} \\
+	\hat{m}_{k-1}
+\end{bmatrix}+W_k\big(z(k)-h(\hat{x}_{k|k-1},
+\hat{m}_{k-1})  \big)\\\\
+P_{k|k} &= P_{k|k-1}-W_k S_k W_k^T
+\]`
 </span>
 
 <span style="font-size:0.8em">
-$$
-\S\_k = \nabla hP\_{k|k-1} \nabla h^T + R\_k\\\\
-W\_k = P\_{k|k-1} \nabla h^TS\_k^{-1}
-$$
+`\[
+\begin{align}
+\S_k &= \nabla hP_{k|k-1} \nabla h^T + R_k\\
+W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
+\end{align}
+\]`
 </span>
 
 
