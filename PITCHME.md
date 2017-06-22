@@ -194,14 +194,11 @@ $$
 
 <span style="font-size:0.8em">
 $$
-S\_k = \nabla hP\_{k|k-1} \nabla h^T + R\_k\\\\
+\S\_k = \nabla hP\_{k|k-1} \nabla h^T + R\_k\\\\
 W\_k = P\_{k|k-1} \nabla h^TS\_k^{-1}
 $$
 </span>
 
-
-
-note: no need to perform time-update for stationary landmarks
 
 ---
 
@@ -209,8 +206,15 @@ note: no need to perform time-update for stationary landmarks
 
 - Handles uncertainty in landmarks and robot movement simultaneously (both are
     considered in the SLAM state)
-- The nonlinearities of motion, observation models are handled by *prior
-    linearisation*.
+- Handles the nonlinearities by linearizing the motion, observation models (not
+	suitable for highly non-linear models)
+- Motion step affects only the current position estimate not the map.
+- Observation step requires the landmarks means and covariances to be computed:
+	Computational, Storage cost \( \rightarrow mathcal{O}(N^2) \)
+
+note:
+mention that all the KF-variants suffer from one (or more) of its drawbacks
+no need to perform time-update for stationary landmarks
 
 ---
 
