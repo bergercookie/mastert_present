@@ -27,6 +27,7 @@ Master Thesis Presentation
 <!--TODO Add current section in right/left footer-->
 <!--DONE-Works fine- Make this an offline version-->
 <!--DONE-Works-fine- Test presenter mode-->
+<!--TODO How should I handle citations?-->
 
 ---
 
@@ -42,13 +43,10 @@ Master Thesis Presentation
 
 ## Intro - What is SLAM?
 
-TODO
-
 ---
 
 ## Definition
 
-<!--TODO How should I handle citations?-->
 
 >Simultaneous localization and mapping (SLAM) is a process that aims
 >to localize an autonomous mobile robot in a previously unexplored environment while
@@ -60,7 +58,11 @@ TODO
 
 ### SLAM Commercial/Academic Usages
 
-TODO
+- Self-driving cars |
+- Domestic robots (Roomba, Neato) |
+- Architectural applications (GeoSLAM) |
+- Large-scale mapping applications (UAV Atmos) |
+- Space applications (NASA Planetary Rovers) |
 
 ---
 
@@ -71,7 +73,6 @@ TODO
 
 <!--Just in case... https://www.sbir.gov/sbirsearch/detail/369703 -->
 <!--Also see the Downloaded files -->
-
 ---?image=assets/figures/bulk/mars_rover.jpg&size=contain
 <!-- .slide: data-background-transition="none" -->
 
@@ -81,6 +82,47 @@ TODO
 
 
 ## Review of SLAM Algorithms
+
+Can be devided based on the **processing scheme** and **map representation**.
+
+---
+
+## Processing Scheme
+
+- Extended Kalman Filter (EKF) |
+- Particle-Filtering (PF) |
+- Graph-based approaches |
+
+Note:
+Why do we pick the graph-based approaches
+describe **briefly** the KF, PF. GraphSLAM is on its own in the next
+~4min
+
+---
+
+## Extended Kalman Filter
+
+Motion model:
+
+$$P(\pmb{x}_k | \pmb{x}_{k_1}, \pmb{u}_k) \Longleftrightarrow
+\pmb{x}_k = \pmb{f}(\pmb{x}_{k-1}, \pmb{u}_k) + \pmb{w}_k $$
+
+
+Observation model:
+
+$$P(\pmb{z}_k | \pmb{x}_{k_1}, \pmb{m}) \Longleftrightarrow
+\pmb{z}_k = \pmb{h}(\pmb{x}_{k}, \pmb{m}) + \pmb{v}_k $$
+
+
+---
+
+## Particle Filter
+
+TODO
+
+---
+
+### Graph-based SLAM
 
 
 TODO
@@ -93,25 +135,13 @@ TODO
 - View-based SLAM |
 - ... |
 
-TODO
+---?image=assets/figures/bulk/map_representation.png&size=contain
+<!-- .slide: data-background-transition="none" -->
 
 Note:
-describe **briefly** the two variants
-~2min
-
----
-
-
-## Processing Scheme
-
-- Kalman Filter (KF) |
-- Particle-Filtering (PF) |
-- Graph-based approaches |
-
-TODO
-
-Note:
-describe **briefly** the KF, PF. GraphSLAM is on its own in the next
+describe **briefly** the two variants.
+Feature-based maps depend on specific landmarks. View-based handle raw sensor
+data. No loss of info there
 ~2min
 
 ---
@@ -176,7 +206,6 @@ TODO
 ---
 
 <!--Ref: http://www.gravizo.com/ -->
-
 ---?image=assets/figures/dot/lib_hierarchy.png&size=contain
 
 note:

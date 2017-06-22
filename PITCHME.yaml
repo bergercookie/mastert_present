@@ -29,3 +29,4 @@ highlight: monokai # mono-blue
 
 background-size: cover
 
+remote-control: false # never used it.. might be useful
