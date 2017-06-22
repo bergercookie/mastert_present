@@ -3,6 +3,9 @@
   box-shadow: none;
 }
 
+/* Things that appear in white.css of the pitchme.css repo */
+/* https://github.com/gitpitch/gitpitch/blob/master/public/libs/reveal.js/3.4.1/css/theme/white.css */
+
 /*.reveal .slides {*/
     /*text-align: left;*/
 /*}*/
@@ -37,5 +40,5 @@
   display: block;
   padding: 5px;
   overflow: auto;
-  max-height: 800px;
+  max-height: 400px;
   word-wrap: normal; }
