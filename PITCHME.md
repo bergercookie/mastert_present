@@ -220,9 +220,28 @@ no need to perform time-update for stationary landmarks
 
 ---
 
-### Particle Filter
+### Particle Filter - FastSLAM
 
-TODO
+- Based on Monte Carlo sampling; directly represent the non-linear motion model,
+    non-Gaussian pose distribution.
+- Apply Rao-Blackwellisation (RB) to the joint space probability; Condition the
+    map computation on the whole robot trajectory
+
+`\[
+  P(X_{0:k}, m | Z_{0:k}, U_{0:k}, x_0) =
+  P(m | X_{0:k}, Z_{0:k}) \times
+  P(X_{0:k} | Z_{0:k}, U_{0:k}, x_0)
+\]`
+
+- Use a *set of particles* each one representing an possible trajectory
+    `\(X_{0:k}^{(i)}\)` and a corresponding weight `\(w_k^{(i)}\)`
+
+1. **Proposal Distribution:** Draw for each particle, based on its prior poses,
+   observations and latest control input.
+2. **Sample weighting:** Samples are weighted according to an importance
+   function.
+3. **(Optional) resampling:** Select prominent particles - Eliminate the rest
+
 
 ---
 
