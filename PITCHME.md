@@ -213,7 +213,7 @@ W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
   Observation step requires the landmarks means and covariances to be
   computed</li>
 
-  Computational, Storage cost `\(\rightarrow\mathcal{O}(N^2)\)`
+  <center>Computational, Storage cost `\(\rightarrow\mathcal{O}(N^2)\)`</center>
 
   <li>Constructs exclusively landmarks-based maps</li>
   <li>Works in either 2D or 3D SLAM</li>
