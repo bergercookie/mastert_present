@@ -148,7 +148,6 @@ P\_{k|k} =
       \right)
   \end{matrix}
   Z\_{0:k}
-
 \right]
 $$
   <!--\begin{matrix}-->
