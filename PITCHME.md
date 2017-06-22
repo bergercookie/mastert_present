@@ -210,8 +210,9 @@ $$
 	suitable for highly non-linear models)
 - Motion step affects only the current position estimate not the map.
 - Observation step requires the landmarks means and covariances to be
-    computed:\\
-    Computational, Storage cost `\(\rightarrow\mathcal{O}(N^2)\)`
+    computed:
+
+Computational, Storage cost `\(\rightarrow\mathcal{O}(N^2)\)`
 
 note:
 mention that all the KF-variants suffer from one (or more) of its drawbacks
