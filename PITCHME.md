@@ -203,7 +203,7 @@ W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
 
 #### Extended Kalman Filter
 
-<span style="font-size:0.3em">
+<div style="font-size:0.3em">
 <ul>
   <li>Handles uncertainty in landmarks and robot movement simultaneously (both
   are considered in the SLAM state)</li>
@@ -215,7 +215,7 @@ W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
 </ul>
 
 
-</span>
+</div>
 
 Computational, Storage cost `\(\rightarrow\mathcal{O}(N^2)\)`
 
