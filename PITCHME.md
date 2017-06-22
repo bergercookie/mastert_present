@@ -179,7 +179,7 @@ P_{xx, k|k-1} &= \nabla f P_{xx, k-1|k-1} \nabla f^T + Q_k
 
 **Observation Update**
 
-<span style="font-size:0.8em">
+<!--<span style="font-size:0.8em">-->
 `\[
 \begin{align}
 \begin{bmatrix}
@@ -197,7 +197,7 @@ S_k &= \nabla hP_{k|k-1} \nabla h^T + R_k\\
 W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
 \end{align}
 \]`
-</span>
+<!--</span>-->
 
 
 ---
