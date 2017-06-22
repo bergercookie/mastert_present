@@ -125,16 +125,16 @@ $$
 = E
 \left[
   \begin{matrix}
-      x\_k \hfill \\
+      x\_k \hfill \\\\
       \hat{m}\_k
   \end{matrix}
   \, | \,
   Z\_{0:k}
 \right]
-\\ [1pt]
+\\\\[1pt]
 P\_{k|k} =
 \begin{bmatrix}
-  P\_{xx} & P\_{xm}\\
+  P\_{xx} & P\_{xm}\\\\
   P^T\_{xm} & P\_{mm}
 \end{bmatrix}\_{k | k}
 $$
@@ -145,13 +145,13 @@ $$
   \begin{matrix}
       \left(
       \begin{matrix}
-          x\_k - \hat{x}\_k \\
+          x\_k - \hat{x}\_k \\\\
           m - \hat{m}\_k
       \end{matrix}
       \right) &
       \left(
       \begin{matrix}
-          x\_k - \hat{x}\_k \\
+          x\_k - \hat{x}\_k \\\\
           m - \hat{m}\_k
       \end{matrix}
       \right)^T &
