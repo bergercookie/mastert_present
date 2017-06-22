@@ -211,12 +211,13 @@ W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
   (not suitable for highly non-linear models)</li>
   <li>Motion step affects only the current position estimate not the map;
   Observation step requires the landmarks means and covariances to be
-  computed:</li>
-  <li>Constructs landmarks-based maps</li>
+  computed</li>
+
+  Computational, Storage cost `\(\rightarrow\mathcal{O}(N^2)\)`
+
+  <li>Constructs exclusively landmarks-based maps</li>
   <li>Works in either 2D or 3D SLAM</li>
 </ul>
-
-Computational, Storage cost `\(\rightarrow\mathcal{O}(N^2)\)`
 </div>
 
 note:
