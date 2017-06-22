@@ -180,24 +180,13 @@ TODO
 
 ---
 
-![lib-graphslam hierarchy](https://g.gravizo.com/svg?
-  digraph G {
-    aize = "4,4";
-    CRegistrationDeciderOrOptimizer [shape=box];
-    CRegistrationDeciderOrOptimizer -> CNodeRegistrationDecider [style=dotted];
-    CRegistrationDeciderOrOptimizer -> CEdgeRegistrationDecider [style=dotted];
-    CRegistrationDeciderOrOptimizer -> CGraphSlamOptimizer [style=dotted];
-    CNodeRegistrationDecider -> { CFixedIntervalsNRD; CICPCriteriaNRD }
-    CEdgeRegistrationDecider -> CRangeScanEdgeRegistrationDecider [style=dotted];
-    CRangeScanEdgeRegistrationDecider -> { CICPCriteriaERD; CLoopCloserERD }
-    CGraphSlamOptimizer -> CLevMarqGSO;
-    {rank = same;
-    CNodeRegistrationDecider; CEdgeRegistrationDecider; CGraphSlamOptimizer}
-    {rank = same;
-     CFixedIntervalsNRD; CICPCriteriaNRD;
-     CICPCriteriaERD; CLoopCloserERD; CLevMarqGSO}
-  }
-)
+<!--Ref: http://www.gravizo.com/ -->
+
+---?image=assets/figures/dot/lib_hierarchy.png&size=contain
+
+note:
+Describe what's the actual separation of tasks. Why is this important? Give
+examples!
 
 ---
 
