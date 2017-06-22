@@ -85,8 +85,8 @@ Master Thesis Presentation
 ## Review of SLAM Algorithms
 
 Can be divided based  according to the
-- **map representation** |
-- **processing scheme**
+- Map representation |
+- Processing scheme |
 
 
 ---
@@ -112,7 +112,7 @@ data. No loss of info there
 ## Processing Scheme
 
 - Extended Kalman Filter (EKF) |
-- Particle-Filtering (PF) |
+- Particle-Filter (PF) |
 - Graph-based approaches |
 - ... |
 
