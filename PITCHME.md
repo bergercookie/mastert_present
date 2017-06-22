@@ -49,8 +49,9 @@ Master Thesis Presentation
 
 
 >Simultaneous localization and mapping (SLAM) is a process that aims
->to localize an autonomous mobile robot in a previously unexplored environment while
->constructing a consistent and incremental map of its environment
+>to <b>localize an autonomous mobile robot</b> in a previously unexplored
+>environment while <b>constructing a consistent and incremental map</b> of its
+>environment
 >
 > <cite>Saeedi2016</cite>
 
