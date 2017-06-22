@@ -308,7 +308,7 @@ TODO
 
 ## Single-Robot graphSLAM
 
-![gui_main](assets/figures/bulk/gui_main.png)
+![](assets/figures/bulk/gui_main.png)
 - Goals |
 - 
 - Mathematical Formulation |
