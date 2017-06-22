@@ -117,7 +117,7 @@ $$P(z\_k | x\_{k\_1}, m) \Longleftrightarrow z\_k = h(x\_{k}, m) + v\_k$$
 
 We need to compute the joint posterior distribution:
 
-<span style="font-size:1.3em; line-height:0%">
+<span style="font-size:0.6em">
 $$
 \begin{bmatrix}
   \hat{x}\_{k | k}\\\\
