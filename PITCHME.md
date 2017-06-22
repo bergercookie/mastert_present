@@ -209,7 +209,8 @@ $$
 - Handles the nonlinearities by linearizing the motion, observation models (not
 	suitable for highly non-linear models)
 - Motion step affects only the current position estimate not the map.
-- Observation step requires the landmarks means and covariances to be computed:
+- Observation step requires the landmarks means and covariances to be
+    computed:\\
     Computational, Storage cost `\(\rightarrow\mathcal{O}(N^2)\)`
 
 note:
@@ -411,13 +412,13 @@ We conducted multi-robot simulations in **Gazebo**.
 - 2 Mobile robots (Pioneer 2dx)
 - Measurements utilized
   - Odometry
-    - Odometry covariance (same for *x*, *y*, *yaw*): \(0.1m\)
+    - Odometry covariance (same for *x*, *y*, *yaw*): `\(0.1m\)`
   - Laser scanner:
-    - Sensor range: \([0.20 - 5.60]m\)
-    - resolution: \(0.01m\)
+    - Sensor range: `\([0.20 - 5.60]m\)`
+    - resolution: `\(0.01m\)`
     - Sensor noise (Gaussian)
-      - Mean: \(0.0m\)
-      - Std. deviation: \(0.01m\)
+      - Mean: `\(0.0m\)`
+      - Std. deviation: `\(0.01m\)`
 
 ---
 
