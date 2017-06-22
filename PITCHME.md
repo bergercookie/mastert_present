@@ -137,9 +137,18 @@ P\_{k|k} =
   P\_{xx} & P\_{xm}\\\\
   P^T\_{xm} & P\_{mm}
 \end{bmatrix}\_{k | k}
+= E
+\left[
+  \begin{matrix}
+      \left(
+      \begin{matrix}
+          x\_k - \hat{x}\_k \\\\
+          m - \hat{m}\_k
+      \end{matrix}
+      \right)
+  \end{matrix}
+\right]
 $$
-<!--= E-->
-<!--\left[-->
   <!--\begin{matrix}-->
       <!--\left(-->
       <!--\begin{matrix}-->
@@ -156,8 +165,6 @@ $$
   <!--\end{matrix}-->
   <!--\\, |  \\,-->
   <!--Z\_{0:k}-->
-<!--\right]-->
-<!--\end{align}-->
 
 
 
