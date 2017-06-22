@@ -153,13 +153,13 @@ TODO
 
 ---
 
-## Iterative Closest Point - ICP
+### Iterative Closest Point - ICP
 
 TODO
 
 ---
 
-### Robust Loop-Closure (LC) Scheme
+#### Robust Loop-Closure (LC) Scheme
 
 TODO
 
@@ -182,7 +182,7 @@ TODO
 
 <!--Ref: http://www.gravizo.com/ -->
 
----?image=https://raw.githubusercontent.com/bergercookie/mastert_present/tmp/assets/figures/dot/lib_hierarchy.svg&size=contain
+---?image=https://github.com/bergercookie/mastert_present/blob/tmp/assets/figures/dot/lib_hierarchy.svg&size=contain
 
 note:
 Describe what's the actual separation of tasks. Why is this important? Give
