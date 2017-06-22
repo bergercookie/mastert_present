@@ -177,7 +177,7 @@ TODO
 
 <!--Ref: http://www.gravizo.com/ -->
 
-![svg here](assets/figures/dot/lib_hierarchy.svg)
+![svg](assets/figures/dot/lib_hierarchy.png)
 
 note:
 Describe what's the actual separation of tasks. Why is this important? Give
