@@ -119,7 +119,7 @@ Thus, we need to compute the joint posterior distribution:
 
 $$
 \begin{bmatrix}
-  \hat{x}\_{k | k}\\
+  \hat{x}\_{k | k}\\\\
   \hat{m}
 \end{bmatrix}
 = E
@@ -131,7 +131,7 @@ $$
   \, | \,
   Z\_{0:k}
 \right]
-\\[1pt]
+\\ [1pt]
 P\_{k|k} =
 \begin{bmatrix}
   P\_{xx} & P\_{xm}\\
