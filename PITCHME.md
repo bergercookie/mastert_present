@@ -182,6 +182,10 @@ $$
 \begin{bmatrix}
 	\hat{x}\_{k|k} \\\\
 	\hat{m}\_k
+\end{bmatrix} =
+\begin{bmatrix}
+	\hat{x}\_{k|k-1} \\\\
+	\hat{m}\_{k-1}
 \end{bmatrix}
 $$
 </span>
