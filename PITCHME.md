@@ -181,6 +181,7 @@ P_{xx, k|k-1} &= \nabla f P_{xx, k-1|k-1} \nabla f^T + Q_k
 
 <span style="font-size:0.8em">
 `\[
+\begin{align}
 \begin{bmatrix}
 	\hat{x}_{k|k} \\
 	\hat{m}_k
@@ -191,6 +192,7 @@ P_{xx, k|k-1} &= \nabla f P_{xx, k-1|k-1} \nabla f^T + Q_k
 \end{bmatrix}+W_k\big(z(k)-h(\hat{x}_{k|k-1},
 \hat{m}_{k-1})  \big)\\\\
 P_{k|k} &= P_{k|k-1}-W_k S_k W_k^T
+\end{align}
 \]`
 </span>
 
