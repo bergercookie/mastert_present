@@ -16,6 +16,7 @@ slide-number: false
 footnote: "Multi-robot graphSLAM"
 
 transition: slide # convex, concave, default, fade, none, slide and zoo
+
 mathjax: TeX-MML-AM_HTMLorMML-full
 
 loop: false
@@ -25,3 +26,6 @@ mousewheel: false
 vertical-center : true
 
 highlight: monokai # mono-blue
+
+background-size: cover
+

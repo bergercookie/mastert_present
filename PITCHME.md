@@ -165,24 +165,19 @@ TODO
 
 ---
 
-### MRPT `lib-graphslam` design
+#### MRPT `lib-graphslam` design
 
-- CGraphSlamEngine
-  - Class that manages the overall execution of graphSLAM
-- CRegistrationDeciderOrOptimizer
-  - Common parent of all decider/optimizer classes
-- CNodeRegistrationDecider (NRD)
-  -  Add *new nodes* to the graph according to a specific criterion
-- CEdgeRegistrationDecider (ERD)
-  - Add edges *between already added nodes* in the graph according to a specific
-      criterion
-- CGraphSlamOptimizer(GSO)
+- **CGraphSlamEngine:** Class that manages the overall execution of graphSLAM
+- **CRegistrationDeciderOrOptimizer:** Common parent of all decider/optimizer classes
+- **CNodeRegistrationDecider (NRD):** Add *new nodes* to the graph according to a specific criterion
+- **CEdgeRegistrationDecider (ERD):** Add edges *between already added nodes* in the graph according to a specific criterion
+- **CGraphSlamOptimizer(GSO):** Optimize an already constructed graph
 
 ---
 
 <!--Ref: http://www.gravizo.com/ -->
 
----?image=https://github.com/bergercookie/mastert_present/blob/tmp/assets/figures/dot/lib_hierarchy.svg
+---?image=assets/figures/dot/lib_hierarchy.png&size=contain
 
 note:
 Describe what's the actual separation of tasks. Why is this important? Give
