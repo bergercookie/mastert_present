@@ -321,7 +321,7 @@ TODO
 
 <div style="font-size=0.7em"/>
 Build a tool to execute robustly and visualize SLAM
-<br>
+<br><br>
 <ul>
   <li>Generic/Extensible design</li>
     <ul>
