@@ -319,24 +319,25 @@ TODO
 
 ## Development Goals
 
-<div style="font-size=0.8em"/>
+<div style="font-size=0.7em"/>
 Build a tool to execute robustly and visualize SLAM
-<ol>
+<br>
+<ul>
   <li>Generic/Extensible design</li>
   <li>
-    <ol>
+    <ul>
       <li>Handle odometry, laser scans, (potentially) monocular/stereo images etc.</li>
       <li>2D/3D SLAM</li>
       <li>Offline/online use:</li>
       <li>
-        <ol>
+        <ul>
           <li>Offline use with simulated or prerecorded datasets</li>
           <li>Integration with ROS for real-time graphSLAM</li>
-        </ol>
+        </ul>
       </li>
-    </ol>
+    </ul>
   </li>
-</ol>
+</ul>
 </div>
 
 
