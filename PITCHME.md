@@ -35,7 +35,7 @@ Master Thesis Presentation
 
 - Intro - What is SLAM? |
 - Review of SLAM Algorithms |
-- Single-Robot graphSLAM |
+- Single-Robot graphSLAM - GSoC Internship @MRPT |
 - Multi-Robot graphSLAM |
 - Conclusions - Future Directions |
 
