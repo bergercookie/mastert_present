@@ -309,9 +309,8 @@ TODO
 ## Single-Robot graphSLAM
 
 - Goals |
-    <div style="height=3em"/>
-      ![](assets/figures/bulk/gui_main.png)
-    </div>
+
+      ![](https://github.com/bergercookie/mastert_present/blob/tmp/assets/figures/bulk/gui_main.png)
  
 - Mathematical Formulation |
 - Simulations |
