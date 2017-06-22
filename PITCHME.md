@@ -203,7 +203,7 @@ W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
 
 #### Extended Kalman Filter
 
-<div style="font-size:0.3em">
+<div style="font-size:0.8em">
 <ul>
   <li>Handles uncertainty in landmarks and robot movement simultaneously (both
   are considered in the SLAM state)</li>
@@ -212,12 +212,12 @@ W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
   <li>Motion step affects only the current position estimate not the map;
   Observation step requires the landmarks means and covariances to be
   computed:</li>
+  <li>Constructs landmarks-based maps</li>
+  <li>Works in either 2D or 3D SLAM</li>
 </ul>
 
-
-</div>
-
 Computational, Storage cost `\(\rightarrow\mathcal{O}(N^2)\)`
+</div>
 
 note:
 mention that all the KF-variants suffer from one (or more) of its drawbacks
