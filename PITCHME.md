@@ -170,13 +170,35 @@ To do that, we split the latter into a **time** and an **observation** update.
 <span style="font-size:0.8em">
 $$
 \hat{x}\_{k|k-1} = f(\hat{x}\_{k-1|k-1}, u\_k) \\\\
-P\_{xx, k|k-1} = \nabla f P\_{xx, k-1|k-1} \nabla f^T
+P\_{xx, k|k-1} = \nabla f P\_{xx, k-1|k-1} \nabla f^T + Q_k
 $$
-
 </span>
 
 
 **Observation Update**
+
+<span style="font-size:0.8em">
+$$
+\begin{bmatrix}
+	\hat{x}\_{k|k} \\\\
+	\hat{m}\_k
+\end{bmatrix}
+=
+\begin{bmatrix}
+	\hat{x}\_{k|k-1} \\\\
+	\hat{m}\_{k-1}
+\end{bmatrix}
++ W\_k\big( z(k) - h(\hat{x}\_{k|k-1},
+\hat{m}\_{k-1})  \big)\\\\
+P\_{k|k} = P\_{k|k-1} - W\_kS\_kW\_k^T \\\\
+where\hfill&\notag\\\\
+S\_k = \nabla hP\_{k|k-1} \nabla h^T + R\_k\\\\
+W\_k = P\_{k|k-1} \nablah^TS\_k^{-1}
+$$
+</span>
+
+
+note: no need to perform time-update for stationary landmarks
 
 ---
 
