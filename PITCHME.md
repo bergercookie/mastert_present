@@ -170,7 +170,7 @@ To do that, we split the latter into a **time** and an **observation** update.
 <span style="font-size:0.8em">
 $$
 \hat{x}\_{k|k-1} = f(\hat{x}\_{k-1|k-1}, u\_k) \\\\
-P\_{xx, k|k-1} = \nabla f P\_{xx, k-1|k-1} \nabla f^T + Q_k
+P\_{xx, k|k-1} = \nabla f P\_{xx, k-1|k-1} \nabla f^T + Q\_k
 $$
 </span>
 
