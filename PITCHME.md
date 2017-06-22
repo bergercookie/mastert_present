@@ -337,6 +337,7 @@ Build a tool to execute robustly and visualize SLAM
     </ol>
   </li>
 </ol>
+</div>
 
 
 Note:
