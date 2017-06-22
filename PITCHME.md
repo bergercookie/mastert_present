@@ -84,17 +84,40 @@ Master Thesis Presentation
 
 ## Review of SLAM Algorithms
 
-Can be devided based on the **processing scheme** and **map representation**.
+Can be divided based  according to the
+- **map representation** |
+- **processing scheme**
+
 
 ---
+
+## Map Representation
+
+- Feature-based SLAM |
+- View-based SLAM |
+- ... |
+
+---?image=assets/figures/bulk/map_representation.png&size=contain
+<!-- .slide: data-background-transition="none" -->
+
+Note:
+describe **briefly** the two variants.
+Feature-based maps depend on specific landmarks. View-based handle raw sensor
+data. No loss of info there
+~2min
+
+---
+
 
 ## Processing Scheme
 
 - Extended Kalman Filter (EKF) |
 - Particle-Filtering (PF) |
 - Graph-based approaches |
+- ... |
 
 Note:
+State the purpose of this section!!!
 Why do we pick the graph-based approaches
 describe **briefly** the KF, PF. GraphSLAM is on its own in the next
 ~4min
@@ -280,29 +303,15 @@ TODO
 
 ---
 
-## Map Representation
-
-- Feature-based SLAM |
-- View-based SLAM |
-- ... |
-
----?image=assets/figures/bulk/map_representation.png&size=contain
-<!-- .slide: data-background-transition="none" -->
-
-Note:
-describe **briefly** the two variants.
-Feature-based maps depend on specific landmarks. View-based handle raw sensor
-data. No loss of info there
-~2min
-
----
-
 <!--- --------- End of Review of SLAM Algorithms-->
 
 
 ## Single-Robot graphSLAM
 
 - Goals |
+
+    <img src="assets/figures/bulk/gui_main.png" alt="gui_main" width="400px"/>
+
 - Mathematical Formulation |
 - Simulations |
 - Real-time Experiments |
