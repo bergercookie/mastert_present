@@ -225,7 +225,7 @@ no need to perform time-update for stationary landmarks
 
 <ul>
  <li>Based on Monte Carlo sampling; directly represent the non-linear motion
-   model, non-Gaussian pose distribution.</li> 
+   model, non-Gaussian pose distribution.</li>
  <li>Apply Rao-Blackwellisation (RB) to the joint space probability; Condition
    the map computation on the whole robot trajectory; Use a *set of particles*
    each one representing an possible trajectory `\(X_{0:k}^{(i)}\)` and a
