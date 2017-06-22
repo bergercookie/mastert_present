@@ -191,9 +191,6 @@ $$
 + W\_k\big( z(k) - h(\hat{x}\_{k|k-1},
 \hat{m}\_{k-1})  \big)\\\\
 P\_{k|k} = P\_{k|k-1} - W\_kS\_kW\_k^T \\\\
-where\hfill&\notag\\\\
-S\_k = \nabla hP\_{k|k-1} \nabla h^T + R\_k\\\\
-W\_k = P\_{k|k-1} \nablah^TS\_k^{-1}
 $$
 </span>
 
