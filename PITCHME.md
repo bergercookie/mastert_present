@@ -361,7 +361,7 @@ Two Options for Visualizing procedure
     <ul>
       <li>Suitable for visualizing executing in real-time</li>
       <li>Better integration with the ROS ecosystem (<i>roscore</i>, <i>ros
-          messages</i>, <i>rqt</i>)</li>
+          messages</i>, <i>rqt</i>, <i>tf2</i>)</li>
     </ul>
   </li>
 </ul>
@@ -371,6 +371,8 @@ Two Options for Visualizing procedure
 <!-- .slide: data-background-transition="none" -->
 ---?image=assets/figures/bulk/ros_visuals.png&size=contain
 <!-- .slide: data-background-transition="none" -->
+
+---
 
 #### Levenberg-Marquardt Least-Squares Optimization
 
