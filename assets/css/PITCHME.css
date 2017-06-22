@@ -42,3 +42,8 @@
   overflow: auto;
   max-height: 400px;
   word-wrap: normal; }
+
+
+.MathJax {
+  font-size: 0.3em;
+}
