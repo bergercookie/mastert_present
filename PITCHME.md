@@ -104,7 +104,7 @@ describe **briefly** the KF, PF. GraphSLAM is on its own in the next
 
 Motion model:
 
-$$P(x)_k | X$$
+$$P(\pmb{x})_k | X$$
 
 $$P(\pmb{x}_k | \pmb{x}_{k_1}, \pmb{u}_k) \Longleftrightarrow
 \pmb{x}_k = \pmb{f}(\pmb{x}_{k-1}, \pmb{u}_k) + \pmb{w}_k$$
