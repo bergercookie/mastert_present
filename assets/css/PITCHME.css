@@ -11,7 +11,8 @@
     /*margin-right: 0;*/
 /*}*/
 
-.reveal pre code {
-  font-size: 3.8em;
-  line-height: 0.8;
-}
+.reveal {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 10;
+  font-weight: normal;
+  color: #222; }
