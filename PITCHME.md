@@ -104,7 +104,7 @@ describe **briefly** the KF, PF. GraphSLAM is on its own in the next
 
 Motion model:
 
-$$P(x_k | x_{k_1})$$
+$$P(x\_k | x\_{k_1})$$
 
 
 Observation model:
