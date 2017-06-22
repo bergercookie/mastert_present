@@ -122,18 +122,17 @@ $$
   \hat{x}\_{k | k}\\
   \hat{m}
 \end{bmatrix}
-&= E
+= E
 \left[
   \begin{matrix}
       x\_k \hfill \\
       \hat{m}\_k
   \end{matrix}
-  \, | \,%
+  \, | \,
   Z\_{0:k}
 \right]
 \\[1pt]
-P\_{k|k}
-&=%
+P\_{k|k} =
 \begin{bmatrix}
   P\_{xx} & P\_{xm}\\
   P^T\_{xm} & P\_{mm}
@@ -157,7 +156,7 @@ $$
       \end{matrix}
       \right)^T &
   \end{matrix}
-  \, |  \,%
+  \, |  \,
   Z\_{0:k}
 \right]
 \end{align}
