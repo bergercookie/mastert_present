@@ -249,7 +249,7 @@ no need to perform time-update for stationary landmarks
   <li><b>Sample weighting:</b> Samples are weighted according to an importance
     function.</li>
   <li><b>(Optional) resampling:</b> Select prominent particles - Eliminate the
-    rest</li>
+    rest. Reset the weights `\(\rightarrow w_k^{(i)} = \frac{1}{N}\)`</li>
 </ol>
 
 ---
