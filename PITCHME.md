@@ -308,20 +308,34 @@ TODO
 
 ## Single-Robot graphSLAM
 
-- Goals |
+- Development Goals |
 - Mathematical Formulation |
 - Simulations |
 - Real-time Experiments |
 
+---
 
 ## Development Goals
 
-- Generic/Extensible design |
-  - Handle odometry, laser scans, (potentially) monocular/stereo images etc. |
-  - 2D/3D SLAM |
-- Offline/online use |
-  - Offline use with simulated or prerecorded datasets |
-  - Integration with ROS for real-time graphSLAM |
+<div style="font-size=0.8em"/>
+Build a tool to execute robustly and visualize SLAM
+<ol>
+  <li>Generic/Extensible design</li>
+  <li>
+    <ol>
+      <li>Handle odometry, laser scans, (potentially) monocular/stereo images etc.</li>
+      <li>2D/3D SLAM</li>
+      <li>Offline/online use:</li>
+      <li>
+        <ol>
+          <li>Offline use with simulated or prerecorded datasets</li>
+          <li>Integration with ROS for real-time graphSLAM</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
 
 Note:
 How much am I going to write here?
@@ -333,6 +347,7 @@ when you show them the specific math steps below, to know what they are about!
 
 ## UI Design Insight
 
+<div font-size="0.8em"/>
 Two Options for Visualizing procedure
 <ul>
   <li>MRPT Native application
@@ -350,8 +365,9 @@ Two Options for Visualizing procedure
     </ul>
   </li>
 </ul>
+</div>
 
----image=assets/figures/bulk/gui_main.png&size=contain
+---?image=assets/figures/bulk/gui_main.png&size=contain
 
 #### Levenberg-Marquardt Least-Squares Optimization
 
