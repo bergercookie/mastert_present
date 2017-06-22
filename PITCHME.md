@@ -168,10 +168,12 @@ To do that, we split the latter into a **time** and an **observation** update.
 **Time Update**
 
 <span style="font-size:0.8em">
-$$
-\hat{x}\_{k|k-1} = f(\hat{x}\_{k-1|k-1}, u\_k) \\\\
-P\_{xx, k|k-1} = \nabla f P\_{xx, k-1|k-1} \nabla f^T + Q\_k
-$$
+`\[
+\begin{align}
+\hat{x}_{k|k-1} &= f(\hat{x}_{k-1|k-1}, u_k) \\
+P_{xx, k|k-1} &= \nabla f P_{xx, k-1|k-1} \nabla f^T + Q_k
+\end{align}
+\]`
 </span>
 
 
