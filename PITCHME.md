@@ -310,7 +310,7 @@ TODO
 
 - Goals |
 
-    <img src="assets/figures/bulk/gui_main.png" alt="gui_main" width="400px"/>
+    <img src="/assets/figures/bulk/gui_main.png" alt="gui_main" width="400px"/>
 
 - Mathematical Formulation |
 - Simulations |
