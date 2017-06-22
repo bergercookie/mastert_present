@@ -177,7 +177,7 @@ TODO
 
 <!--Ref: http://www.gravizo.com/ -->
 
----?image=assets/figures/dot/lib_hierarchy.png&size=contain
+---?image=assets/figures/dot/lib_hierarchy.png&size=auto 60% 60%
 
 note:
 Describe what's the actual separation of tasks. Why is this important? Give
