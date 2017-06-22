@@ -100,7 +100,7 @@ describe **briefly** the KF, PF. GraphSLAM is on its own in the next
 
 ---
 
-## Extended Kalman Filter
+### Extended Kalman Filter
 
 **Motion model:**
 
@@ -111,10 +111,74 @@ $$P(x\_k | x\_{k\_1}, u\_k) \Longleftrightarrow x\_k = f(x\_{k-1}, u\_k) + w\_k$
 
 $$P(z\_k | x\_{k\_1}, m) \Longleftrightarrow z\_k = h(x\_{k}, m) + v\_k$$
 
+---
+
+### Extended Kalman Filter
+
+Thus, we need to compute the joint posterior distribution:
+$$
+\begin{bmatrix}
+  \hat{x}_{k | k}\\
+  \hat{m}
+\end{bmatrix}
+$$
+
+<!--$$-->
+<!--\begin{bmatrix}-->
+  <!--\hat{x}_{k | k}\\-->
+  <!--\hat{m}-->
+<!--\end{bmatrix}-->
+<!--&= E-->
+<!--\left[-->
+  <!--\begin{matrix}-->
+      <!--x_k \hfill \\-->
+      <!--\hat{m}_k-->
+  <!--\end{matrix}-->
+  <!--\, | \,%-->
+  <!--Z_{0:k}-->
+<!--\right]-->
+<!--\\[1pt]-->
+<!--P_{k|k}-->
+<!--&=%-->
+<!--\begin{bmatrix}-->
+  <!--P_{xx} & P_{xm}\\-->
+  <!--P^T_{xm} & P_{mm}-->
+<!--\end{bmatrix}_{k | k} \notag\\-->
+<!--&= E-->
+<!--\left[-->
+  <!--\begin{matrix}-->
+      <!--\left(-->
+      <!--\begin{matrix}-->
+          <!--x_k - \hat{x}_k \\-->
+          <!--m - \hat{m}_k-->
+      <!--\end{matrix}-->
+      <!--\right) &-->
+      <!--\left(-->
+      <!--\begin{matrix}-->
+          <!--x_k - \hat{x}_k \\-->
+          <!--m - \hat{m}_k-->
+      <!--\end{matrix}-->
+      <!--\right)^T &-->
+  <!--\end{matrix}-->
+  <!--\, |  \,%-->
+  <!--Z_{0:k}-->
+<!--\right]-->
+<!--$$-->
+
+
 
 ---
 
-## Particle Filter
+### Extended Kalman Filter
+
+- Handles uncertainty in landmarks and robot movement simultaneously (both are
+    considered in the SLAM state)
+- The nonlinearities of motion, observation models are handled by *prior
+    linearisation*.
+
+---
+
+### Particle Filter
 
 TODO
 
