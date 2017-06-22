@@ -204,13 +204,15 @@ W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
 #### Extended Kalman Filter
 
 <span style="font-size:0.8em">
-- Handles uncertainty in landmarks and robot movement simultaneously (both are
-    considered in the SLAM state)
-- Handles the nonlinearities by linearizing the motion, observation models (not
-	suitable for highly non-linear models)
-- Motion step affects only the current position estimate not the map;
-    Observation step requires the landmarks means and covariances to be
-    computed:
+<ul>
+  <li>Handles uncertainty in landmarks and robot movement simultaneously (both
+  are considered in the SLAM state)</li>
+  <li>Handles the nonlinearities by linearizing the motion, observation models
+  (not suitable for highly non-linear models)</li>
+  <li>Motion step affects only the current position estimate not the map;
+  Observation step requires the landmarks means and covariances to be
+  computed:</li>
+</ul>
 </span>
 
 Computational, Storage cost `\(\rightarrow\mathcal{O}(N^2)\)`
