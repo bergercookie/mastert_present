@@ -117,7 +117,7 @@ $$P(z\_k | x\_{k\_1}, m) \Longleftrightarrow z\_k = h(x\_{k}, m) + v\_k$$
 
 We need to compute the joint posterior distribution:
 
-<span style="font-size:0.6em">
+<span style="font-size:0.8em">
 $$
 \begin{bmatrix}
   \hat{x}\_{k | k}\\\\
@@ -158,24 +158,25 @@ P\_{k|k} =
 \right]
 $$
 </span>
-  <!--\begin{matrix}-->
-      <!--\left(-->
-      <!--\begin{matrix}-->
-          <!--x\_k - \hat{x}\_k \\\\-->
-          <!--m - \hat{m}\_k-->
-      <!--\end{matrix}-->
-      <!--\right) &-->
-      <!--\left(-->
-      <!--\begin{matrix}-->
-          <!--x\_k - \hat{x}\_k \\\\-->
-          <!--m - \hat{m}\_k-->
-      <!--\end{matrix}-->
-      <!--\right)^T &-->
-  <!--\end{matrix}-->
-  <!--\\, |  \\,-->
-  <!--Z\_{0:k}-->
+
+To do that, we split the latter into a **time** and an **observation** update.
+
+---
+
+#### Extended Kalman Filter
+
+**Time Update**
+
+<span style="font-size:0.8em">
+$$
+\hat{x}\_{k|k-1} = f(\hat{x}\_{k-1|k-1}, u\_k) \\\\
+P\_{xx, k|k-1} = \nabla f P\_{xx, k-1|k-1} \nabla f^T
+$$
+
+</span>
 
 
+**Observation Update**
 
 ---
 
