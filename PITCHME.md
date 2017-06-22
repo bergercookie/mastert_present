@@ -100,7 +100,7 @@ describe **briefly** the KF, PF. GraphSLAM is on its own in the next
 
 ---
 
-### Extended Kalman Filter
+#### Extended Kalman Filter
 
 **Motion model:**
 
@@ -113,9 +113,9 @@ $$P(z\_k | x\_{k\_1}, m) \Longleftrightarrow z\_k = h(x\_{k}, m) + v\_k$$
 
 ---
 
-### Extended Kalman Filter
+#### Extended Kalman Filter
 
-Thus, we need to compute the joint posterior distribution:
+We need to compute the joint posterior distribution:
 
 $$
 \begin{bmatrix}
@@ -171,7 +171,7 @@ $$
 
 ---
 
-### Extended Kalman Filter
+#### Extended Kalman Filter
 
 - Handles uncertainty in landmarks and robot movement simultaneously (both are
     considered in the SLAM state)
@@ -373,13 +373,13 @@ We conducted multi-robot simulations in **Gazebo**.
 - 2 Mobile robots (Pioneer 2dx)
 - Measurements utilized
   - Odometry
-    - Odometry covariance (same for *x*, *y*, *yaw*): 0.1m
+    - Odometry covariance (same for *x*, *y*, *yaw*): \(0.1m\)
   - Laser scanner:
-    - Sensor range: [0.20 - 5.60]m
-    - resolution: 0.01m
+    - Sensor range: \([0.20 - 5.60]m\)
+    - resolution: \(0.01m\)
     - Sensor noise (Gaussian)
-      - Mean: 0.0m
-      - Std. deviation: 0.01m
+      - Mean: \(0.0m\)
+      - Std. deviation: \(0.01m\)
 
 ---
 
