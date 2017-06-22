@@ -137,9 +137,6 @@ P\_{k|k} =
   P\_{xx} & P\_{xm}\\\\
   P^T\_{xm} & P\_{mm}
 \end{bmatrix}\_{k | k}
-$$
-
-$$
 = E
 \left[
   \begin{matrix}
