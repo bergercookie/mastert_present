@@ -147,6 +147,12 @@ P\_{k|k} =
           m - \hat{m}\_k
       \end{matrix}
       \right)
+	  \left(
+	  \begin{matrix}
+		  x\_k - \hat{x}\_k \\\\
+		  m - \hat{m}\_k
+	  \end{matrix}
+	  \right)^T &
   \end{matrix}
   Z\_{0:k}
 \right]
