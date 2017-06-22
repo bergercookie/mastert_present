@@ -324,19 +324,15 @@ Build a tool to execute robustly and visualize SLAM
 <br>
 <ul>
   <li>Generic/Extensible design</li>
-  <li>
     <ul>
       <li>Handle odometry, laser scans, (potentially) monocular/stereo images etc.</li>
       <li>2D/3D SLAM</li>
       <li>Offline/online use:</li>
-      <li>
-        <ul>
-          <li>Offline use with simulated or prerecorded datasets</li>
-          <li>Integration with ROS for real-time graphSLAM</li>
-        </ul>
-      </li>
+      <ul>
+        <li>Offline use with simulated or prerecorded datasets</li>
+        <li>Integration with ROS for real-time graphSLAM</li>
+      </ul>
     </ul>
-  </li>
 </ul>
 </div>
 
