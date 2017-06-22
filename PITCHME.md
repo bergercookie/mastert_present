@@ -102,14 +102,14 @@ describe **briefly** the KF, PF. GraphSLAM is on its own in the next
 
 ## Extended Kalman Filter
 
-Motion model:
+**Motion model:**
 
 $$P(x\_k | x\_{k\_1}, u\_k) \Longleftrightarrow x\_k = f(x\_{k-1}, u\_k) + w\_k$$
 
 
-Observation model:
+**Observation model:**
 
-$$P(z_k | x_{k_1}, m) \Longleftrightarrow z_k = h(x_{k}, m) + v_k$$
+$$P(z\_k | x\_{k\_1}, m) \Longleftrightarrow z\_k = h(x\_{k}, m) + v\_k$$
 
 
 ---
