@@ -310,7 +310,7 @@ TODO
 
 - Goals |
 
-      ![](https://github.com/bergercookie/mastert_present/blob/tmp/assets/figures/bulk/gui_main.png)
+  ![](https://github.com/bergercookie/mastert_present/blob/tmp/assets/figures/bulk/gui_main.png)
  
 - Mathematical Formulation |
 - Simulations |
