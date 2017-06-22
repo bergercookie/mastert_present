@@ -116,54 +116,50 @@ $$P(z\_k | x\_{k\_1}, m) \Longleftrightarrow z\_k = h(x\_{k}, m) + v\_k$$
 ### Extended Kalman Filter
 
 Thus, we need to compute the joint posterior distribution:
+
 $$
+\begin{align}
 \begin{bmatrix}
   \hat{x}_{k | k}\\
   \hat{m}
 \end{bmatrix}
+&= E
+\left[
+  \begin{matrix}
+      x_k \hfill \\
+      \hat{m}_k
+  \end{matrix}
+  \, | \,%
+  Z_{0:k}
+\right]
+\\[1pt]
+P_{k|k}
+&=%
+\begin{bmatrix}
+  P_{xx} & P_{xm}\\
+  P^T_{xm} & P_{mm}
+\end{bmatrix}_{k | k} \notag\\
+&= E
+\left[
+  \begin{matrix}
+      \left(
+      \begin{matrix}
+          x_k - \hat{x}_k \\
+          m - \hat{m}_k
+      \end{matrix}
+      \right) &
+      \left(
+      \begin{matrix}
+          x_k - \hat{x}_k \\
+          m - \hat{m}_k
+      \end{matrix}
+      \right)^T &
+  \end{matrix}
+  \, |  \,%
+  Z_{0:k}
+\right]
+\end{align}
 $$
-
-<!--$$-->
-<!--\begin{bmatrix}-->
-  <!--\hat{x}_{k | k}\\-->
-  <!--\hat{m}-->
-<!--\end{bmatrix}-->
-<!--&= E-->
-<!--\left[-->
-  <!--\begin{matrix}-->
-      <!--x_k \hfill \\-->
-      <!--\hat{m}_k-->
-  <!--\end{matrix}-->
-  <!--\, | \,%-->
-  <!--Z_{0:k}-->
-<!--\right]-->
-<!--\\[1pt]-->
-<!--P_{k|k}-->
-<!--&=%-->
-<!--\begin{bmatrix}-->
-  <!--P_{xx} & P_{xm}\\-->
-  <!--P^T_{xm} & P_{mm}-->
-<!--\end{bmatrix}_{k | k} \notag\\-->
-<!--&= E-->
-<!--\left[-->
-  <!--\begin{matrix}-->
-      <!--\left(-->
-      <!--\begin{matrix}-->
-          <!--x_k - \hat{x}_k \\-->
-          <!--m - \hat{m}_k-->
-      <!--\end{matrix}-->
-      <!--\right) &-->
-      <!--\left(-->
-      <!--\begin{matrix}-->
-          <!--x_k - \hat{x}_k \\-->
-          <!--m - \hat{m}_k-->
-      <!--\end{matrix}-->
-      <!--\right)^T &-->
-  <!--\end{matrix}-->
-  <!--\, |  \,%-->
-  <!--Z_{0:k}-->
-<!--\right]-->
-<!--$$-->
 
 
 
