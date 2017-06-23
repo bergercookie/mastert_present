@@ -345,7 +345,12 @@ Designed and implemented a complete single-robot graphSLAM framework in
 - SLAM Error metric + visualization
 - Implementation of Robust Loop Closure (LC) scheme initially [designed by
     Olson](https://pdfs.semanticscholar.org/ee30/49d302f56bcadaaec9f3d57642a32ff5224d.pdf) - ``CLoopCloserERD``.
+- Use of a consistent [observation-grouping
+    algorithm](http://ieeexplore.ieee.org/document/1641810) proposed by
+    J.L.Blanco
 
+
+---
 
 ## Development Goals
 
