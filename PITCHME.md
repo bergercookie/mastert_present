@@ -539,6 +539,7 @@ running robots. These take care of:
   - Sensor acquisition (laser, camera)
   - Various utilities (dataset recording)
   - Network utilities (communication of agents in MR-SLAM)
+  - Software config (deciders/optimizer to use)
 
 Design should account for the multiple different options (robot type, laser
 type)
