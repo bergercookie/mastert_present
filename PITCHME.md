@@ -662,7 +662,7 @@ We conducted multi-robot simulations in **Gazebo**.
 
 ## Gazebo World
 
----?image=assets/figures/bulk/simulation_env_gazebo.png&size=contain
+---?image=assets/figures/bulk/gazebo_simulation_env.png&size=contain
 
 ---
 
@@ -674,6 +674,8 @@ We conducted multi-robot simulations in **Gazebo**.
 
 ## Map-matching #2 - More obstacles
 
+---?image=assets/figures/bulk/gazebo_simulation_env_more_obstacles.png&size=contain
+<!-- .slide: data-background-transition="none" -->
 ---?image=assets/figures/bulk/simulation_map_match_more_obstacles.png&size=contain
 
 ---
