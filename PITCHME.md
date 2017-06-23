@@ -342,8 +342,8 @@ node to that of the other we can add an edge constraining those two nodes."
     <li>Computations part - graph optimization</li>
   </ul>
   <li>Any sensor can be used as long as it provides inter-pose constraints</li>
-  <li>Backend works the same for 2D/3D constraints `\( \rightarrow \)` 2D/3D SLAM</li>
-  <li>Optimize for the whole trajectory - accuracy `\( \nearrow \)`
+  <li>Backend works the same for 2D/3D constraints `\[ \rightarrow \]` 2D/3D SLAM</li>
+  <li>Optimize for the whole trajectory - accuracy `\[ \nearrow \]`
   <li>Not restrained to a particular map format. We can:</li>
   <ul>
     <li>include landmarks in the mathematical formulation <b>or</b></li>
