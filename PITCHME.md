@@ -471,7 +471,9 @@ TODO
 
 #### Robust Loop-Closure (LC) Scheme
 
-TODO
+A robot returns to re-observe part of the already observed environment after a
+large traverse. If this is detected it can be useful to reduce the accumulated
+trajectory/map error.
 
 ---?image=assets/figures/bulk/gui_registered_loop_closure.png&size=contain
 <!-- .slide: data-background-transition="none" -->
@@ -487,8 +489,6 @@ TODO
 - **CNodeRegistrationDecider (NRD):** Add *new nodes* to the graph according to a specific criterion
 - **CEdgeRegistrationDecider (ERD):** Add edges *between already added nodes* in the graph according to a specific criterion
 - **CGraphSlamOptimizer(GSO):** Optimize an already constructed graph
-
----
 
 <!--Ref: http://www.gravizo.com/ -->
 ---?image=assets/figures/dot/lib_hierarchy.png&size=contain
@@ -551,7 +551,7 @@ TODO
 
 ---
 
-### Real-time experiment #1
+### Real-time experiment
 
 - For comparison computed an estimation of the ground-truth path via `Aruco`
     static and moving markers; Use ``ar_sys`` for computing the
@@ -567,6 +567,10 @@ TODO
 <!-- .slide: data-background-transition="none" -->
 ---?image=assets/figures/bulk/real_time_CICPCriteriaNRD_CICPCriteriaERD_gt.png&size=contain
 <!-- .slide: data-background-transition="none" -->
+
+note:
+Mention the ar_sys faulty measurements in the end
+Mention the camera range near the trash can
 
 ---
 
