@@ -509,9 +509,9 @@ TODO
 - Faulty odometry; Only used laser scan data
 - We conducted the experiment in the top floor of Ktirio M., NTUA
 
----?image=assets/figures/gimp/real_time_no_gt_setup.png&size=contain
+---?image=assets/figures/bulk/real_time_no_gt_setup.png&size=contain
 <!-- .slide: data-background-transition="none" -->
----?image=assets/figures/gimp/ros_graphSLAM_CICPCriteriaNRD_CLoopCloserERD.png&size=contain
+---?image=assets/figures/bulk/ros_graphSLAM_CICPCriteriaNRD_CLoopCloserERD.png&size=contain
 <!-- .slide: data-background-transition="none" -->
 
 ---
@@ -523,9 +523,9 @@ TODO
 
 ---?image=assets/figures/bulk/real_time_gt_setup.png&size=contain
 <!-- .slide: data-background-transition="none" -->
----?image=assets/figures/bulk/real_time_sr_slam_cfixedintervalsnrd_cloopclosererd_gt.png&size=contain
+---?image=assets/figures/bulk/real_time_CFixedIntervalsNRD_CLoopCloserERD_gt.png&size=contain
 <!-- .slide: data-background-transition="none" -->
----?image=assets/figures/bulk/real_time_sr_slam_cicpcriterianrd_cicpcriteriaerd_gt.png&size=contain
+---?image=assets/figures/bulk/real_time_CICPCriteriaNRD_CICPCriteriaERD_gt.png&size=contain
 <!-- .slide: data-background-transition="none" -->
 
 ---
