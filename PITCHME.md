@@ -718,11 +718,11 @@ Example: Configuring an agent to join the ad-hoc network
 
 ## Multi-Robot graphSLAM
 
-TODO
-
 ---
 
 ### Multi-hypothesis Map-matching
+
+- Algorithm is described in detail in <cite>Blanco2013</cite>
 
 TODO
 
@@ -899,6 +899,8 @@ Tell the details as described in thesis text
     <li> (Grisetti2010) A tutorial on graph-based SLAM - Grisetti, Giorgio
           and Kummerle, Rainer and Stachniss, Cyrill and Burgard, Wolfram
     </li>
+    <li> (Blanco2013) A Robust , Multi-Hypothesis Approach to Matching Occupancy
+    Grid Maps - Blanco, Jose-luis and Gonz, Javier and Fern, Juan-antonio
   </div>
 
 ---
