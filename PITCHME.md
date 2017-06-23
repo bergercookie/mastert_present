@@ -523,9 +523,9 @@ TODO
 
 ---?image=assets/figures/bulk/real_time_gt_setup.png&size=contain
 <!-- .slide: data-background-transition="none" -->
----?image=assets/figures/bulk/real-time-sr-slam-cfixedintervalsnrd-cloopclosesrerd-gt.png&size=contain
+---?image=assets/figures/bulk/real_time_sr_slam_cfixedintervalsnrd_cloopclosererd_gt.png&size=contain
 <!-- .slide: data-background-transition="none" -->
----?image=assets/figures/bulk/real-time-sr-slam-real-time-sr-slam-cicpcriterianrd-cicpcriteriaerd-gt.png&size=contain
+---?image=assets/figures/bulk/real_time_sr_slam_cicpcriterianrd_cicpcriteriaerd_gt.png&size=contain
 <!-- .slide: data-background-transition="none" -->
 
 ---
