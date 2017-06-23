@@ -546,8 +546,9 @@ type)
 
 <hr>
 
-Use a shell script that defines a list of environment variables. Source that in
-robot. Based on the variables set, launch the corresponding processes.
+Use `a shell script` that defines a list of environment variables. Source that in
+every robot agent separately. Based on the variables set, launch the
+corresponding processes.
 
 
 ---?code=codes/real_time_config.sh&lang=bash
