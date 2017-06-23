@@ -311,15 +311,23 @@ All the PF shit should take ~2min
   - An edge between two nodes represents a *spatial constraint* (2D/3D
       transformation) between them.
 
+
 <hr>
 
 <div class="fragment">
-Find the node configuration for which the overall error 
+Find the node configuration for which the overall error of constraints is
+minimized. This comes down to solving a system of non-linear equations.
 </div>
 
 
 Note:
 Take your time to explain this correctly - should take ~2min
+
+Give an example on the edge addition.
+"Assume two nodes A, B for which we store the corresponding laser scans. If we
+can determine the 2D transformation to maximally align the laser scan of one
+node to that of the other we can add an edge constraining those two nodes."
+
 
 
 ---
@@ -335,6 +343,7 @@ Take your time to explain this correctly - should take ~2min
   </ul>
   <li>Any sensor can be used as long as it provides inter-pose constraints</li>
   <li>Backend works the same for 2D/3D constraints `\( \rightarrow \)` 2D/3D SLAM</li>
+  <li>Optimize for the whole trajectory - accuracy `\( \nearrow \)`
   <li>Not restrained to a particular map format. We can:</li>
   <ul>
     <li>include landmarks in the mathematical formulation <b>or</b></li>
@@ -352,34 +361,11 @@ State the benefits. Why is it fundamentally better?
 
 ---
 
-### Essential Terminology
-
-<ul>
-  <li><b>Node:</b></li>
-  <li><b>Edge:</b> 2D/3D Transformation connecting 2 nodes.</li>
-  <li><b>Loop Closure:</b>A robot returns to re-observe part of the already
-  observed environment after a large traverse. If this is detected it can be
-  useful to reduce the accumulated trajectory/map error.</li>
-</ul>
-
-<!--TODO Maybe add a gif on the ICP here?-->
-
-TODO
-
-note:
-Give an example on the edge addition.
-"Assume two nodes A, B for which we store the corresponding laser scans. If we
-can determine the 2D transformation to maximally align the laser scan of one
-node to that of the other we can add an edge constraining those two nodes."
-
-
----
-
 <!--- --------- End of Review of SLAM Algorithms-->
 
 ## Single-Robot graphSLAM
 
-- Google Summer of Code internship @MRPT |
+- Google Summer of Code Internship @MRPT |
 - Development Goals |
 - Mathematical Formulation |
 - Simulations |
