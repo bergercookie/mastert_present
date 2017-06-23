@@ -849,6 +849,7 @@ Tell the details as described in thesis text
 <!--- --------- End of Conclusions - Future Directions-->
 
 ---
+
 ## References
 
   <div style="font-size:0.5em">
@@ -858,7 +859,24 @@ Tell the details as described in thesis text
     </li>
   </div>
 
+---
 
+### Open-source contributions
+
+- [mrpt-graphslam](http://reference.mrpt.org/devel/namespacemrpt_1_1graphslam.html):
+    Library that provides generic graphSLAM functionality.
+- [graphslam-engine_app](http://www.mrpt.org/list-of-mrpt-apps/application-graphslamengine/):
+    MRPT application that utilizes lib-graphslam to run single-robot simulated
+    graphSLAM.
+- [mrpt_graphslam_2d](http://wiki.ros.org/mrpt_graphslam_2d): ROS wrapper for
+    the lib-graphslam library for real-time single, and multi-robot graphSLAM.
+- [csl_mr_slam](https://github.com/bergercookie/csl_mr_slam): Suite of helper
+    ROS packages that facilitate in simulated, real-time graphSLAM; provide
+    automation scripts, launchfiles for Gazebo simulations, set of hardware
+    sensors and drivers.
+- [catkin_ws](https://github.com/bergercookie/catkin_ws): ROS set of packages
+    that acts as a container and provides instructions for easier setup of
+    graphSLAM
 
 ---
 
