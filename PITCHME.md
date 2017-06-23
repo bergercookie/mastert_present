@@ -521,11 +521,11 @@ TODO
 - For comparison computed an estimation of the ground-truth path via `Aruco`
     static and moving markers.
 
----?image=assets/figures/gimp/real_time_gt_setup.png&size=contain
+---?image=assets/figures/bulk/real_time_gt_setup.png&size=contain
 <!-- .slide: data-background-transition="none" -->
----?image=assets/figures/gimp/real-time-sr-slam-cfixedintervalsnrd-cloopclosesrerd-gt.png&size=contain
+---?image=assets/figures/bulk/real-time-sr-slam-cfixedintervalsnrd-cloopclosesrerd-gt.png&size=contain
 <!-- .slide: data-background-transition="none" -->
----?image=assets/figures/gimp/real-time-sr-slam-real-time-sr-slam-cicpcriterianrd-cicpcriteriaerd-gt.png&size=contain
+---?image=assets/figures/bulk/real-time-sr-slam-real-time-sr-slam-cicpcriterianrd-cicpcriteriaerd-gt.png&size=contain
 <!-- .slide: data-background-transition="none" -->
 
 ---
