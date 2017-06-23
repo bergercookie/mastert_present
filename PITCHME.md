@@ -290,7 +290,7 @@ no need to perform time-update for stationary landmarks
 ### Particle Filter - FastSLAM
 
 <ul>
-  <li>FastSLAM produces landmarks-based maps - `gmapping` variant produces
+  <li>FastSLAM produces landmarks-based maps - ``gmapping`` variant produces
   occupancy grid maps</li>
   <li>No known extension in 3D; Computationally inefficient</li>
   <li>Still applies linearization to the observation model (as does EKF)</li>
@@ -329,12 +329,23 @@ node to that of the other we can add an edge constraining those two nodes."
 
 ## Single-Robot graphSLAM
 
+- Google Summer of Code internship @MRPT
 - Development Goals |
 - Mathematical Formulation |
 - Simulations |
 - Real-time Experiments |
 
 ---
+
+## GSoC Internship
+
+Designed and implemented a complete single-robot graphSLAM framework in
+[MRPT](http://mrpt.org) which also included:
+
+- SLAM Error metric + visualization
+- Implementation of Robust Loop Closure (LC) scheme initially [designed by
+    Olson](https://pdfs.semanticscholar.org/ee30/49d302f56bcadaaec9f3d57642a32ff5224d.pdf) - ``CLoopCloserERD``.
+
 
 ## Development Goals
 
@@ -410,10 +421,13 @@ TODO
 TODO
 
 ---?image=assets/figures/bulk/gui_registered_loop_closure.png&size=contain
+<!-- .slide: data-background-transition="none" -->
+---?image=assets/figures/bulk/gui_registered_loop_closure1.png&size=contain
+<!-- .slide: data-background-transition="none" -->
 
 ---
 
-#### MRPT `lib-graphslam` design
+#### MRPT ``lib-graphslam`` design
 
 - **CGraphSlamEngine:** Class that manages the overall execution of graphSLAM
 - **CRegistrationDeciderOrOptimizer:** Common parent of all decider/optimizer classes
@@ -452,7 +466,7 @@ examples!
 ### Configuring the Application
 
 - Users don't have to meddle with the source code / compilation
-- Use of `.ini` files to tweak the application behavior
+- Use of ``.ini`` files to tweak the application behavior
   - Parameters of deciders, optimizer classes
   - Visualization parameters
   - ...
@@ -466,7 +480,7 @@ examples!
 - Specify the following:
   - dataset file
   - Ground-truth file
-  - `.ini` configuration file
+  - ``.ini`` configuration file
   - 2D/3D SLAM
 
 ```bash
