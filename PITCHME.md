@@ -670,6 +670,8 @@ We conducted multi-robot simulations in **Gazebo**.
 
 ---?image=assets/figures/bulk/simulation_map_match.png&size=contain
 
+---
+
 ## Map-matching #2 - More obstacles
 
 ---?image=assets/figures/bulk/simulation_map_match_more_obstacles.png&size=contain
