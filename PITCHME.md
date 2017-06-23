@@ -298,8 +298,8 @@ All the PF shit should take ~2min
   occupancy grid maps</li>
   <li>No known working extension in 3D; Computationally expensive</li>
   <li>Still applies linearization to the observation model (as does EKF)</li>
-  <li>Computational complexity: `\( M \times log(N) \)`,
-      M = num of particles, N = number of landmarks </li>
+  <li>Computational complexity: `\( \mathcal{O} M \times log(N) \)`,
+      M = num of particles </li>
 </ul>
 
 ---
@@ -316,7 +316,7 @@ All the PF shit should take ~2min
 
 <div class="fragment">
 Find the node configuration for which the overall error of constraints is
-minimized. This comes down to solving a system of non-linear equations.
+minimized. This comes down to a *least-squares problem*.
 </div>
 
 
@@ -343,7 +343,7 @@ node to that of the other we can add an edge constraining those two nodes."
   </ul>
   <li>Any sensor can be used as long as it provides inter-pose constraints</li>
   <li>Backend works the same for 2D/3D constraints `\[ \rightarrow \]` 2D/3D SLAM</li>
-  <li>Optimize for the whole trajectory - accuracy `\[ \nearrow \]`
+  <li>Optimize for the whole trajectory - Increased accuracy
   <li>Not restrained to a particular map format. We can:</li>
   <ul>
     <li>include landmarks in the mathematical formulation <b>or</b></li>
