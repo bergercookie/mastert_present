@@ -298,7 +298,7 @@ All the PF shit should take ~2min
   occupancy grid maps</li>
   <li>No known working extension in 3D; Computationally expensive</li>
   <li>Still applies linearization to the observation model (as does EKF)</li>
-  <li>Computational complexity: `\( \mathcal{O}(M \times log(N)) \)`,
+  <li>Computational complexity: `\( \mathcal{O}\big((M \times log(N))\big) \)`,
       M = num of particles </li>
 </ul>
 
