@@ -554,7 +554,8 @@ TODO
 ### Real-time experiment #1
 
 - For comparison computed an estimation of the ground-truth path via `Aruco`
-    static and moving markers.
+    static and moving markers; Use ``ar_sys`` for computing the
+    camera(s) `\( \rightarrow \)` marker(s) transforms
 - We conducted the experiment in the top floor of the M building, NTUA
 - 2 scenarios
   - Use odometry + laser scans
