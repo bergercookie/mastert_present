@@ -530,6 +530,14 @@ TODO
 
 ---
 
+#### Configuring & Launching Application
+
+- Each robot agent runs graphSLAM independently
+
+TODO
+
+---
+
 <!--- --------- End of Single-Robot graphSLAM-->
 
 ## Inter-Robot Communication
