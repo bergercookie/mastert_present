@@ -681,10 +681,10 @@ Example: Configuring an agent to join the ad-hoc network
   # Get the 10.8.0.16 IP in the ad-hoc
   # Access internet via the 10.8.0.1 node
   # ad-hoc interface is wlan0
-  \# $(rospack find csl_hw_setup)/scripts/ad_hoc_network/setup_adhoc.py \
-                                                            -a 10.8.0.1 \
-                                                            -I 10.8.0.16 \
-                                                            -w wlan0
+  $ [sudo] $(rospack find csl_hw_setup)/scripts/ad_hoc_network/setup_adhoc.py \
+                                                                  -a 10.8.0.1 \
+                                                                  -I 10.8.0.16 \
+                                                                  -w wlan0
 ```
 
 ---
