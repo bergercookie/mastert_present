@@ -329,6 +329,23 @@ can determine the 2D transformation to maximally align the laser scan of one
 node to that of the other we can add an edge constraining those two nodes."
 
 
+---
+
+### Graph-based SLAM
+
+TODO - Add the math here - find them in the graph-based slam tutorial
+
+---
+
+### Graph-based SLAM
+
+TODO - Add more math here
+
+---
+
+### Graph-based SLAM
+
+TODO - Add more math here
 
 ---
 
@@ -459,13 +476,18 @@ Two options for visualizing the procedure
 
 #### Levenberg-Marquardt Least-Squares Optimization
 
-TODO
+TODO Write this
+See master thesis text
 
 ---
 
 ### Iterative Closest Point - ICP
 
-TODO
+Assume two point clouds A, B. Find the transformation which, if applied to A
+will maximally align its points with those of cloud B.
+
+TODO Write this
+See the scan-matching section of Stachniss frontends
 
 ---
 
@@ -547,8 +569,6 @@ $ graphslam-engine -r dataset.rawlog \
 
 ### Real-Time Setup & Execution
 
-TODO
-
 ---
 
 ### Real-time experiment
@@ -556,6 +576,7 @@ TODO
 - For comparison computed an estimation of the ground-truth path via `Aruco`
     static and moving markers; Use ``ar_sys`` for computing the
     camera(s) `\( \rightarrow \)` marker(s) transforms
+- Tested it with the *Pioneer-2dx*, *Pioneer-2AT*, *Youbot* models
 - We conducted the experiment in the top floor of the M building, NTUA
 - 2 scenarios
   - Use odometry + laser scans
@@ -605,7 +626,88 @@ corresponding processes.
 
 ## Inter-Robot Communication
 
-TODO
+---
+
+### Design requirements:
+
+<div style="font-size: 1.0em">
+<ul>
+  <div class="fragment">
+    <li>Arbitrary number of agents in a real-time experiment</li>
+  </div>
+  <div class="fragment">
+    <li>Robust to communication, agent failure</li>
+  </div>
+  <div class="fragment">
+    <li>Minimize the exchanged data between the agents - Assume limited
+        communications environment </li>
+  </div>
+  <div class="fragment">
+    <li>Assume no prior network infrastructure</li>
+  </div>
+</ul>
+</div>
+
+---
+
+### Network setup:
+
+<div style="font-size: 0.9em">
+<ul>
+  <li>Robots communicate over a fully distributed  ad-hoc network</li>
+  <li>Automated script to register an <b>upstart job</b>; Configures the
+    corresponding interface on ad-hoc mode on startup and when it is enabled -
+    see
+    [csl_hw_setup/ad_hoc_network](https://github.com/bergercookie/csl_mr_slam/tree/master/csl_hw_setup/scripts/ad_hoc_network)
+  </li>
+  <li>Robots run <b>their own separate</b> <code>roscore</code> instance. They
+    exchange messages with their counterparts via the
+    <code>multimaster_fkie</code> ROS package. This also requires the following:
+  </li>
+  <ul>
+    <li><b>A central node</b> runs as a DNS server for name resolution of all the
+      running agents.
+    <li>Rerouting of multicast packets to the ad-hoc interface for
+      multimaster_fkie processes to work as expected. </li>
+  </ul>
+  <li> Optionally provide access to the internet via a set of firewall rules
+    and the central node as the middle man. </li>
+</ul>
+</div>
+
+Example: Configuring an agent to join the ad-hoc network
+
+```sh
+  # Get the 10.8.0.16 IP in the ad-hoc
+  # Access internet via the 10.8.0.1 node
+  # ad-hoc interface is wlan0
+  $ $(rospack find csl_hw_setup)/scripts/ad_hoc_network/setup_adhoc.py -a 10.8.0.1 -I 10.8.0.16 -w wlan0
+```
+
+---
+
+### Communication Protocol
+
+<div style="font-size:0.8em">
+  <ul>
+    <li> Each robot executes single-robot graphSLAM.</li>
+    <li>When in communication range robots exchange their local maps:</li>
+    <ul>
+      <li>Laser scan corresponding to latest registered graph node</li>
+      <li>List of last X (optimized) node positions in own robot frame</li>
+    </ul>
+    <li>Receiver robot caches the transmitters data (can't use them yet -
+      unknown relative position of other agent.</li>
+    <li>When enough data (scans + node positions) have been gathered, build
+      neighbor's map execute map-matching - find transformation between own and
+      neighbor's frame of reference.
+    </li>
+    <li> If transformation is found integrate received measurements in own
+      graph</li>
+    <li> Continue standard mapping - Integrate rest of received nodes in
+      batches of `\(Y\)` nodes
+  </ul>
+</div>
 
 ---
 
