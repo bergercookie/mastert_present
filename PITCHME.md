@@ -684,7 +684,7 @@ We conducted multi-robot simulations in **Gazebo**.
 # Simulation Demo
 ---
 
-![](https://youtubecom/embed/6EjFP3jO4gM)
+![](https://youtube.com/embed/6EjFP3jO4gM)
 
 Note:
 <!--![](https://www.youtube.com/embed/4RKS2jrvsYE)-->
