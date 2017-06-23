@@ -778,23 +778,43 @@ We conducted multi-robot simulations in **Gazebo**.
 ---?image=assets/figures/bulk/gazebo_simulation_env_more_obstacles.png&size=contain
 <!-- .slide: data-background-transition="none" -->
 ---?image=assets/figures/bulk/simulation_map_match_more_obstacles.png&size=contain
+<!-- .slide: data-background-transition="none" -->
 
 ---
 
 
 # Simulation Demo
+
+---
+
+![](https://www.youtube.com/embed/4RKS2jrvsYE)
+
+---
+
+# Simulation Demo #2
+
 ---
 
 ![](https://youtube.com/embed/6EjFP3jO4gM)
-
-Note:
-<!--![](https://www.youtube.com/embed/4RKS2jrvsYE)-->
 
 ---
 
 ## Experimental Results
 
-TODO
+---
+
+### Experiment - Around the pool
+
+---?image=assets/figures/bulk/online_integration_nickkoukubuntu2.png&size=contain
+
+---
+
+### Experiment - M building top floor
+
+---?image=assets/figures/bulk/online_integration_nickkoukubuntu.png&size=contain
+<!-- .slide: data-background-transition="none" -->
+---?image=assets/figures/bulk/online_integration_nickkoukubuntu_edited.png&size=contain
+<!-- .slide: data-background-transition="none" -->
 
 ---
 
@@ -850,19 +870,6 @@ Tell the details as described in thesis text
 
 ---
 
-## References
-
-  <div style="font-size:0.5em">
-    <li> (Saeedi2016) Multiple-Robot Simultaneous Localization and Mapping: A Review
-      - Saeedi, Sajad and Trentini, Michael and Seto, Mae and Li, Howard
-    </li>
-    <li> (Grisetti2010) A tutorial on graph-based SLAM - Grisetti, Giorgio
-          and Kummerle, Rainer and Stachniss, Cyrill and Burgard, Wolfram
-    </li>
-  </div>
-
----
-
 ### Open-source contributions
 
 - [mrpt-graphslam](http://reference.mrpt.org/devel/namespacemrpt_1_1graphslam.html):
@@ -879,6 +886,20 @@ Tell the details as described in thesis text
 - [catkin_ws](https://github.com/bergercookie/catkin_ws): ROS set of packages
     that acts as a container and provides instructions for easier setup of
     graphSLAM
+
+
+---
+
+## References
+
+  <div style="font-size:0.5em">
+    <li> (Saeedi2016) Multiple-Robot Simultaneous Localization and Mapping: A Review
+      - Saeedi, Sajad and Trentini, Michael and Seto, Mae and Li, Howard
+    </li>
+    <li> (Grisetti2010) A tutorial on graph-based SLAM - Grisetti, Giorgio
+          and Kummerle, Rainer and Stachniss, Cyrill and Burgard, Wolfram
+    </li>
+  </div>
 
 ---
 
