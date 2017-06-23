@@ -293,7 +293,7 @@ no need to perform time-update for stationary landmarks
   <li>FastSLAM produces landmarks-based maps - `gmapping` variant produces
   occupancy grid maps</li>
   <li>No known extension in 3D; Computationally inefficient</li>
-  <li>Still applies linearization for the observation model (as does EKF)</li>
+  <li>Still applies linearization to the observation model (as does EKF)</li>
 </ul>
 
 ---
