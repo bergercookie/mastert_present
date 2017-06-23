@@ -511,7 +511,7 @@ TODO
 
 ---?image=assets/figures/bulk/real_time_no_gt_setup.png&size=contain
 <!-- .slide: data-background-transition="none" -->
----?image=assets/figures/bulk/ros_graphSLAM_CICPCriteriaNRD_CLoopCloserERD.png&size=contain
+---?image=assets/figures/bulk/real_time_CICPCriteriaNRD_CLoopCloserERD.png&size=contain
 <!-- .slide: data-background-transition="none" -->
 
 ---
