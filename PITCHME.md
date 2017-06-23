@@ -628,7 +628,7 @@ corresponding processes.
 
 ---
 
-### Design requirements:
+### Design requirements
 
 <div style="font-size: 1.0em">
 <ul>
@@ -650,7 +650,7 @@ corresponding processes.
 
 ---
 
-### Network setup:
+### Network setup
 
 <div style="font-size: 0.9em">
 <ul>
