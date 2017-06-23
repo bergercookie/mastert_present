@@ -23,8 +23,6 @@ Master Thesis Presentation
 </div>
 
 
-<!--TODO Add a date -->
-<!--TODO Add current section in right/left footer-->
 <!--DONE-Works fine- Make this an offline version-->
 <!--DONE-Works-fine- Test presenter mode-->
 <!--TODO How should I handle citations?-->
@@ -237,7 +235,7 @@ W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
   Observation step requires the landmarks means and covariances to be
   computed</li>
 
-  <center>Computational, Storage cost `\(\rightarrow\mathcal{O}(N^2)\)`</center>
+  <center>Computational, Storage complexity `\(\rightarrow\mathcal{O}(N^2)\)`</center>
 
   <li>Constructs exclusively landmarks-based maps</li>
   <li>Works in either 2D or 3D SLAM</li>
@@ -271,6 +269,9 @@ no need to perform time-update for stationary landmarks
 \]`
 </span>
 
+Note:
+All the EKF shit should take ~2min
+
 ---
 
 ### Particle Filter - FastSLAM
@@ -285,6 +286,9 @@ no need to perform time-update for stationary landmarks
     rest. Reset the weights `\(\rightarrow w_k^{(i)} = \frac{1}{N}\)`</li>
 </ol>
 
+Note:
+All the PF shit should take ~2min
+
 ---
 
 ### Particle Filter - FastSLAM
@@ -292,15 +296,59 @@ no need to perform time-update for stationary landmarks
 <ul>
   <li>FastSLAM produces landmarks-based maps - ``gmapping`` variant produces
   occupancy grid maps</li>
-  <li>No known extension in 3D; Computationally inefficient</li>
+  <li>No known working extension in 3D; Computationally expensive</li>
   <li>Still applies linearization to the observation model (as does EKF)</li>
+  <li>Computational complexity: `\( M \times log(N) \)`,
+      M = num of particles, N = number of landmarks </li>
 </ul>
 
 ---
 
 ### Graph-based SLAM
 
+- Use a graph to represent the SLAM problem
+  - Nodes correspond to *poses* of the robot during mapping
+  - An edge between two nodes represents a *spatial constraint* (2D/3D
+      transformation) between them.
+
+<hr>
+
+<div class="fragment">
+Find the node configuration for which the overall error 
+</div>
+
+
+Note:
+Take your time to explain this correctly - should take ~2min
+
+
+---
+
+### Why Choose GraphSLAM?
+
+<div style="font-size:0.8em">
+<ul>
+  <li> Modular design; Makes a clear distinction between:
+  <ul>
+    <li>Acquisition of measurements, initial graph construction</li>
+    <li>Computations part - graph optimization</li>
+  </ul>
+  <li>Any sensor can be used as long as it provides inter-pose constraints</li>
+  <li>Backend works the same for 2D/3D constraints `\( \rightarrow \)` 2D/3D SLAM</li>
+  <li>Not restrained to a particular map format. We can:</li>
+  <ul>
+    <li>include landmarks in the mathematical formulation <b>or</b></li>
+    <li>execute <em>"mapping with known poses"</em> and then construct the map by aligning the measurements.</li>
+  </ul>
+  <li>Computational complexity: <em>Linear</em> in the number of edges</li>
+</ul>
+</div>
+
 TODO
+
+Note:
+State the benefits. Why is it fundamentally better?
+2min
 
 ---
 
@@ -325,11 +373,13 @@ can determine the 2D transformation to maximally align the laser scan of one
 node to that of the other we can add an edge constraining those two nodes."
 
 
+---
+
 <!--- --------- End of Review of SLAM Algorithms-->
 
 ## Single-Robot graphSLAM
 
-- Google Summer of Code internship @MRPT
+- Google Summer of Code internship @MRPT |
 - Development Goals |
 - Mathematical Formulation |
 - Simulations |
@@ -547,7 +597,7 @@ type)
 <hr>
 
 <div class="fragment">
-Use `a shell script` that defines a list of environment variables. Source that in
+Use a *shell script* that defines a list of environment variables. Source that in
 every robot agent separately. Based on the variables set, launch the
 corresponding processes.
 </div>
