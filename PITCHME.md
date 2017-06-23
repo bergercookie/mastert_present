@@ -578,7 +578,7 @@ TODO
 
 ---
 
-#### Configuring & Launching Application
+#### Configuring Robot for real-time graphSLAM
 
 We need a generic way to define the processes that are launched in each of the
 running robots. These take care of:
@@ -625,6 +625,9 @@ TODO
 
 TODO
 
+Note:
+I didn't write this module. Say in short what it does and skip
+
 ---
 
 
@@ -666,6 +669,10 @@ We conducted multi-robot simulations in **Gazebo**.
 ## Map-matching
 
 ---?image=assets/figures/bulk/simulation_map_match.png&size=contain
+
+## Map-matching #2 - More obstacles
+
+---?image=assets/figures/bulk/simulation_map_match_more_obstacles.png&size=contain
 
 ---
 
