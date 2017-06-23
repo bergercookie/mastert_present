@@ -532,9 +532,24 @@ TODO
 
 #### Configuring & Launching Application
 
-- Each robot agent runs graphSLAM independently
+We need a generic way to define the processes that are launched in each of the
+running robots. These take care of:
+  - Robot movement
+  - Teleoperation (joystick, keyboard)
+  - Sensor acquisition (laser, camera)
+  - Various utilities (dataset recording)
+  - Network utilities (inspect procedure remotely, communication of agents in
+      MR-SLAM)
 
-TODO
+Design should account for the multiple different options (robot type, laser
+type)
+
+#### Configuring & Launching Application
+
+Use a shell script that defines a list of environment variables. Source that in
+robot. Based on the variables set, launch the corresponding processes.
+
+---?code=codes/real_time_config.sh&lang=bash
 
 ---
 
