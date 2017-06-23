@@ -723,7 +723,7 @@ Example: Configuring an agent to join the ad-hoc network
 ### Multi-hypothesis Map-matching
 
 - Algorithm is described in detail in <cite>Blanco2013</cite>
-- Code implementation is provided via the MRPT `mrpt::maps::CGridmapAligner`
+- Code implementation is provided via the MRPT `maps::CGridmapAligner`
     class.
 
 TODO
