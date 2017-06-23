@@ -553,21 +553,12 @@ TODO
 
 ### Real-time experiment #1
 
-
-- Faulty odometry; Only used laser scan data
-- We conducted the experiment in the top floor of Ktirio M., NTUA
-
----?image=assets/figures/bulk/real_time_no_gt_setup.png&size=contain
-<!-- .slide: data-background-transition="none" -->
----?image=assets/figures/bulk/real_time_CICPCriteriaNRD_CLoopCloserERD.png&size=contain
-<!-- .slide: data-background-transition="none" -->
-
----
-
-### Real-time experiment #2
-
 - For comparison computed an estimation of the ground-truth path via `Aruco`
     static and moving markers.
+- We conducted the experiment in the top floor of the M building, NTUA
+- 2 scenarios
+  - Use odometry + laser scans
+  - Use laser scans exclusively
 
 ---?image=assets/figures/bulk/real_time_gt_setup.png&size=contain
 <!-- .slide: data-background-transition="none" -->
