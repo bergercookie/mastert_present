@@ -383,7 +383,7 @@ when you show them the specific math steps below, to know what they are about!
 ## UI Design Insight
 
 <div font-size="0.8em"/>
-Two Options for Visualizing procedure
+Two options for visualizing the procedure
 <ul>
   <li>MRPT Native application
     <ul>
@@ -503,6 +503,32 @@ TODO
 
 ---
 
+### Real-time experiment #1
+
+
+- Faulty odometry; Only used laser scan data
+- We conducted the experiment in the top floor of Ktirio M., NTUA
+
+---?image=assets/figures/gimp/real_time_no_gt_setup.png&size=contain
+<!-- .slide: data-background-transition="none" -->
+---?image=assets/figures/gimp/ros_graphSLAM_CICPCriteriaNRD_CLoopCloserERD.png&size=contain
+<!-- .slide: data-background-transition="none" -->
+
+---
+
+### Real-time experiment #2
+
+- For comparison computed an estimation of the ground-truth path via `Aruco`
+    static and moving markers.
+
+---?image=assets/figures/gimp/real_time_gt_setup.png&size=contain
+<!-- .slide: data-background-transition="none" -->
+---?image=assets/figures/gimp/real-time-sr-slam-cfixedintervalsnrd-cloopclosesrerd-gt.png&size=contain
+<!-- .slide: data-background-transition="none" -->
+---?image=assets/figures/gimp/real-time-sr-slam-real-time-sr-slam-cicpcriterianrd-cicpcriteriaerd-gt.png&size=contain
+<!-- .slide: data-background-transition="none" -->
+
+---
 
 <!--- --------- End of Single-Robot graphSLAM-->
 
