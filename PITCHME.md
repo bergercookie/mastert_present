@@ -300,13 +300,32 @@ no need to perform time-update for stationary landmarks
 
 ### Graph-based SLAM
 
-
 TODO
 
 ---
 
-<!--- --------- End of Review of SLAM Algorithms-->
+### Essential Terminology
 
+<ul>
+  <li><b>Node:</b></li>
+  <li><b>Edge:</b> 2D/3D Transformation connecting 2 nodes.</li>
+  <li><b>Loop Closure:</b>A robot returns to re-observe part of the already
+  observed environment after a large traverse. If this is detected it can be
+  useful to reduce the accumulated trajectory/map error.</li>
+</ul>
+
+<!--TODO Maybe add a gif on the ICP here?-->
+
+TODO
+
+note:
+Give an example on the edge addition.
+"Assume two nodes A, B for which we store the corresponding laser scans. If we
+can determine the 2D transformation to maximally align the laser scan of one
+node to that of the other we can add an edge constraining those two nodes."
+
+
+<!--- --------- End of Review of SLAM Algorithms-->
 
 ## Single-Robot graphSLAM
 
@@ -389,6 +408,8 @@ TODO
 #### Robust Loop-Closure (LC) Scheme
 
 TODO
+
+---?image=assets/figures/bulk/gui_registered_loop_closure.png&size=contain
 
 ---
 
