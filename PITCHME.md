@@ -336,24 +336,36 @@ node to that of the other we can add an edge constraining those two nodes."
 
 <div style="font-size:0.8em">
 <ul>
-  <li> Modular design; Makes a clear distinction between:
-  <ul>
-    <li>Acquisition of measurements, initial graph construction</li>
-    <li>Computations part - graph optimization</li>
-  </ul>
-  <li>Any sensor can be used as long as it provides inter-pose constraints</li>
-  <li>Backend works the same for 2D/3D constraints `\( \rightarrow \)` 2D/3D SLAM</li>
-  <li>Optimize for the whole trajectory - Increased accuracy
-  <li>Not restrained to a particular map format. We can:</li>
-  <ul>
-    <li>include landmarks in the mathematical formulation <b>or</b></li>
-    <li>execute <em>"mapping with known poses"</em> and then construct the map by aligning the measurements.</li>
-  </ul>
-  <li>Computational complexity: <em>Linear</em> in the number of edges</li>
+  <div class="fragment">
+    <li> Modular design; Makes a clear distinction between:
+    <ul>
+      <li>Acquisition of measurements, initial graph construction</li>
+      <li>Computations part - graph optimization</li>
+    </ul>
+  </div>
+  <div class="fragment">
+    <li>Any sensor can be used as long as it provides inter-pose constraints</li>
+  </div>
+  <div class="fragment">
+    <li>Backend works the same for 2D/3D constraints `\( \rightarrow \)` 2D/3D
+        SLAM</li>
+  </div>
+  <div class="fragment">
+    <li>Optimize for the whole trajectory - Increased accuracy
+  </div>
+  <div class="fragment">
+    <li>Not restrained to a particular map format. We can:</li>
+    <ul>
+      <li>include landmarks in the mathematical formulation <b>or</b></li>
+      <li>execute <em>"mapping with known poses"</em> and then construct the map
+          by aligning the measurements.</li>
+    </ul>
+  </div>
+  <div class="fragment">
+    <li>Computational complexity: <em>Linear</em> in the number of edges</li>
+  </div>
 </ul>
 </div>
-
-TODO
 
 Note:
 State the benefits. Why is it fundamentally better?
