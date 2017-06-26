@@ -380,6 +380,7 @@ Error multivariate function:
 
 Log-likelihood of the virtual measurement:
 
+<div style="font-size:0.8em">
 `\[
 \begin{align}
     l_{i,j} &\propto \big[ z_{i,j} - \hat{z}_{i,j}(x_i, x_j) \big]^T
@@ -389,6 +390,7 @@ Log-likelihood of the virtual measurement:
     e_{i,j}^T \, \Omega_{i,j} \, e_{i,j}
 \end{align}
 \]`
+</div>
 
 ---?image=assets/figures/bulk/virtual_measurements.png&size=contain
 
