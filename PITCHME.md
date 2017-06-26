@@ -429,6 +429,8 @@ e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j)
 \end{align}
 \]`
 
+so
+
 `\[
 \begin{align}
 \mathbf{F}_{i,j}(\breve x + \Delta x)
