@@ -892,7 +892,7 @@ Example: Configuring an agent to join the ad-hoc network
 
 ### Multi-hypothesis Map-matching
 
-- Used to find the relative transformation from robot frame to that of the
+- Used to find the relative transformation from the robot's frame to the
     neighbor's frame. If found the incoming measurements can be integrated in
     own map
 - Algorithm is described in detail in <cite>Blanco2013</cite>
@@ -1099,7 +1099,7 @@ Tell the details as described in thesis text
 
 - [mrpt-graphslam docs](http://reference.mrpt.org/devel/group__mrpt__graphslam__grp.html)
 - [ROS mrpt_graphslam_2d docs](http://wiki.ros.org/mrpt_graphslam_2d)
-- In case of an issue open an issue on the corresponding Github page
+- In case of a question / bug report, open an issue on the corresponding Github page
 
 
 ---
