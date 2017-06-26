@@ -608,7 +608,7 @@ when you show them the specific math steps below, to know what they are about!
 
 ## UI Design Insight
 
-<div font-size="0.8em"/>
+<div style="font-size:0.8em"/>
 Two options for visualizing the procedure
 <ul>
   <li>MRPT Native application
@@ -760,19 +760,23 @@ Mention the camera range near the trash can
 
 We need a generic way to define the processes that are launched in each of the
 running robots. These take care of:
-  - Robot movement
-  - Teleoperation (joystick, keyboard)
-  - Sensor acquisition (laser, camera)
-  - Various utilities (dataset recording)
-  - Network utilities (communication of agents in MR-SLAM)
-  - Software config (deciders/optimizer to use)
+<div style="font-size:0.8em"/>
+<ul>
+  <li>Robot movement</li>
+  <li>Teleoperation (joystick, keyboard)</li>
+  <li>Sensor acquisition (laser, camera)</li>
+  <li>Various utilities (dataset recording)</li>
+  <li>Network utilities (communication of agents in MR-SLAM)</li>
+  <li>Software config (deciders/optimizer to use)</li>
+</ul>
+</div>
 
 Design should account for the multiple different options (robot type, laser
 type)
 
 <hr>
 
-<div class="fragment">
+<div class="fragment", style="font-size:0.8em">
 Use a *shell script* that defines a list of environment variables. Source that in
 every robot agent separately. Based on the variables set, launch the
 corresponding processes.
