@@ -712,7 +712,6 @@ Let `\( W = \sum_{i=1}^{N_p} x^\prime_i p{^\prime}^T_i \)`. We denote its
 
 `\[
 W = U \begin{bmatrix}
-
 \sigma_1 & 0 & 0 \\
 0 & \sigma_2 & 0 \\
 0 & 0 & \sigma_3
