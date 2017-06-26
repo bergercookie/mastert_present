@@ -432,7 +432,8 @@ e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j)
 `\( \mathbf{F} \)` can be rewritten as:
 
 `\[
-\overbrace{a}^{b} \\ \underbrace{a}_{b}
+\overbrace{a}^{b} \\ \underbrace{a}_{b} \\
+\underbrace{e^T_{i,j}\Omega_{i,j}e_{i,j}}_{c_{i,j}}
 \]`
 
 `\[
