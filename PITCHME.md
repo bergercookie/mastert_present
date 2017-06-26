@@ -817,7 +817,7 @@ corresponding processes.
 
 ---
 
-### Network setup
+### Network Setup
 
 <div style="font-size: 0.6em">
 <ul>
@@ -840,10 +840,14 @@ corresponding processes.
   <li> Optionally provide access to the internet via a set of firewall rules
     and the central node as the middle man. </li>
 </ul>
+</div>
+
+---
+
+### Network Setup
 
 Example: Configuring an agent to join the ad-hoc network
 
-</div>
 
 ```sh
   # Get the 10.8.0.16 IP in the ad-hoc
