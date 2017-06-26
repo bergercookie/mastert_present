@@ -640,10 +640,8 @@ Two options for visualizing the procedure
 
 ### Iterative Closest Point - ICP
 
-<quote>
 Assume two point clouds X, P. Find the transformation which, if applied to P
 will maximally align its points with those of cloud X.
-</quote>
 
 `\[
 \begin{align}
