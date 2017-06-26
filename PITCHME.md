@@ -437,6 +437,9 @@ e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j)
 &= e_{i,j}(\breve x + \Delta x)^T \Omega_{i,j} e_{i,j}(\breve x + \Delta x) \\
 &\approx (e_{i,j} + J_{i,j} \Delta x)^T \Omega_{i,j} (e_{i,j} + J_{i,j}
 \Delta x) \\
+&= \underbrace{e^T_{i,j}\Omega_{i,j}e_{i,j}}_{c_{i,j}}
++ 2\underbrace{e^T_{i,j} \Omega_{i,j} J_{i,j}}_{b_{i,j}} \Delta x +
+\Delta x ^T \underbrace{J^T_{i,j} \Omega_{i,j} J_{i,j}}_{H_{i,j}} \Delta x \\
 &= c_{i,j} + 2b_{i,j} \Delta x + \Delta x^T H_{i,j} \Delta x
 \end{align}
 \]`
