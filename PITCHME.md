@@ -404,7 +404,6 @@ Log-likelihood of the virtual measurement:
     log-likelihood of all observations in `\( C \)`
 
 `\[
-
 \begin{equation}
     \mathbf{F}(x) =
     \sum_{\langle i,j \rangle \in C}F_{i,j} =
@@ -412,7 +411,6 @@ Log-likelihood of the virtual measurement:
     e_{i,j}^T \, \pmb \Omega_{i,j} \, e_{i,j}
     \label{eqn:literature_F_initial}
 \end{equation}
-
 \]`
 
 To express this in least-squares form:
