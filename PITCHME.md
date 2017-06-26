@@ -437,9 +437,6 @@ e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j)
 &= e_{i,j}(\breve x + \Delta x)^T \Omega_{i,j} e_{i,j}(\breve x + \Delta x) \\
 &\approx (e_{i,j} + J_{i,j} \Delta x)^T \Omega_{i,j} (e_{i,j} + J_{i,j}
 \Delta x) \\
-&= \underbrace{e^T_{i,j}\Omega_{i,j}e_{i,j}}_{c_{i,j}}
-+ 2\underbrace{e^T_{i,j} \Omega_{i,j} J_{i,j}}_{b_{i,j}} \Delta x +
-\Delta x ^T \underbrace{J^T_{i,j} \Omega_{i,j} J_{i,j}}_{H_{i,j}} \Delta x \\
 &= c_{i,j} + 2b_{i,j} \Delta x + \Delta x^T H_{i,j} \Delta x
 \end{align}
 \]`
@@ -470,7 +467,6 @@ We can rewrite as follows:
     &\approx \sum_{\langle i,j \rangle \in C}\Big[ c_{i,j} + 2 b_{i,j} \Delta x
     + \Delta x ^T H_{i,j} \Delta x \Big] \\
     &= c + 2 b^T \Delta x + \Delta x^T H \Delta x
-    \label{eqn:literature_F_quad_form}
 \end{align}
 
 \]`
@@ -489,7 +485,6 @@ derivative with regards to `\( \Delta x \)` and set it to `\( 0 \)`:
     \stackrel{\text{H symmetric}}{=} \notag \\
     &= 2 H \Delta x + 2b  = 0 \Rightarrow \notag \\
     \Delta x^{\star} &= - H^{-1} b
-    \label{eqn:literature_least_sq_sol}
 \end{align}
 \]`
 
