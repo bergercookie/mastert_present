@@ -336,6 +336,7 @@ node to that of the other we can add an edge constraining those two nodes."
 
 Break overall problem down to:
 
+<div style="font-size:0.8em">
 <ul>
   <li>Frontend</li>
   <ul>
@@ -352,6 +353,7 @@ Break overall problem down to:
       Levenberg-Marquardt, Gradient Descent)</li>
   </ul>
 </ul>
+</div>
 
 ---
 
