@@ -769,10 +769,10 @@ running robots. These take care of:
   <li>Network utilities (communication of agents in MR-SLAM)</li>
   <li>Software config (deciders/optimizer to use)</li>
 </ul>
-</div>
 
 Design should account for the multiple different options (robot type, laser
 type)
+</div>
 
 <hr>
 
