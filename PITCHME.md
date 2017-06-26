@@ -921,7 +921,9 @@ I didn't write this module. Say in short what it does and skip
 #### Simulation Setup & Results
 
 <div style="font-size:0.8em">
+
 We conducted multi-robot simulations in **Gazebo**.
+<br>
 
   <ul>
     <li>2 Mobile robots (Pioneer 2dx)</li>
@@ -938,8 +940,8 @@ We conducted multi-robot simulations in **Gazebo**.
       <li>Resolution: 0.01m </li>
       <li>Sensor noise (Gaussian)</li>
       <ul>
-        Mean: 0.0m
-        Std. Deviation: 0.01m
+        <li>Mean: 0.0m</li>
+        <li>Std. Deviation: 0.01m</li>
       </ul>
     </ul>
   </ul>
