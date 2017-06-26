@@ -923,28 +923,28 @@ I didn't write this module. Say in short what it does and skip
 <div style="font-size:0.8em">
 
 We conducted multi-robot simulations in **Gazebo**.
-<br>
+<br><br>
 
+<ul>
+  <li>2 Mobile robots (Pioneer 2dx)</li>
+  <li>Measurements utilized</li>
   <ul>
-    <li>2 Mobile robots (Pioneer 2dx)</li>
-    <li>Measurements utilized</li>
+    <li>Odometry</li>
     <ul>
-      <li>Odometry</li>
-      <ul>
-        <li>Odometry covariance (same for <code>x, y, yaw</code>): 0.1m </li>
-      </ul>
-    </ul>
-    <li>Laser scaner</li>
-    <ul>
-      <li>Sensor range: [0.20 - 5.60]m </li>
-      <li>Resolution: 0.01m </li>
-      <li>Sensor noise (Gaussian)</li>
-      <ul>
-        <li>Mean: 0.0m</li>
-        <li>Std. Deviation: 0.01m</li>
-      </ul>
+      <li>Odometry covariance (same for <code>x, y, yaw</code>): 0.1m </li>
     </ul>
   </ul>
+  <li>Laser scaner</li>
+  <ul>
+    <li>Sensor range: [0.20 - 5.60]m </li>
+    <li>Resolution: 0.01m </li>
+    <li>Sensor noise (Gaussian)</li>
+    <ul>
+      <li>Mean: 0.0m</li>
+      <li>Std. Deviation: 0.01m</li>
+    </ul>
+  </ul>
+</ul>
 </div>
 ---
 
