@@ -645,8 +645,8 @@ will maximally align its points with those of cloud X.
 
 `\[
 \begin{align}
-X &= { x_1, x_2, \cdots x_{N_x} } \\
-P &= { p_1, p_2, \cdots p_{N_p} }
+X &= \{ x_1, x_2, \cdots x_{N_x} \} \\
+P &= \{ p_1, p_2, \cdots p_{N_p} \}
 \end{align}
 \]`
 
