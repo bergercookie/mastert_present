@@ -931,7 +931,7 @@ We conducted multi-robot simulations in **Gazebo**.
     - resolution: `\(0.01m\)`
     - Sensor noise (Gaussian)
       - Mean: `\(0.0m\)`
-      - Std. deviation: `\(0.01m\)`
+      - Std. Deviation: `\(0.01m\)`
 
 ---
 
@@ -1066,7 +1066,7 @@ Tell the details as described in thesis text
 
 ## References
 
-  <div style="font-size:0.5em">
+  <div style="font-size:0.5em;float:'left'">
     <li> (Saeedi2016) Multiple-Robot Simultaneous Localization and Mapping: A Review
       - Saeedi, Sajad and Trentini, Michael and Seto, Mae and Li, Howard
     </li>
