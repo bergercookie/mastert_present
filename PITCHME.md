@@ -692,10 +692,10 @@ Algorithm stages:
 Find the centers of mass for each point cloud; substract if from every point:
 
 `\[
-\begim{matrix}
+\begim{tabular}
 \mu_x = \frac{1}{N_x}\sum_{i=1}^{N_x} x_i &
 \mu_p = \frac{1}{N_p}\sum_{i=1}^{N_p} p_i
-\end{matrix}
+\end{tabular}
 \]`
 
 `\[
