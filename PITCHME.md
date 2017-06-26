@@ -433,7 +433,7 @@ e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j)
 
 `\( \mathbf{F} \)` can be rewritten as:
 
-<div style="font-size:0.8em">
+<div style="font-size:0.2em">
 `\[
 \begin{align}
 \mathbf{F}_{i,j}(\breve x + \Delta x)
