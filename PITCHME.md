@@ -672,23 +672,6 @@ E(R,t) = \frac{1}{N_p} \sum_{i=1}^{N_p} \| x_i - R p_i -t\|^2
 
 ### Iterative Closest Point - ICP
 
-<div style="font-size:0.8em"/>
-Algorithm stages:
-<ul>
-    <li> **Selection** of some set of points in one or both meshes.</li>
-    <li> **Matching** these points to samples in the other mesh.</li>
-    <li> **Weighting** the corresponding pairs appropriately.</li>
-    <li> **Rejecting** certain pairs by looking at each pair</li>
-        individually or by considering an entire set of pairs.
-    <li> Assigning an **error metric** based on the point pairs.</li>
-    <li> **Minimizing** the error metric.</li>
-</ul>
-</div>
-
----
-
-### Iterative Closest Point - ICP
-
 Find the centers of mass for each point cloud; substract if from every point:
 
 `\[
@@ -700,7 +683,7 @@ Find the centers of mass for each point cloud; substract if from every point:
 
 `\[
 X^{\prime} = \{ x_i - \mu_x \} = \{ x_i^\prime \} \,\,\,\,
-P^{\prime} = \{ p_i - \mu_p } = \{ p_i^\prime \}
+P^{\prime} = \{ p_i - \mu_p \} = \{ p_i^\prime \}
 \]`
 
 ---
@@ -744,6 +727,24 @@ Minimal value of error function:
 E(R,t) = \sum_{i=1}^{N_p}\big(\|x^{\prime}_i \|^2 + \| y^{\prime}_i \|^2
 -2(\sigma_1 + \sigma_2 + \sigma_3) \big)
 \]`
+
+### Iterative Closest Point - ICP
+
+<div style="font-size:0.8em"/>
+Algorithm stages:
+<ul>
+    <li> **Selection** of some set of points in one or both meshes.</li>
+    <li> **Matching** these points to samples in the other mesh.</li>
+    <li> **Weighting** the corresponding pairs appropriately.</li>
+    <li> **Rejecting** certain pairs by looking at each pair</li>
+        individually or by considering an entire set of pairs.
+    <li> Assigning an **error metric** based on the point pairs.</li>
+    <li> **Minimizing** the error metric.</li>
+</ul>
+</div>
+
+---
+
 
 ---?image=assets/figures/bulk/icp_example.png&size=contain
 
