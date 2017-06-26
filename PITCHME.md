@@ -398,7 +398,112 @@ Log-likelihood of the virtual measurement:
 
 ### Graph-based SLAM
 
-TODO - Add more math here
+`\( C \)`: Set of pairs of indices `\(i,j\)` for which a virtual measurement exists.
+
+**Goal:** Find the vector of node positions `\( x^{\star} \)` that maximizes the
+    log-likelihood of all observations in `\( C \)`
+
+`\[
+
+\begin{equation}
+    \mathbf{F}(x) =
+    \sum_{\langle i,j \rangle \in C}F_{i,j} =
+    \sum_{\langle i,j \rangle \in C}
+    e_{i,j}^T \, \pmb \Omega_{i,j} \, e_{i,j}
+    \label{eqn:literature_F_initial}
+\end{equation}
+
+\]`
+
+To express this in least-squares form:
+
+`\[ x^{\star} = argmin_{x}\mathbf{F}(x) \]`
+
+
+---
+
+### Graph-based SLAM
+
+1st order Taylor approximation of error function:
+
+`\[
+
+\begin{equation}
+    e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j) =
+    e_{i,j}(\breve x + \Delta x) \approx
+    e_{i,j} + \pmb{J}_{i,j} \Delta x
+\end{equation}
+
+\]`
+
+`\[
+
+\begin{align}
+    \mathbf{F}_{i,j}(\breve x + \Delta x)
+    &= e_{i,j}(\breve x + \Delta x)^T \pmb \Omega_{i,j} e_{i,j}(\breve x + \Delta x)
+    \\
+    &\approx (e_{i,j} + \pmb{J}_{i,j} \Delta x)^T \pmb \Omega_{i,j} (e_{i,j} + \pmb{J}_{i,j}
+    \Delta x) \\
+    &= \underbrace{e^T_{i,j}\pmb \Omega_{i,j}e_{i,j}}_{c_{i,j}}
+    + 2\underbrace{e^T_{i,j} \pmb \Omega_{i,j} \pmb{J}_{i,j}}_{b_{i,j}} \Delta x +
+    \Delta x ^T \underbrace{\pmb{J}^T_{i,j} \pmb \Omega_{i,j} \pmb{J}_{i,j}}_{\pmb H_{i,j}} \Delta x \\
+    &= c_{i,j} + 2b_{i,j} \Delta x + \Delta x^T \pmb H_{i,j} \Delta x
+    \label{eqn:literature_fij_expression}
+\end{align}
+
+\]`
+
+---
+
+### Graph-based SLAM
+
+Using the latter expression, and by setting:
+
+`\[
+
+\begin{align*}
+    c &= \sum c_{i,j} \\
+    b &= \sum b_{i,j} \\
+    H &= \sum H_{i,j}
+\end{align*}
+
+\]`
+
+We can rewrite as follows:
+
+`\[
+
+\begin{align}
+    \mathbf{F}(\breve x + \Delta x)
+    &= \sum_{\langle i,j \rangle \in C}F_{i,j}(\breve x + \Delta x) \\
+    &\approx \sum_{\langle i,j \rangle \in C}\Big[ c_{i,j} + 2 b_{i,j} \Delta x
+    + \Delta x ^T H_{i,j} \Delta x \Big] \\
+    &= c + 2 b^T \Delta x + \Delta x^T H \Delta x
+    \label{eqn:literature_F_quad_form}
+\end{align}
+
+\]`
+
+---
+
+### Graph-based SLAM
+
+We have to reach to a formula suitable for optimization; Compute partial
+derivative with regards to `\[ \Delta x \]` and set it to `\[ 0 \]`:
+
+`\[
+
+\begin{align}
+    \frac{\partial  F(x + \Delta x)}{\partial{\Delta x}}
+    &= \left(  H +  H^T \right) \Delta x + 2b
+    \stackrel{\text{H symmetric}}{=} \notag \\
+    &= 2 H \Delta x + 2b  = 0 \Rightarrow \notag \\
+    \Delta x^{\star} &= - H^{-1} b
+    \label{eqn:literature_least_sq_sol}
+\end{align}
+
+\]`
+
 
 ---
 
