@@ -640,11 +640,75 @@ Two options for visualizing the procedure
 
 ### Iterative Closest Point - ICP
 
-Assume two point clouds A, B. Find the transformation which, if applied to A
-will maximally align its points with those of cloud B.
+<quote>
+Assume two point clouds X, P. Find the transformation which, if applied to P
+will maximally align its points with those of cloud X.
+</quote>
 
-TODO Write this
-See the scan-matching section of Stachniss frontends
+`\[
+X = \big{ x_1, x_2, \cdots x_{N_x} \big}
+P = \big{ p_1, p_2, \cdots p_{N_p} \big}
+\]`
+
+
+Potential error metric:
+
+`\[
+E(R,t) = \frac{1}{N_p} \sum_{i=1}^{N_p}\norm{x_i - R p_i -t}^2
+\]`
+
+
+
+---
+
+### Iterative Closest Point - ICP
+
+- Used for registering the outputs of 2D/3D scanners
+- Starting from an initial estimation of the transform between the two point
+    clouds, iteratively refine it by minimizing a suitable error metric.
+- Used to add new edges between already registered nodes.
+
+---
+
+### Iterative Closest Point - ICP
+
+<div style="font-size:0.8em"/>
+Algorithm stages:
+<ul>
+    <li> **Selection** of some set of points in one or both meshes.</li>
+    <li> **Matching** these points to samples in the other mesh.</li>
+    <li> **Weighting** the corresponding pairs appropriately.</li>
+    <li> **Rejecting** certain pairs by looking at each pair</li>
+        individually or by considering an entire set of pairs.
+    <li> Assigning an **error metric** based on the point pairs.</li>
+    <li> **Minimizing** the error metric.</li>
+</ul>
+</div>
+
+---
+
+### Iterative Closest Point - ICP
+
+Find the centers of mass for each point cloud; substract if from every point:
+
+`\[
+\mu_x = \frac{1}{N_x}\sum_{i=1}^{N_x} x_i
+\mu_p = \frac{1}{N_p}\sum_{i=1}^{N_p} p_i
+\]`
+
+`\[
+X^\prime = { x_i - \mu_x }= { x_i^\prime }
+P^\prime = { p_i - \mu_p }= { p_i^\prime }
+\]`
+
+---
+
+### Iterative Closest Point - ICP
+
+
+---
+
+---?image=assets/figures/bulk/icp_example.png&size=contain
 
 ---
 
@@ -1092,6 +1156,9 @@ Tell the details as described in thesis text
 - [catkin_ws](https://github.com/bergercookie/catkin_ws): ROS set of packages
     that acts as a container and provides instructions for easier setup of
     graphSLAM
+
+Stable versions of the above also exist in the [CSL Gogs
+server](http://controlsystemslab.gr/code).
 
 ---
 
