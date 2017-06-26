@@ -404,13 +404,10 @@ Log-likelihood of the virtual measurement:
     log-likelihood of all observations in `\( C \)`
 
 `\[
-\begin{equation}
-    \mathbf{F}(x) =
-    \sum_{\langle i,j \rangle \in C}F_{i,j} =
-    \sum_{\langle i,j \rangle \in C}
-    e_{i,j}^T \, \pmb \Omega_{i,j} \, e_{i,j}
-    \label{eqn:literature_F_initial}
-\end{equation}
+\mathbf{F}(x) =
+\sum_{\langle i,j \rangle \in C}F_{i,j} =
+\sum_{\langle i,j \rangle \in C}
+e_{i,j}^T \, \Omega_{i,j} \, e_{i,j}
 \]`
 
 To express this in least-squares form:
@@ -429,7 +426,7 @@ To express this in least-squares form:
 \begin{equation}
     e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j) =
     e_{i,j}(\breve x + \Delta x) \approx
-    e_{i,j} + \pmb{J}_{i,j} \Delta x
+    e_{i,j} + J_{i,j} \Delta x
 \end{equation}
 
 \]`
@@ -438,14 +435,14 @@ To express this in least-squares form:
 
 \begin{align}
     \mathbf{F}_{i,j}(\breve x + \Delta x)
-    &= e_{i,j}(\breve x + \Delta x)^T \pmb \Omega_{i,j} e_{i,j}(\breve x + \Delta x)
+    &= e_{i,j}(\breve x + \Delta x)^T \Omega_{i,j} e_{i,j}(\breve x + \Delta x)
     \\
-    &\approx (e_{i,j} + \pmb{J}_{i,j} \Delta x)^T \pmb \Omega_{i,j} (e_{i,j} + \pmb{J}_{i,j}
+    &\approx (e_{i,j} + J_{i,j} \Delta x)^T \Omega_{i,j} (e_{i,j} + J_{i,j}
     \Delta x) \\
-    &= \underbrace{e^T_{i,j}\pmb \Omega_{i,j}e_{i,j}}_{c_{i,j}}
-    + 2\underbrace{e^T_{i,j} \pmb \Omega_{i,j} \pmb{J}_{i,j}}_{b_{i,j}} \Delta x +
-    \Delta x ^T \underbrace{\pmb{J}^T_{i,j} \pmb \Omega_{i,j} \pmb{J}_{i,j}}_{\pmb H_{i,j}} \Delta x \\
-    &= c_{i,j} + 2b_{i,j} \Delta x + \Delta x^T \pmb H_{i,j} \Delta x
+    &= \underbrace{e^T_{i,j}\Omega_{i,j}e_{i,j}}_{c_{i,j}}
+    + 2\underbrace{e^T_{i,j} \Omega_{i,j} J_{i,j}}_{b_{i,j}} \Delta x +
+    \Delta x ^T \underbrace{J^T_{i,j} \Omega_{i,j} J_{i,j}}_{H_{i,j}} \Delta x \\
+    &= c_{i,j} + 2b_{i,j} \Delta x + \Delta x^T H_{i,j} \Delta x
     \label{eqn:literature_fij_expression}
 \end{align}
 
