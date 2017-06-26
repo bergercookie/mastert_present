@@ -368,7 +368,6 @@ measurement* that associates two different graph nodes.
 - `\( \hat{z}_{i,j} \)`: Mean of the *prediction* of a virtual measurement.
     Computed via the initial poses of the nodes `\( i, j \)`.
 
----?image=assets/figures/bulk/virtual_measurements.png&size=contain
 
 ---
 
@@ -391,7 +390,7 @@ Log-likelihood of the virtual measurement:
 \end{align}
 \]`
 
-
+---?image=assets/figures/bulk/virtual_measurements.png&size=contain
 
 ---
 
