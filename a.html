@@ -1,16 +1,22 @@
-<ul>
-  <li>Frontend</li>
+<div style="font-size:0.8em">
   <ul>
-    <li>Constructs <i>the initial graph</i> from raw sensor data</li>
-    <li>In case we also consider landmarks, it deals with the <i>data association
-        problem</i></li>
+    <li></li>
+    <li></li>
+    <ul>
+      <li>Odometry</li>
+      <ul>
+        <li>Odometry covariance (same for <code>x, y, yaw</code): 0.1m </li>
+      </ul>
+    </ul>
+    <li>Laser scaner</li>
+    <ul>
+      <li>Sensor range: [0.20 - 5.60]m </li>
+      <li>Resolution: 0.01m </li>
+      <li>Sensor noise (Gaussian)</li>
+      <ul>
+        Mean: 0.0m
+        Std. Deviation: 0.01m
+      </ul>
+    </ul>
   </ul>
-  <li>Backend</li>
-  <ul>
-    <li>Multivariate optimization scheme</li>
-    <li>Minimizes the error vector between the <i>predicted state</i> and the
-      <i>measurements</i></li>
-    <li>Comprises variants of least-squares solvers (Gauss-Newton,
-      Levenberg-Marquardt, Gradient Descent)</li>
-  </ul>
-</ul>
+</div>

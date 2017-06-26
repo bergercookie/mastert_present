@@ -920,19 +920,30 @@ I didn't write this module. Say in short what it does and skip
 
 #### Simulation Setup & Results
 
+<div style="font-size:0.8em">
 We conducted multi-robot simulations in **Gazebo**.
 
-- 2 Mobile robots (Pioneer 2dx)
-- Measurements utilized
-  - Odometry
-    - Odometry covariance (same for *x*, *y*, *yaw*): `\(0.1m\)`
-  - Laser scanner:
-    - Sensor range: `\([0.20 - 5.60]m\)`
-    - resolution: `\(0.01m\)`
-    - Sensor noise (Gaussian)
-      - Mean: `\(0.0m\)`
-      - Std. Deviation: `\(0.01m\)`
-
+  <ul>
+    <li>2 Mobile robots (Pioneer 2dx)</li>
+    <li>Measurements utilized</li>
+    <ul>
+      <li>Odometry</li>
+      <ul>
+        <li>Odometry covariance (same for <code>x, y, yaw</code>): 0.1m </li>
+      </ul>
+    </ul>
+    <li>Laser scaner</li>
+    <ul>
+      <li>Sensor range: [0.20 - 5.60]m </li>
+      <li>Resolution: 0.01m </li>
+      <li>Sensor noise (Gaussian)</li>
+      <ul>
+        Mean: 0.0m
+        Std. Deviation: 0.01m
+      </ul>
+    </ul>
+  </ul>
+</div>
 ---
 
 ## Gazebo World
@@ -1066,7 +1077,7 @@ Tell the details as described in thesis text
 
 ## References
 
-<div style="font-size:0.5em; float:left">
+<div style="font-size:0.5em;">
   <li> (Saeedi2016) Multiple-Robot Simultaneous Localization and Mapping: A Review
     - Saeedi, Sajad and Trentini, Michael and Seto, Mae and Li, Howard
   </li>
