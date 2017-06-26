@@ -846,7 +846,6 @@ corresponding processes.
 
 ### Network Setup
 
-<div style="font-size: 0.8em">
 Example: Configuring an agent to join the ad-hoc network
 
 
@@ -859,7 +858,6 @@ Example: Configuring an agent to join the ad-hoc network
                                                                   -I 10.8.0.16 \
                                                                   -w wlan0
 ```
-</div>
 
 ---
 
