@@ -429,7 +429,7 @@ e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j)
 \end{align}
 \]`
 
-so
+`\( \mathbf{F} \)` can be rewritten as:
 
 `\[
 \begin{align}
