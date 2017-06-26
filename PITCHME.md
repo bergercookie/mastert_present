@@ -696,6 +696,8 @@ Find the centers of mass for each point cloud; substract if from every point:
 \mu_p = \frac{1}{N_p}\sum_{i=1}^{N_p} p_i
 \]`
 
+<br>
+
 `\[
 X^\prime = \{ x_i - \mu_x }= { x_i^\prime \} \vspace*{2em}
 P^\prime = \{ p_i - \mu_p }= { p_i^\prime \}
@@ -705,8 +707,45 @@ P^\prime = \{ p_i - \mu_p }= { p_i^\prime \}
 
 ### Iterative Closest Point - ICP
 
+Let `\( W = \sum_{i=1}^{N_p} x^\prime_i p{^\prime}^T_i \)`. We denote its
+*Singular Value Decomposition* (SVD) as:
+
+`\[
+W = U \begin{bmatrix}
+
+\sigma_1 & 0 & 0 \\
+0 & \sigma_2 & 0 \\
+0 & 0 & \sigma_3
+\end{bmatrix} V^T
+
+\]`
+
+Note:
+
+U,V are orthogonal
+sigma1 > sigma2 > sigma3
 
 ---
+
+### Iterative Closest Point - ICP
+
+Theorem:
+
+If `\( rank(W) = 3 \)`, the optimal solution E(R,t) is unique and given by:
+
+`\[
+\begin{align}
+R &= U V^T \\
+t &= \mu_x - R \mu_p
+\end{align}
+\]`
+
+Minimal value of error function:
+
+`\[
+E(R,t) = \sum_{i=1}^{N_p}\big(\|x^{\prime}_i \|^2 + y^{\prime}_i \|^2
+-2(\sigma_1 + \sigma_2 + \sigma_3) \big)
+\]`
 
 ---?image=assets/figures/bulk/icp_example.png&size=contain
 
