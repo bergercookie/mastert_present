@@ -716,7 +716,6 @@ W = U \begin{bmatrix}
 0 & \sigma_2 & 0 \\
 0 & 0 & \sigma_3
 \end{bmatrix} V^T
-
 \]`
 
 Note:
