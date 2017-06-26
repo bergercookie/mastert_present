@@ -368,6 +368,15 @@ measurement* that associates two different graph nodes.
 - `\( \hat{z}_{i,j} \)`: Mean of the *prediction* of a virtual measurement.
     Computed via the initial poses of the nodes `\( i, j \)`.
 
+note:
+On the dimensions of the terms:
+e_{i,j} -> VECTOR of error terms for all node ID pairs that I have a measurement
+\hat x -> VECTOR of initial guesses
+\Delta x -> VECTOR of differences between the initial guesses and the real
+values
+
+c_{i,j} is a scalar  (e_{i,j}^T * X * e_{i,j}) and e_{i,j} is a vector
+
 
 ---
 
@@ -883,14 +892,35 @@ Example: Configuring an agent to join the ad-hoc network
 
 ### Multi-hypothesis Map-matching
 
+- Used to find the relative transformation from robot frame to that of the
+    neighbor's frame. If found the incoming measurements can be integrated in
+    own map
 - Algorithm is described in detail in <cite>Blanco2013</cite>
 - Code implementation is provided via the MRPT `maps::CGridmapAligner`
     class.
 
-TODO
+---
+
+### Multi-hypothesis Map-matching
+
+
+<div style="font-size:0.8em">
+  <ul>
+    <li> Multi-hypothesis approach; Provides a multi-modal probability
+    distribution for the transformation between two grid maps.</li>
+    <li> Based on a modified RANSAC scheme; Non-deterministic algorithm</li>
+    <li> Consists of a two-step matching procedure:
+    <ul>
+      <li> Grid-to-grid matching without any a priori information</li>
+      <li> Point maps matching to refine the latter grid-matching estimation</li>
+    </ul>
+  </ul>
+</div>
 
 Note:
 I didn't write this module. Say in short what it does and skip
+
+---?image=assets/figures/bulk/jlblancoc_map_matching_scheme.png&size=contain
 
 ---
 
@@ -1062,6 +1092,14 @@ Tell the details as described in thesis text
 - [catkin_ws](https://github.com/bergercookie/catkin_ws): ROS set of packages
     that acts as a container and provides instructions for easier setup of
     graphSLAM
+
+---
+
+### Asking for help
+
+- [mrpt-graphslam docs](http://reference.mrpt.org/devel/group__mrpt__graphslam__grp.html)
+- [ROS mrpt_graphslam_2d docs](http://wiki.ros.org/mrpt_graphslam_2d)
+- In case of an issue open an issue on the corresponding Github page
 
 
 ---
