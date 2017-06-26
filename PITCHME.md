@@ -364,7 +364,7 @@ Break overall problem down to:
 - `\(z_{i,j}, \Omega_{i,j} \)`: Mean and information matrix of a *virtual
 measurement* that associates two different graph nodes.
 
-    - In pose-graph SLAM this is the transformation between two nodes: `\( i \rigtharrow j \)`
+    - In pose-graph SLAM this is the transformation between two nodes: `\( i \rightarrow j \)`
 - `\( \hat{z}_{i,j} \)`: Mean of the *prediction* of a virtual measurement.
     Computed via the initial poses of the nodes `\( i, j \)`.
 
