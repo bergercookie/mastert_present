@@ -663,10 +663,10 @@ E(R,t) = \frac{1}{N_p} \sum_{i=1}^{N_p} \| x_i - R p_i -t\|^2
 
 ### Iterative Closest Point - ICP
 
-- Used for registering the outputs of 2D/3D scanners
 - Starting from an initial estimation of the transform between the two point
     clouds, iteratively refine it by minimizing a suitable error metric.
-- Used to add new edges between already registered nodes.
+- Used for registering the outputs of 2D/3D scanners; add new edges between
+    already registered nodes.
 
 ---
 
