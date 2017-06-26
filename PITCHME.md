@@ -656,7 +656,7 @@ P &= \big{ p_1, p_2, \cdots p_{N_p} \big}
 Potential error metric:
 
 `\[
-E(R,t) = \frac{1}{N_p} \sum_{i=1}^{N_p}\norm{x_i - R p_i -t}^2
+E(R,t) = \frac{1}{N_p} \sum_{i=1}^{N_p} \| x_i - R p_i -t\|^2
 \]`
 
 
