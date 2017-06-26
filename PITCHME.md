@@ -819,7 +819,7 @@ corresponding processes.
 
 ### Network setup
 
-<div style="font-size: 0.9em">
+<div style="font-size: 0.6em">
 <ul>
   <li>Robots communicate over a fully distributed  ad-hoc network</li>
   <li>Automated script to register an <b>upstart job</b>; Configures the
@@ -840,9 +840,10 @@ corresponding processes.
   <li> Optionally provide access to the internet via a set of firewall rules
     and the central node as the middle man. </li>
 </ul>
-</div>
 
 Example: Configuring an agent to join the ad-hoc network
+
+</div>
 
 ```sh
   # Get the 10.8.0.16 IP in the ad-hoc
