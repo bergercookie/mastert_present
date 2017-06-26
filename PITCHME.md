@@ -422,11 +422,9 @@ To express this in least-squares form:
 1st order Taylor approximation of error function:
 
 `\[
-\begin{equation}
-    e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j) =
-    e_{i,j}(\breve x + \Delta x) \approx
-    e_{i,j} + J_{i,j} \Delta x
-\end{equation}
+e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j) =
+e_{i,j}(\breve x + \Delta x) \approx
+e_{i,j} + J_{i,j} \Delta x
 \]`
 
 `\[
