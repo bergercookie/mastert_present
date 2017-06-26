@@ -432,6 +432,10 @@ e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j)
 `\( \mathbf{F} \)` can be rewritten as:
 
 `\[
+\overbrace{a}^{b} \\ \underbrace{a}_{b}
+\]`
+
+`\[
 \begin{align}
 \mathbf{F}_{i,j}(\breve x + \Delta x)
 &= e_{i,j}(\breve x + \Delta x)^T \Omega_{i,j} e_{i,j}(\breve x + \Delta x) \\
