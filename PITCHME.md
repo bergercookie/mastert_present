@@ -359,7 +359,7 @@ Break overall problem down to:
 
 ### Graph-based SLAM
 
-- `\( x = \left( x_1, x_2, \cdots x_T\right)^T$ \)`: Set of estimated robot
+- `\( x = \left( x_1, x_2, \cdots x_T\right)^T \)`: Set of estimated robot
     trajectory poses (graph nodes).
 - `\(z_{i,j}, \Omega_{i,j} \)`: Mean and information matrix of a *virtual
 measurement* that associates two different graph nodes.
