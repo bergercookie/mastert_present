@@ -742,7 +742,7 @@ t &= \mu_x - R \mu_p
 Minimal value of error function:
 
 `\[
-E(R,t) = \sum_{i=1}^{N_p}\big(\|x^{\prime}_i \|^2 + y^{\prime}_i \|^2
+E(R,t) = \sum_{i=1}^{N_p}\big(\|x^{\prime}_i \|^2 + \| y^{\prime}_i \|^2
 -2(\sigma_1 + \sigma_2 + \sigma_3) \big)
 \]`
 
