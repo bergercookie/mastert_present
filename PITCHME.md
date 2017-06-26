@@ -504,12 +504,6 @@ derivative with regards to `\( \Delta x \)` and set it to `\( 0 \)`:
 
 ---
 
-### Graph-based SLAM
-
-TODO - Add more math here
-
----
-
 ### Why Choose GraphSLAM?
 
 <div style="font-size:0.8em">
@@ -632,13 +626,6 @@ Two options for visualizing the procedure
 <!-- .slide: data-background-transition="none" -->
 ---?image=assets/figures/bulk/ros_visuals.png&size=contain
 <!-- .slide: data-background-transition="none" -->
-
----
-
-#### Levenberg-Marquardt Least-Squares Optimization
-
-TODO Write this
-See master thesis text
 
 ---
 
@@ -771,6 +758,8 @@ running robots. These take care of:
   <li>Network utilities (communication of agents in MR-SLAM)</li>
   <li>Software config (deciders/optimizer to use)</li>
 </ul>
+
+<br>
 
 Design should account for the multiple different options (robot type, laser
 type)
@@ -934,7 +923,7 @@ We conducted multi-robot simulations in **Gazebo**.
       <li>Odometry covariance (same for <code>x, y, yaw</code>): 0.1m </li>
     </ul>
   </ul>
-  <li>Laser scaner</li>
+  <li>Laser scanner</li>
   <ul>
     <li>Sensor range: [0.20 - 5.60]m </li>
     <li>Resolution: 0.01m </li>
