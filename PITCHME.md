@@ -758,9 +758,11 @@ Mention the camera range near the trash can
 
 #### Configuring Robot for real-time graphSLAM
 
+<div style="font-size:0.8em"/>
+
 We need a generic way to define the processes that are launched in each of the
 running robots. These take care of:
-<div style="font-size:0.8em"/>
+
 <ul>
   <li>Robot movement</li>
   <li>Teleoperation (joystick, keyboard)</li>
