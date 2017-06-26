@@ -421,6 +421,7 @@ To express this in least-squares form:
 
 1st order Taylor approximation of error function:
 
+<div style="font-size:0.8em">
 `\[
 \begin{align}
 e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j)
@@ -428,9 +429,11 @@ e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j)
 &\approx e_{i,j} + J_{i,j} \Delta x
 \end{align}
 \]`
+</div>
 
 `\( \mathbf{F} \)` can be rewritten as:
 
+<div style="font-size:0.8em">
 `\[
 \begin{align}
 \mathbf{F}_{i,j}(\breve x + \Delta x)
@@ -443,6 +446,7 @@ e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j)
 &= c_{i,j} + 2b_{i,j} \Delta x + \Delta x^T H_{i,j} \Delta x
 \end{align}
 \]`
+</div>
 
 ---
 
@@ -450,6 +454,7 @@ e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j)
 
 Using the latter expression, and by setting:
 
+<div style="font-size:0.8em">
 `\[
 
 \begin{align*}
@@ -459,9 +464,11 @@ Using the latter expression, and by setting:
 \end{align*}
 
 \]`
+</div>
 
 We can rewrite as follows:
 
+<div style="font-size:0.8em">
 `\[
 
 \begin{align}
@@ -473,6 +480,7 @@ We can rewrite as follows:
 \end{align}
 
 \]`
+</div>
 
 ---
 
