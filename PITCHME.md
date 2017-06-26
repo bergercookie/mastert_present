@@ -730,6 +730,8 @@ E(R,t) = \sum_{i=1}^{N_p}\big(\|x^{\prime}_i \|^2 + \| y^{\prime}_i \|^2
 -2(\sigma_1 + \sigma_2 + \sigma_3) \big)
 \]`
 
+---
+
 ### Iterative Closest Point - ICP
 
 <div style="font-size:0.8em"/>
@@ -744,9 +746,6 @@ Algorithm stages:
     <li> **Minimizing** the error metric.</li>
 </ul>
 </div>
-
----
-
 
 ---?image=assets/figures/bulk/icp_example.png&size=contain
 
