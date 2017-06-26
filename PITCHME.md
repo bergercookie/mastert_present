@@ -759,7 +759,7 @@ running robots. These take care of:
   <li>Software config (deciders/optimizer to use)</li>
 </ul>
 
-<br>
+<br> <br>
 
 Design should account for the multiple different options (robot type, laser
 type)
