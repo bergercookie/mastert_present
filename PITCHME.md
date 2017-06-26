@@ -697,8 +697,8 @@ Find the centers of mass for each point cloud; substract if from every point:
 \]`
 
 `\[
-X^\prime = { x_i - \mu_x }= { x_i^\prime }
-P^\prime = { p_i - \mu_p }= { p_i^\prime }
+X^\prime = \{ x_i - \mu_x }= { x_i^\prime \} \vspace*{2em}
+P^\prime = \{ p_i - \mu_p }= { p_i^\prime \}
 \]`
 
 ---
