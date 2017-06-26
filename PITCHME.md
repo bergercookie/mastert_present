@@ -1066,16 +1066,16 @@ Tell the details as described in thesis text
 
 ## References
 
-  <div style="font-size:0.5em;float:'left'">
-    <li> (Saeedi2016) Multiple-Robot Simultaneous Localization and Mapping: A Review
-      - Saeedi, Sajad and Trentini, Michael and Seto, Mae and Li, Howard
-    </li>
-    <li> (Grisetti2010) A tutorial on graph-based SLAM - Grisetti, Giorgio
-          and Kummerle, Rainer and Stachniss, Cyrill and Burgard, Wolfram
-    </li>
-    <li> (Blanco2013) A Robust , Multi-Hypothesis Approach to Matching Occupancy
-    Grid Maps - Blanco, Jose-luis and Gonz, Javier and Fern, Juan-antonio
-  </div>
+<div style="font-size:0.5em;float:'left'">
+  <li> (Saeedi2016) Multiple-Robot Simultaneous Localization and Mapping: A Review
+    - Saeedi, Sajad and Trentini, Michael and Seto, Mae and Li, Howard
+  </li>
+  <li> (Grisetti2010) A tutorial on graph-based SLAM - Grisetti, Giorgio
+        and Kummerle, Rainer and Stachniss, Cyrill and Burgard, Wolfram
+  </li>
+  <li> (Blanco2013) A Robust , Multi-Hypothesis Approach to Matching Occupancy
+  Grid Maps - Blanco, Jose-luis and Gonz, Javier and Fern, Juan-antonio
+</div>
 
 ---
 
