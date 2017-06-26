@@ -484,7 +484,7 @@ We can rewrite as follows:
 ### Graph-based SLAM
 
 We have to reach to a formula suitable for optimization; Compute partial
-derivative with regards to `\[ \Delta x \]` and set it to `\[ 0 \]`:
+derivative with regards to `\( \Delta x \)` and set it to `\( 0 \)`:
 
 `\[
 
