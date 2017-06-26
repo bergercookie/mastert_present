@@ -454,7 +454,7 @@ e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j)
 
 Using the latter expression, and by setting:
 
-<div style="font-size:0.8em">
+<div style="font-size:0.6em">
 `\[
 
 \begin{align*}
@@ -468,7 +468,7 @@ Using the latter expression, and by setting:
 
 We can rewrite as follows:
 
-<div style="font-size:0.8em">
+<div style="font-size:0.7em">
 `\[
 
 \begin{align}
@@ -489,6 +489,7 @@ We can rewrite as follows:
 We have to reach to a formula suitable for optimization; Compute partial
 derivative with regards to `\( \Delta x \)` and set it to `\( 0 \)`:
 
+<div style="font-size:0.8em">
 `\[
 \begin{align}
     \frac{\partial  F(x + \Delta x)}{\partial{\Delta x}}
@@ -498,6 +499,7 @@ derivative with regards to `\( \Delta x \)` and set it to `\( 0 \)`:
     \Delta x^{\star} &= - H^{-1} b
 \end{align}
 \]`
+</div>
 
 
 ---
