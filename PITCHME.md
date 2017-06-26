@@ -24,8 +24,9 @@ Master Thesis Presentation
 
 
 <!--DONE-Works fine- Make this an offline version-->
-<!--DONE-Works-fine- Test presenter mode-->
-<!--TODO How should I handle citations?-->
+<!--DONE-Works fine- Test presenter mode-->
+<!--DONE-Works fine- Generate PDF-->
+<!--DONE-Just use names and a list of citations in the last page- How I handle citations?-->
 
 ---
 
@@ -310,7 +311,8 @@ All the PF shit should take ~2min
   - Nodes correspond to *poses* of the robot during mapping
   - An edge between two nodes represents a *spatial constraint* (2D/3D
       transformation) between them.
-
+- Optimize for the whole trajectory - not only the latest pose
+- Option to consider the robot poses exclusively (no landmarks)
 
 <hr>
 
@@ -328,12 +330,66 @@ Give an example on the edge addition.
 can determine the 2D transformation to maximally align the laser scan of one
 node to that of the other we can add an edge constraining those two nodes."
 
+---
+
+### Graph-based SLAM
+
+Break overall problem down to:
+
+<ul>
+  <li>Frontend</li>
+  <ul>
+    <li>Constructs <i>the initial graph</i> from raw sensor data</li>
+    <li>In case we also consider landmarks, it deals with the <i>data association
+        problem</i></li>
+  </ul>
+  <li>Backend</li>
+  <ul>
+    <li>Multivariate optimization scheme</li>
+    <li>Minimizes the error vector between the <i>predicted state</i> and the
+      <i>measured state</i></li>
+    <li>Comprises variants of least-squares solvers (Gauss-Newton,
+      Levenberg-Marquardt, Gradient Descent)</li>
+  </ul>
+</ul>
 
 ---
 
 ### Graph-based SLAM
 
-TODO - Add the math here - find them in the graph-based slam tutorial
+- `\( x = \left( x_1, x_2, \cdots x_T\right)^T$ \)`: Set of estimated robot
+    trajectory poses (graph nodes).
+- `\(z_{i,j}, \Omega_{i,j} \)`: Mean and information matrix of a *virtual
+measurement* that associates two different graph nodes.
+
+    - In pose-graph SLAM this is the transformation between two nodes: `\( i \rigtharrow j \)`
+- `\( \hat{z}_{i,j} \)`: Mean of the *prediction* of a virtual measurement.
+    Computed via the initial poses of the nodes `\( i, j \)`.
+
+---?image=assets/figures/bulk/virtual_measurements.png&size=contain
+
+---
+
+### Graph-based SLAM
+
+Error multivariate function:
+
+`\[ e(x_i, x_j) = e_{i,j} = z_{i,j} - \hat{z}_{i,j}(x_i, x_j) \]`
+
+
+Log-likelihood of the virtual measurement:
+
+`\[
+\begin{align}
+    l_{i,j} &\propto \big[ z_{i,j} - \hat{z}_{i,j}(x_i, x_j) \big]^T
+    \Omega_{i,j}
+    \big[ z_{i,j} - \hat{z}_{i,j}(x_i, x_j) \big] \\
+    &=
+    e_{i,j}^T \, \Omega_{i,j} \, e_{i,j}
+\end{align}
+\]`
+
+
 
 ---
 
