@@ -692,14 +692,14 @@ Algorithm stages:
 Find the centers of mass for each point cloud; substract if from every point:
 
 `\[
-\mu_x = \frac{1}{N_x}\sum_{i=1}^{N_x} x_i \vspace*{2em}
+\mu_x = \frac{1}{N_x}\sum_{i=1}^{N_x} x_i \,\,\,\,
 \mu_p = \frac{1}{N_p}\sum_{i=1}^{N_p} p_i
 \]`
 
 <br>
 
 `\[
-X^\prime = \{ x_i - \mu_x }= { x_i^\prime \} \vspace*{2em}
+X^\prime = \{ x_i - \mu_x }= { x_i^\prime \} \,\,\,\,
 P^\prime = \{ p_i - \mu_p }= { p_i^\prime \}
 \]`
 
