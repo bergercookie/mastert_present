@@ -693,6 +693,8 @@ P^{\prime} = \{ p_i - \mu_p \} = \{ p_i^\prime \}
 Let `\( W = \sum_{i=1}^{N_p} x^\prime_i p{^\prime}^T_i \)`. We denote its
 *Singular Value Decomposition* (SVD) as:
 
+<br><br>
+
 `\[
 W = U \begin{bmatrix}
 \sigma_1 & 0 & 0 \\
