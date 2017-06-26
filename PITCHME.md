@@ -422,17 +422,14 @@ To express this in least-squares form:
 1st order Taylor approximation of error function:
 
 `\[
-
 \begin{equation}
     e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j) =
     e_{i,j}(\breve x + \Delta x) \approx
     e_{i,j} + J_{i,j} \Delta x
 \end{equation}
-
 \]`
 
 `\[
-
 \begin{align}
     \mathbf{F}_{i,j}(\breve x + \Delta x)
     &= e_{i,j}(\breve x + \Delta x)^T \Omega_{i,j} e_{i,j}(\breve x + \Delta x)
@@ -445,7 +442,6 @@ To express this in least-squares form:
     &= c_{i,j} + 2b_{i,j} \Delta x + \Delta x^T H_{i,j} \Delta x
     \label{eqn:literature_fij_expression}
 \end{align}
-
 \]`
 
 ---
@@ -487,7 +483,6 @@ We have to reach to a formula suitable for optimization; Compute partial
 derivative with regards to `\( \Delta x \)` and set it to `\( 0 \)`:
 
 `\[
-
 \begin{align}
     \frac{\partial  F(x + \Delta x)}{\partial{\Delta x}}
     &= \left(  H +  H^T \right) \Delta x + 2b
@@ -496,7 +491,6 @@ derivative with regards to `\( \Delta x \)` and set it to `\( 0 \)`:
     \Delta x^{\star} &= - H^{-1} b
     \label{eqn:literature_least_sq_sol}
 \end{align}
-
 \]`
 
 
