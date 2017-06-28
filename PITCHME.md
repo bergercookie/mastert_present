@@ -111,14 +111,14 @@ Describe what the EKF, PF **do**, do not analyze the math
 
 #### Extended Kalman Filter
 
-**Motion model:**
+##### Motion model
 
-$$P(x\_k | x\_{k\_1}, u\_k) \Longleftrightarrow x\_k = f(x\_{k-1}, u\_k) + w\_k$$
+`\[ P(x_k | x_{k_1}, u_k) \Longleftrightarrow x_k = f(x_{k-1}, u_k) + w_k \]`
 
 
-**Observation model:**
+##### Observation model
 
-$$P(z\_k | x\_{k\_1}, m) \Longleftrightarrow z\_k = h(x\_{k}, m) + v\_k$$
+`\[ P(z_k | x_{k_1}, m) \Longleftrightarrow z_k = h(x_{k}, m) + v_k \]`
 
 ---
 
@@ -230,12 +230,14 @@ W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
  <li>Directly represent non-linear motion model, non-Gaussian pose distribution.</li>
  <li>Apply Rao-Blackwellisation (RB) to joint space probability;
  <ul>
-    <li>Condition map computation on whole robot trajectory;
-    <li>Use a *set of particles* representing a possible trajectory
-    `\(X_{0:k}^{(i)}\)` + corresponding weight `\(w_k^{(i)}\)`</li>
+    <li>Condition map computation on whole robot trajectory
+    <li>Use a *set of particles* representing possible trajectory
+    `\(X_{0:k}^{(i)}\)`, corresponding weight `\(w_k^{(i)}\)`</li>
 </ul>
 
-<span style="font-size:0.8em">
+<br>
+
+<span style="font-size:1.0em">
 `\[
 \begin{align}
   P(X_{0:k}, m | Z_{0:k}, U_{0:k}, x_0) =
@@ -286,9 +288,9 @@ All the PF shit should take ~2min
 
 ### Graph-based SLAM
 
-- Use graph to represent the SLAM problem
+- Use graph to represent SLAM problem
   - Nodes `\( \rightarrow \)` *poses* of the robot
-  - An edge between two nodes `\( \rightarrow \)`  *spatial constraint* between them.
+  - Edge between two nodes `\( \rightarrow \)`  *spatial constraint*
 - Optimize for the whole trajectory - not only latest pose
 - Optionally consider the robot poses exclusively (no landmarks)
 
