@@ -18,7 +18,7 @@ Control Systems Laboratory<br>
 Nikos Koukis<br>
 </div>
 <div style="color:gray; font-size: 0.8em; position: fixed; bottom: 0; text-align: center;">
-Master Thesis
+Master Thesisa
 </div>
 
 
