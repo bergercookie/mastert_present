@@ -177,7 +177,7 @@ Split into a **time** and an **observation** update.
 
 #### Extended Kalman Filter
 
-**Time Update**
+##### Time Update
 
 <span style="font-size:0.8em">
 `\[
@@ -189,7 +189,7 @@ P_{xx, k|k-1} &= \nabla f P_{xx, k-1|k-1} \nabla f^T + Q_k
 </span>
 
 
-**Observation Update**
+##### Observation Update
 
 <span style="font-size:0.8em">
 `\[
