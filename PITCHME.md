@@ -724,10 +724,10 @@ E(R,t) = \sum_{i=1}^{N_p}\big(\|x^{\prime}_i \|^2 + \| y^{\prime}_i \|^2
 
 ### Iterative Closest Point - ICP
 
-<div style="font-size:0.8em"/>
-
-Algorithm stagesa:
+Algorithm stages:
 <br><br>
+
+<div style="font-size:0.8em"/>
 
 <ul>
     <li> **Selection** of some set of points in one or both meshes.</li>
