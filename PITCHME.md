@@ -1,4 +1,3 @@
-
 <center><div style="width:10%">
 ![](assets/figures/MoreGraphics/NTUA.jpg)
 </div></center>
@@ -726,7 +725,9 @@ E(R,t) = \sum_{i=1}^{N_p}\big(\|x^{\prime}_i \|^2 + \| y^{\prime}_i \|^2
 ### Iterative Closest Point - ICP
 
 <div style="font-size:0.8em"/>
+
 Algorithm stages:
+
 <ul>
     <li> **Selection** of some set of points in one or both meshes.</li>
     <li> **Matching** these points to samples in the other mesh.</li>
@@ -1018,7 +1019,7 @@ I didn't write this module. Say in short what it does and skip
 
 ---
 
-## Example with 2 agents
+<h1>Example with 2 agents</h1>
 
 ---?image=assets/figures/bulk/map_merger_node_2_robots.png&size=contain
 
