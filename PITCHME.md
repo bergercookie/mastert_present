@@ -726,7 +726,8 @@ E(R,t) = \sum_{i=1}^{N_p}\big(\|x^{\prime}_i \|^2 + \| y^{\prime}_i \|^2
 
 <div style="font-size:0.8em"/>
 
-Algorithm stages:
+Algorithm stagesa:
+<br>
 
 <ul>
     <li> **Selection** of some set of points in one or both meshes.</li>
