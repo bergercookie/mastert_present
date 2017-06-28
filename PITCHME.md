@@ -713,7 +713,7 @@ E(R,t) = \sum_{i=1}^{N_p}\big(\|x^{\prime}_i \|^2 + \| y^{\prime}_i \|^2
 ### Iterative Closest Point - ICP
 
 Algorithm stages:
-<br><br>
+<br>
 
 <div style="font-size:1.0em"/>
 
@@ -731,26 +731,13 @@ Algorithm stages:
 
 ---
 
-#### Robust Loop-Closure (LC) Scheme
-
-A robot returns to re-observe part of the already observed environment after a
-large traverse. If this is detected it can be useful to reduce the accumulated
-trajectory/map error.
-
----?image=assets/figures/bulk/gui_registered_loop_closure.png&size=contain
-<!-- .slide: data-background-transition="none" -->
----?image=assets/figures/bulk/gui_registered_loop_closure1.png&size=contain
-<!-- .slide: data-background-transition="none" -->
-
----
-
 #### MRPT ``lib-graphslam`` design
 
-- **CGraphSlamEngine:** Class that manages the overall execution of graphSLAM
-- **CRegistrationDeciderOrOptimizer:** Common parent of all decider/optimizer classes
-- **CNodeRegistrationDecider (NRD):** Add *new nodes* to the graph according to a specific criterion
-- **CEdgeRegistrationDecider (ERD):** Add edges *between already added nodes* in the graph according to a specific criterion
-- **CGraphSlamOptimizer(GSO):** Optimize an already constructed graph
+- **CGraphSlamEngine:** Manages the overall execution
+- **CRegistrationDeciderOrOptimizer:** Common parent of all deciders/optimizers 
+- **CNodeRegistrationDecider (NRD):** Add *new nodes* to the graph
+- **CEdgeRegistrationDecider (ERD):** Add edges *between already added nodes*
+- **CGraphSlamOptimizer(GSO):** Optimize already constructed graph
 
 <!--Ref: http://www.gravizo.com/ -->
 ---?image=assets/figures/dot/lib_hierarchy.png&size=contain
@@ -782,8 +769,8 @@ examples!
 
 ### Configuring the Application
 
-- Users don't have to meddle with the source code / compilation
-- Use of ``.ini`` files to tweak the application behavior
+- Don't meddle with source code
+- Use of ``.ini`` files, tweak application behavior
   - Parameters of deciders, optimizer classes
   - Visualization parameters
   - ...
@@ -816,14 +803,13 @@ $ graphslam-engine -r dataset.rawlog \
 
 ### Real-time experiment
 
-- For comparison computed an estimation of the ground-truth path via `Aruco`
-    static and moving markers; Use ``ar_sys`` for computing the
-    camera(s) `\( \rightarrow \)` marker(s) transforms
-- Tested it with the *Pioneer-2dx*, *Pioneer-2AT*, *Youbot* models
-- We conducted the experiment in the top floor of the M building, NTUA
+- For comparison compute ground-truth: 
+    - `Aruco` static and moving markers
+    - Use ``ar_sys`` for computing the camera(s) `\( \rightarrow \)` marker(s)
+        transforms
 - 2 scenarios
-  - Use odometry + laser scans
-  - Use laser scans exclusively
+  - Odometry + laser scans
+  - laser scans only
 
 ---?image=assets/figures/bulk/real_time_gt_setup.png&size=contain
 <!-- .slide: data-background-transition="none" -->
@@ -836,34 +822,36 @@ note:
 Mention the ar_sys faulty measurements in the end
 Mention the camera range near the trash can
 
+note:
+Mention why we acquired the ground-truth
+
 ---
 
 #### Configuring Robot for real-time graphSLAM
 
 <div style="font-size:0.8em"/>
 
-We need a generic way to define the processes that are launched in each of the
-running robots. These take care of:
+Generic way to define the processes that are launched in each of the
+running robots. Account for:
 
 <ul>
   <li>Robot movement</li>
   <li>Teleoperation (joystick, keyboard)</li>
   <li>Sensor acquisition (laser, camera)</li>
-  <li>Various utilities (dataset recording)</li>
   <li>Network utilities (communication of agents in MR-SLAM)</li>
+  <li>Various utilities (dataset recording)</li>
   <li>Software config (deciders/optimizer to use)</li>
 </ul>
 
 <br> <br>
 
-Design should account for the multiple different options (robot type, laser
-type)
+Take care of multiple configurations (robot type, laser type)
 </div>
 
 <hr>
 
 <div class="fragment", style="font-size:0.8em">
-Use a *shell script* that defines a list of environment variables. Source that in
+Use a *shell script* that defines environment variables. Source that in
 every robot agent separately. Based on the variables set, launch the
 corresponding processes.
 </div>
@@ -882,17 +870,17 @@ corresponding processes.
 
 ### Design requirements
 
-<div style="font-size: 1.0em">
+<div style="font-size: 1.2em">
 <ul>
   <div class="fragment">
-    <li>Arbitrary number of agents in a real-time experiment</li>
+    <li>Arbitrary number of agents in real-time experiment</li>
   </div>
   <div class="fragment">
     <li>Robust to communication, agent failure</li>
   </div>
   <div class="fragment">
-    <li>Minimization of exchanged data between the agents - Assume limited
-        communications environment </li>
+    <li>Minimization of exchanged data between agents - Assume limited
+        communications</li>
   </div>
   <div class="fragment">
     <li>No prior network infrastructure</li>
@@ -904,28 +892,25 @@ corresponding processes.
 
 ### Network Setup
 
-<div style="font-size: 0.6em">
+<div style="font-size: 1.0em">
 <ul>
-  <li>Robots communicate over a fully distributed  ad-hoc network</li>
-  <li>Automated script to register an <b>upstart job</b>; Configures the
-    corresponding interface on ad-hoc mode on startup and when it is enabled -
-    see
-    [csl_hw_setup/ad_hoc_network](https://github.com/bergercookie/csl_mr_slam/tree/master/csl_hw_setup/scripts/ad_hoc_network)
-  </li>
-  <li>Robots run <b>their own separate</b> <code>roscore</code> instance. They
-    exchange messages with their counterparts via the
-    <code>multimaster_fkie</code> ROS package. This also requires the following:
+  <li>Fully distributed ad-hoc network</li>
+  <li>Robots run <b>their own separate</b> <code>roscore</code> instance.
+  <li>Exchange messages with counterparts via the <code>multimaster_fkie</code>
+  ROS package.
   </li>
   <ul>
-    <li><b>A central node</b> runs as a DNS server for name resolution of all the
-      running agents.
-    <li>Rerouting of multicast packets to the ad-hoc interface for
-      multimaster_fkie processes to work as expected. </li>
+    <li><b>Central node</b> runs as DNS server.</li>
+    <li>Rerouting of multicast packets to the ad-hoc interface</li>
   </ul>
-  <li> Optionally provide access to the internet via a set of firewall rules
-    and the central node as the middle man. </li>
+  <li> Provide access to the internet</li>
 </ul>
 </div>
+
+
+note:
+
+Previous bullets are quite to the point. Do describe what happens for each one of them and why it is needed
 
 ---
 
