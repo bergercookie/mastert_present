@@ -213,7 +213,7 @@ W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
 
 #### Extended Kalman Filter
 
-<div style="font-size:0.8em">
+<div style="font-size:1.2em">
 <ul>
   <li>Handles landmarks uncertainty and robot movement</li>
   <li>Linearize motion, observation models</li>
@@ -325,7 +325,7 @@ Break overall problem down to:
   <li>Backend</li>
   <ul>
     <li>Multivariate optimization scheme</li>
-    <li>Minimize the error vector between <i>predicted</i> and <i>measured
+    <li>Minimize the error vector between <i>predicted</i>, <i>measured
     state</i></li>
     <li>Least-squares solver (Gauss-Newton, Levenberg-Marquardt, Gradient
     Descent)</li>
@@ -340,9 +340,9 @@ Break overall problem down to:
 - `\( x = \left( x_1, x_2, \cdots x_T\right)^T \)`: Set of estimated robot
     trajectory poses (graph nodes).
 - `\(z_{i,j}, \Omega_{i,j} \)`: Mean, information matrix of a *virtual
-measurement* that associates two graph nodes.
+measurement*, associates two graph nodes.
 - `\( \hat{z}_{i,j} \)`: Mean of *prediction* of a virtual measurement.
-    Computed via initial poses of the nodes `\( i, j \)`.
+    Computed via initial poses of nodes `\( i, j \)`.
 
 note:
 On the dimensions of the terms:
@@ -453,7 +453,7 @@ Using latter expression, and by setting:
 
 Rewrite as follows:
 
-<div style="font-size:0.8em">
+<div style="font-size:0.7em">
 `\[
 
 \begin{align}
