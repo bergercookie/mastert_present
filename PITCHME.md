@@ -109,16 +109,16 @@ Describe what the EKF, PF **do**, do not analyze the math
 
 ---
 
-#### Extended Kalman Filter
+### Extended Kalman Filter
 
 ##### Motion model
 
-`\[ P(x_k | x_{k_1}, u_k) \Longleftrightarrow x_k = f(x_{k-1}, u_k) + w_k \]`
+`\[ P(x_k | x_{k-1}, u_k) \Longleftrightarrow x_k = f(x_{k-1}, u_k) + w_k \]`
 
 
 ##### Observation model
 
-`\[ P(z_k | x_{k_1}, m) \Longleftrightarrow z_k = h(x_{k}, m) + v_k \]`
+`\[ P(z_k | x_{k}, m) \Longleftrightarrow z_k = h(x_{k}, m) + v_k \]`
 
 ---
 
@@ -127,45 +127,48 @@ Describe what the EKF, PF **do**, do not analyze the math
 Compute joint posterior distribution:
 
 <span style="font-size:0.8em">
-$$
+`\[
+\begin{align}
 \begin{bmatrix}
-  \hat{x}\_{k | k}\\\\
+  \hat{x}_{k | k}\\
   \hat{m}
 \end{bmatrix}
-= E
+&= E
 \left[
   \begin{matrix}
-      x\_k \hfill \\\\
-      \hat{m}\_k
+      x_k \hfill \\
+      \hat{m}_k
   \end{matrix}
   \, | \,
-  Z\_{0:k}
+  Z_{0:k}
 \right]
-\\\\[1pt]
-P\_{k|k} =
+\\[1pt]
+P_{k|k} =
 \begin{bmatrix}
-  P\_{xx} & P\_{xm}\\\\
-  P^T\_{xm} & P\_{mm}
-\end{bmatrix}\_{k | k}
-= E
+  P_{xx} & P_{xm}\\
+  P^T_{xm} & P_{mm}
+\end{bmatrix}_{k | k}
+&= E
 \left[
   \begin{matrix}
       \left(
       \begin{matrix}
-          x\_k - \hat{x}\_k \\\\
-          m - \hat{m}\_k
+          x_k - \hat{x}_k \\
+          m - \hat{m}_k
       \end{matrix}
       \right)
 	  \left(
 	  \begin{matrix}
-		  x\_k - \hat{x}\_k \\\\
-		  m - \hat{m}\_k
+		  x_k - \hat{x}_k \\
+		  m - \hat{m}_k
 	  \end{matrix}
 	  \right)^T &
   \end{matrix}
-  |\\, Z\_{0:k}
+  |\, Z_{0:k}
 \right]
-$$
+\end{align}
+\]`
+
 </span>
 
 Split into a **time** and an **observation** update.
