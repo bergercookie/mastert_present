@@ -567,12 +567,12 @@ Build a tool to execute and visualize SLAM
 <ul>
   <li>Generic/Extensible design</li>
     <ul>
-      <li>Handle odometry, laser scans, (potentially) monocular/stereo images etc.</li>
+      <li>Handle odometry, laser scans, (potentially) monocular/stereo images</li>
       <li>2D/3D SLAM</li>
       <li>Offline/online use:</li>
       <ul>
-        <li>Offline use with simulated or prerecorded datasets</li>
-        <li>Integration with ROS for real-time graphSLAM</li>
+        <li>Simulated or prerecorded datasets</li>
+        <li>Integration with ROS, real-time graphSLAM</li>
       </ul>
     </ul>
 </ul>
@@ -589,20 +589,20 @@ when you show them the specific math steps below, to know what they are about!
 
 ## UI Design Insight
 
-<div style="font-size:0.8em"/>
+<div style="font-size:1.0em"/>
 Two options for visualizing the procedure
 <ul>
   <li>MRPT Native application
     <ul>
       <li>Written in <i>OpenGL</i> + <i>wxWidgets</i></li>
-      <li>Can be used in both simulated, real-time setups</li>
-      <li>Does not require installation of <i>ROS</i></li>
+      <li>Simulated, real-time setups</li>
+      <li>Does not require <i>ROS</i> installation </li>
     </ul>
   </li>
   <li>ROS <i>Qt</i> GUI
     <ul>
-      <li>Suitable for visualizing executing in real-time</li>
-      <li>Better integration with the ROS ecosystem (<i>roscore</i>, <i>ros
+      <li>Real-time setups</li>
+      <li>Better integration with ROS ecosystem (<i>roscore</i>, <i>ros
           messages</i>, <i>rqt</i>, <i>tf2</i>)</li>
     </ul>
   </li>
@@ -618,7 +618,7 @@ Two options for visualizing the procedure
 
 ### Iterative Closest Point - ICP
 
-Assume two point clouds X, P. Find the transformation `\((R, t)\)` which, if
+Assume two point clouds X, P. Find transformation `\((R, t)\)` which, if
 applied to P will maximally align its points with those of cloud X.
 
 `\[
@@ -715,16 +715,15 @@ E(R,t) = \sum_{i=1}^{N_p}\big(\|x^{\prime}_i \|^2 + \| y^{\prime}_i \|^2
 Algorithm stages:
 <br><br>
 
-<div style="font-size:0.8em"/>
+<div style="font-size:1.0em"/>
 
 <ul>
-    <li> **Selection** of some set of points in one or both meshes.</li>
+    <li> **Selection** of set of points in one or both meshes.</li>
     <li> **Matching** these points to samples in the other mesh.</li>
-    <li> **Weighting** the corresponding pairs appropriately.</li>
-    <li> **Rejecting** certain pairs by looking at each pair</li>
-        individually or by considering an entire set of pairs.
-    <li> Assigning an **error metric** based on the point pairs.</li>
-    <li> **Minimizing** the error metric.</li>
+    <li> **Weighting** corresponding pairs appropriately.</li>
+    <li> **Rejecting** certain pairs.</li>
+    <li> Assigning an **error metric**.</li>
+    <li> **Minimizing** error metric.</li>
 </ul>
 </div>
 
