@@ -17,11 +17,10 @@ Control Systems Laboratory<br>
 <div style="color:gray; font-size: 1.3em">
 Nikos Koukis<br>
 </div>
-<center>
-<div style="color:gray; font-size: 0.8em; position: fixed; bottom: 0;">
+
+<div style="color:gray; font-size: 0.8em; position: fixed; bottom: 0; left: 50%">
 Master Thesis
 </div>
-</center>
 
 
 ---
@@ -1127,9 +1126,10 @@ Tell the details as described in thesis text
 
 ## Future Directions
 
+<div style="font-size:1.2">
 <ul>
   <div class="fragment">
-    <li>Integration of 3rd party optimization framework</li>
+    <li>3rd party optimization framework</li>
     <ul>
       <li>g2o</li>
       <li>iSAM, iSAM2</li>
@@ -1142,41 +1142,20 @@ Tell the details as described in thesis text
   </div>
 
   <div class="fragment">
-    <li>Implement deciders based on Visual sensors (Monocular, Stereo images)</li>
+    <li>Support visual sensors (Monocular, Stereo images)</li>
   </div>
 
   <div class="fragment">
-    <li>Add full support for 3D Slam</li>
+    <li>3D Slam</li>
   </div>
 
   <div class="fragment">
-    <li>Support for active exploration</li>
+    <li>Active exploration</li>
   </div>
 </ul>
+</div>
 
 <!--- --------- End of Conclusions - Future Directions-->
-
----
-
-### Open-source contributions
-
-- [mrpt-graphslam](http://reference.mrpt.org/devel/namespacemrpt_1_1graphslam.html):
-    Library that provides generic graphSLAM functionality.
-- [graphslam-engine_app](http://www.mrpt.org/list-of-mrpt-apps/application-graphslamengine/):
-    MRPT application that utilizes lib-graphslam to run single-robot simulated
-    graphSLAM.
-- [mrpt_graphslam_2d](http://wiki.ros.org/mrpt_graphslam_2d): ROS wrapper for
-    the lib-graphslam library for real-time single, and multi-robot graphSLAM.
-- [csl_mr_slam](https://github.com/bergercookie/csl_mr_slam): Suite of helper
-    ROS packages that facilitate in simulated, real-time graphSLAM; provide
-    automation scripts, launchfiles for Gazebo simulations, set of hardware
-    sensors and drivers.
-- [catkin_ws](https://github.com/bergercookie/catkin_ws): ROS set of packages
-    that acts as a container and provides instructions for easier setup of
-    graphSLAM
-
-Stable versions of the above also exist in the [CSL Gogs
-server](http://controlsystemslab.gr/code).
 
 ---
 
