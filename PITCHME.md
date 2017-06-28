@@ -1019,7 +1019,9 @@ I didn't write this module. Say in short what it does and skip
 
 ---
 
+<center>
 #### Example with 2 agents
+</center>
 
 ---?image=assets/figures/bulk/map_merger_node_2_robots.png&size=contain
 
