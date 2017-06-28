@@ -491,7 +491,7 @@ derivative wrt `\( \Delta x \)`,  set it to `\( 0 \)`:
 
 ### Why Choose GraphSLAM?
 
-<div style="font-size:0.8em">
+<div style="font-size:1.0em">
 <ul>
   <div class="fragment">
     <li> Modular design; clear distinction between:
@@ -501,7 +501,7 @@ derivative wrt `\( \Delta x \)`,  set it to `\( 0 \)`:
     </ul>
   </div>
   <div class="fragment">
-    <li>Any sensor can be used as long as it provides inter-pose constraints</li>
+    <li>Supports variety of sensors</li>
   </div>
   <div class="fragment">
     <li>Same backend for 2D/3D constraints</li>
@@ -526,6 +526,9 @@ derivative wrt `\( \Delta x \)`,  set it to `\( 0 \)`:
 Note:
 State the benefits. Why is it fundamentally better?
 2min
+
+Mention that pose-graphSLAM supports all sensors that can provide inter-pose
+constraints
 
 ---
 
