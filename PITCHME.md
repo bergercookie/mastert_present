@@ -24,11 +24,6 @@ Master Thesis
 </center>
 
 
-<!--DONE-Works fine- Make this an offline version-->
-<!--DONE-Works fine- Test presenter mode-->
-<!--DONE-Works fine- Generate PDF-->
-<!--DONE-Just use names and a list of citations in the last page- How I handle citations?-->
-
 ---
 
 ## Presentation Contents
@@ -130,7 +125,7 @@ $$P(z\_k | x\_{k\_1}, m) \Longleftrightarrow z\_k = h(x\_{k}, m) + v\_k$$
 
 #### Extended Kalman Filter
 
-Compute the joint posterior distribution:
+Compute joint posterior distribution:
 
 <span style="font-size:0.8em">
 $$
@@ -174,7 +169,7 @@ P\_{k|k} =
 $$
 </span>
 
-Split the latter into a **time** and an **observation** update.
+Split into a **time** and an **observation** update.
 
 ---
 
@@ -220,36 +215,25 @@ W_k &= P_{k|k-1} \nabla h^TS_k^{-1}
 
 <div style="font-size:0.8em">
 <ul>
-  <li>Handles uncertainty in landmarks and robot movement simultaneously (both
-  are considered in the SLAM state)</li>
-  <li>Handles the nonlinearities by linearizing the motion, observation models
-  (not suitable for highly non-linear models)</li>
-  <li>Motion step affects only the current position estimate not the map;
-  Observation step requires the landmarks means and covariances to be
-  computed</li>
-
-  <center>Computational, Storage complexity `\(\rightarrow\mathcal{O}(N^2)\)`</center>
-
+  <li>Handles landmarks uncertainty and robot movement</li>
+  <li>Linearize motion, observation models</li>
+  <li>Computational, Storage complexity `\(\rightarrow\mathcal{O}(N^2)\)`</li>
   <li>Constructs exclusively landmarks-based maps</li>
-  <li>Works in either 2D or 3D SLAM</li>
+  <li>Works in 2D/3D SLAM</li>
 </ul>
 </div>
-
-note:
-mention that all the KF-variants suffer from one (or more) of its drawbacks
-no need to perform time-update for stationary landmarks
 
 ---
 
 ### Particle Filter - FastSLAM
 
 <ul>
- <li>Based on Monte Carlo sampling; directly represent the non-linear motion
-   model, non-Gaussian pose distribution.</li>
- <li>Apply Rao-Blackwellisation (RB) to the joint space probability; Condition
-   the map computation on the whole robot trajectory; Use a *set of particles*
-   each one representing an possible trajectory `\(X_{0:k}^{(i)}\)` and a
-   corresponding weight `\(w_k^{(i)}\)`</li>
+ <li>Directly represent non-linear motion model, non-Gaussian pose distribution.</li>
+ <li>Apply Rao-Blackwellisation (RB) to joint space probability;
+ <ul>
+    <li>Condition map computation on whole robot trajectory;
+    <li>Use a *set of particles* representing a possible trajectory
+    `\(X_{0:k}^{(i)}\)` + corresponding weight `\(w_k^{(i)}\)`</li>
 </ul>
 
 <span style="font-size:0.8em">
@@ -275,8 +259,12 @@ All the EKF shit should take ~2min
   </li>
   <li><b>Sample weighting:</b> Samples are weighted according to an importance
     function.</li>
-  <li><b>(Optional) resampling:</b> Select prominent particles - Eliminate the
-    rest. Reset the weights `\(\rightarrow w_k^{(i)} = \frac{1}{N}\)`</li>
+  <li><b>(Optional) resampling:</b>
+    <ul>
+        <li>Select prominent particles</li>
+        <li>Eliminate the rest</li>
+        <li>Reset the weights `\(\rightarrow w_k^{(i)} = \frac{1}{N}\)`</li>
+    </ul>
 </ol>
 
 Note:
@@ -289,8 +277,8 @@ All the PF shit should take ~2min
 <ul>
   <li>FastSLAM produces landmarks-based maps - ``gmapping`` variant produces
   occupancy grid maps</li>
-  <li>No known working extension in 3D; Computationally expensive</li>
-  <li>Still applies linearization to the observation model (as does EKF)</li>
+  <li>Doesn't extend in 3D; Computationally expensive</li>
+  <li>Applies linearization to observation model</li>
   <li>Computational complexity: `\( \mathcal{O}\big((M \times log(N))\big) \)`,
       M = num of particles </li>
 </ul>
@@ -299,18 +287,17 @@ All the PF shit should take ~2min
 
 ### Graph-based SLAM
 
-- Use a graph to represent the SLAM problem
-  - Nodes correspond to *poses* of the robot during mapping
-  - An edge between two nodes represents a *spatial constraint* (2D/3D
-      transformation) between them.
-- Optimize for the whole trajectory - not only the latest pose
-- Option to consider the robot poses exclusively (no landmarks)
+- Use graph to represent the SLAM problem
+  - Nodes `\( \rightarrow \)` *poses* of the robot
+  - An edge between two nodes `\( \rightarrow \)`  *spatial constraint* between them.
+- Optimize for the whole trajectory - not only latest pose
+- Optionally consider the robot poses exclusively (no landmarks)
 
 <hr>
 
 <div class="fragment">
-Find the node configuration for which the overall error of constraints is
-minimized. This comes down to a *least-squares problem*.
+Find node configuration for which the overall error of constraints is
+minimized `\( \rightarrow \)` *least-squares problem*.
 </div>
 
 
@@ -328,21 +315,20 @@ node to that of the other we can add an edge constraining those two nodes."
 
 Break overall problem down to:
 
-<div style="font-size:0.8em">
+<div style="font-size:1.0em">
 <ul>
   <li>Frontend</li>
   <ul>
     <li>Constructs <i>the initial graph</i> from raw sensor data</li>
-    <li>In case we also consider landmarks, it deals with the <i>data association
-        problem</i></li>
+    <li>Deal with the <i>data association problem</i></li>
   </ul>
   <li>Backend</li>
   <ul>
     <li>Multivariate optimization scheme</li>
-    <li>Minimizes the error vector between the <i>predicted state</i> and the
-      <i>measured state</i></li>
-    <li>Comprises variants of least-squares solvers (Gauss-Newton,
-      Levenberg-Marquardt, Gradient Descent)</li>
+    <li>Minimize the error vector between <i>predicted</i> and <i>measured
+    state</i></li>
+    <li>Least-squares solver (Gauss-Newton, Levenberg-Marquardt, Gradient
+    Descent)</li>
   </ul>
 </ul>
 </div>
@@ -353,12 +339,10 @@ Break overall problem down to:
 
 - `\( x = \left( x_1, x_2, \cdots x_T\right)^T \)`: Set of estimated robot
     trajectory poses (graph nodes).
-- `\(z_{i,j}, \Omega_{i,j} \)`: Mean and information matrix of a *virtual
-measurement* that associates two different graph nodes.
-
-    - In pose-graph SLAM this is the transformation between two nodes: `\( i \rightarrow j \)`
-- `\( \hat{z}_{i,j} \)`: Mean of the *prediction* of a virtual measurement.
-    Computed via the initial poses of the nodes `\( i, j \)`.
+- `\(z_{i,j}, \Omega_{i,j} \)`: Mean, information matrix of a *virtual
+measurement* that associates two graph nodes.
+- `\( \hat{z}_{i,j} \)`: Mean of *prediction* of a virtual measurement.
+    Computed via initial poses of the nodes `\( i, j \)`.
 
 note:
 On the dimensions of the terms:
@@ -381,7 +365,7 @@ Error multivariate function:
 
 Log-likelihood of the virtual measurement:
 
-<div style="font-size:0.8em">
+<div style="font-size:1.0em">
 `\[
 \begin{align}
     l_{i,j} &\propto \big[ z_{i,j} - \hat{z}_{i,j}(x_i, x_j) \big]^T
@@ -453,9 +437,9 @@ e_{i,j}(\breve x_i + \Delta x_i, \breve x_j + \Delta x_j)
 
 ### Graph-based SLAM
 
-Using the latter expression, and by setting:
+Using latter expression, and by setting:
 
-<div style="font-size:0.6em">
+<div style="font-size:1.0em">
 `\[
 
 \begin{align*}
@@ -467,9 +451,9 @@ Using the latter expression, and by setting:
 \]`
 </div>
 
-We can rewrite as follows:
+Rewrite as follows:
 
-<div style="font-size:0.7em">
+<div style="font-size:0.8em">
 `\[
 
 \begin{align}
@@ -487,8 +471,8 @@ We can rewrite as follows:
 
 ### Graph-based SLAM
 
-We have to reach to a formula suitable for optimization; Compute partial
-derivative with regards to `\( \Delta x \)` and set it to `\( 0 \)`:
+Reach a formula suitable for optimization; Compute partial
+derivative wrt `\( \Delta x \)`,  set it to `\( 0 \)`:
 
 <div style="font-size:0.8em">
 `\[
@@ -510,7 +494,7 @@ derivative with regards to `\( \Delta x \)` and set it to `\( 0 \)`:
 <div style="font-size:0.8em">
 <ul>
   <div class="fragment">
-    <li> Modular design; Makes a clear distinction between:
+    <li> Modular design; clear distinction between:
     <ul>
       <li>Acquisition of measurements, initial graph construction</li>
       <li>Computations part - graph optimization</li>
@@ -520,22 +504,21 @@ derivative with regards to `\( \Delta x \)` and set it to `\( 0 \)`:
     <li>Any sensor can be used as long as it provides inter-pose constraints</li>
   </div>
   <div class="fragment">
-    <li>Backend works the same for 2D/3D constraints `\( \rightarrow \)` 2D/3D
-        SLAM</li>
+    <li>Same backend for 2D/3D constraints</li>
   </div>
   <div class="fragment">
-    <li>Optimize for the whole trajectory - Increased accuracy
+    <li>Optimize for whole trajectory - Increased accuracy
   </div>
   <div class="fragment">
-    <li>Not restrained to a particular map format. We can:</li>
+    <li>Not restrained to a particular map format:</li>
     <ul>
-      <li>include landmarks in the mathematical formulation <b>or</b></li>
-      <li>execute <em>"mapping with known poses"</em> and then construct the map
-          by aligning the measurements.</li>
+      <li>include landmarks <b>or</b></li>
+      <li>execute <em>"mapping with known poses"</em>, construct the map
+          by aligning measurements.</li>
     </ul>
   </div>
   <div class="fragment">
-    <li>Computational complexity: <em>Linear</em> in the number of edges</li>
+    <li>Computational complexity: <em>Linear</em> in number of edges</li>
   </div>
 </ul>
 </div>
@@ -576,7 +559,7 @@ Designed and implemented a complete single-robot graphSLAM framework in
 ## Development Goals
 
 <div style="font-size=0.7em"/>
-Build a tool to execute robustly and visualize SLAM
+Build a tool to execute and visualize SLAM
 <br><br>
 <ul>
   <li>Generic/Extensible design</li>
