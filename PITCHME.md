@@ -1019,7 +1019,7 @@ I didn't write this module. Say in short what it does and skip
 
 ---
 
-<h3>Example with 2 agents</h3>
+<h3>aExample with 2 agents</h3>
 
 ---?image=assets/figures/bulk/map_merger_node_2_robots.png&size=contain
 
