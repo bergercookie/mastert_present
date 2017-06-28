@@ -783,6 +783,7 @@ examples!
 
 ---
 
+<!-- .slide: class="center" -->
 # Simulation Demo
 
 ---
@@ -820,6 +821,7 @@ $ graphslam-engine -r dataset.rawlog \
 
 ---
 
+<!-- .slide: class="center" -->
 ### Real-Time Setup & Execution
 
 ---
@@ -885,6 +887,7 @@ corresponding processes.
 
 <!--- --------- End of Single-Robot graphSLAM-->
 
+<!-- .slide: class="center" -->
 ## Inter-Robot Communication
 
 ---
@@ -982,6 +985,7 @@ Example: Configuring an agent to join the ad-hoc network
 
 <!--- --------- End of Inter-Robot Communication-->
 
+<!-- .slide: class="center" -->
 ## Multi-Robot graphSLAM
 
 ---
@@ -997,7 +1001,6 @@ Example: Configuring an agent to join the ad-hoc network
 ---
 
 ### Multi-hypothesis Map-matching
-
 
 <div style="font-size:0.8em">
   <ul>
@@ -1079,7 +1082,7 @@ We conducted multi-robot simulations in **Gazebo**.
 ---
 
 <!-- .slide: class="center" -->
-## Map-matching #2 - More obstacles
+### Map-matching #2 - More obstacles
 
 ---?image=assets/figures/bulk/gazebo_simulation_env_more_obstacles.png&size=contain
 <!-- .slide: data-background-transition="none" -->
@@ -1119,6 +1122,7 @@ We conducted multi-robot simulations in **Gazebo**.
 
 ---
 
+<!-- .slide: class="center" -->
 ### Experiment - M building top floor
 
 ---?image=assets/figures/bulk/online_integration_nickkoukubuntu.png&size=contain
@@ -1130,6 +1134,7 @@ We conducted multi-robot simulations in **Gazebo**.
 
 <!--- --------- End of Multi-Robot graphSLAM-->
 
+<!-- .slide: class="center" -->
 ## Conclusions - Future Directions
 
 ---
@@ -1231,6 +1236,7 @@ CSL Team
 
 ---
 
+<!-- .slide: class="center" -->
 ### Thanks for your attention ![](https://raw.githubusercontent.com/github/gemoji/master/images/bowtie.png)
 
 # Q&A
