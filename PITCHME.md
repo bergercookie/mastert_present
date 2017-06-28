@@ -18,7 +18,7 @@ Control Systems Laboratory<br>
 Nikos Koukis<br>
 </div>
 
-<div style="color:gray; font-size: 0.8em; position: fixed; bottom: 0; left: 50%">
+<div style="color:gray; font-size: 0.8em; position: fixed; bottom: 0; left: 40%">
 Master Thesis
 </div>
 
