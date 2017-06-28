@@ -42,17 +42,10 @@ Master Thesis Presentation
 
 ## Intro - What is SLAM?
 
----
+Goal of SLAM is to **simultaneously**:
 
-## Definition
-
-
->Simultaneous localization and mapping (SLAM) is a process that aims
->to <b>localize an autonomous mobile robot</b> in a previously unexplored
->environment while <b>constructing a consistent and incremental map</b> of its
->environment
->
-> <cite>Saeedi2016</cite>
+- Construct consistent, incremental map
+- Localize itself in that map
 
 ---
 
@@ -81,7 +74,7 @@ Master Thesis Presentation
 
 ## Review of SLAM Algorithms
 
-Can be divided based  according to the
+Can be divided according to
 - Map representation |
 - Processing scheme |
 
@@ -116,7 +109,7 @@ data. No loss of info there
 Note:
 State the purpose of this section!!!
 Why do we pick the graph-based approaches
-describe **briefly** the KF, PF. GraphSLAM is on its own in the next
+Describe what the EKF, PF **do**, do not analyze the math
 ~4min
 
 ---
@@ -136,7 +129,7 @@ $$P(z\_k | x\_{k\_1}, m) \Longleftrightarrow z\_k = h(x\_{k}, m) + v\_k$$
 
 #### Extended Kalman Filter
 
-We need to compute the joint posterior distribution:
+Compute the joint posterior distribution:
 
 <span style="font-size:0.8em">
 $$
@@ -180,7 +173,7 @@ P\_{k|k} =
 $$
 </span>
 
-To do that, we split the latter into a **time** and an **observation** update.
+Split the latter into a **time** and an **observation** update.
 
 ---
 
@@ -997,7 +990,6 @@ Example: Configuring an agent to join the ad-hoc network
 - Used to find the relative transformation from the robot's frame to the
     neighbor's frame. If found the incoming measurements can be integrated in
     own map
-- Algorithm is described in detail in <cite>Blanco2013</cite>
 - Code implementation is provided via the MRPT `maps::CGridmapAligner`
     class.
 
@@ -1205,22 +1197,6 @@ server](http://controlsystemslab.gr/code).
 - [mrpt-graphslam docs](http://reference.mrpt.org/devel/group__mrpt__graphslam__grp.html)
 - [ROS mrpt_graphslam_2d docs](http://wiki.ros.org/mrpt_graphslam_2d)
 - In case of a question / bug report, open an issue on the corresponding Github page
-
-
----
-
-## References
-
-<div style="font-size:0.5em;float:left">
-  <li> (Saeedi2016) Multiple-Robot Simultaneous Localization and Mapping: A Review
-    - Saeedi, Sajad and Trentini, Michael and Seto, Mae and Li, Howard
-  </li>
-  <li> (Grisetti2010) A tutorial on graph-based SLAM - Grisetti, Giorgio
-        and Kummerle, Rainer and Stachniss, Cyrill and Burgard, Wolfram
-  </li>
-  <li> (Blanco2013) A Robust , Multi-Hypothesis Approach to Matching Occupancy
-  Grid Maps - Blanco, Jose-luis and Gonz, Javier and Fern, Juan-antonio
-</div>
 
 ---
 
