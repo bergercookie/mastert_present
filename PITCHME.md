@@ -1019,14 +1019,14 @@ I didn't write this module. Say in short what it does and skip
 
 ---
 
-<center>
-#### Example with 2 agents
-</center>
+<!-- .slide: class="center" -->
+## Example with 2 agents
 
 ---?image=assets/figures/bulk/map_merger_node_2_robots.png&size=contain
 
 ---
 
+<!-- .slide: class="center" -->
 ## Example with 3 agents
 
 ---?image=assets/figures/bulk/map_merger_node_3_robots.png&size=contain
@@ -1064,18 +1064,21 @@ We conducted multi-robot simulations in **Gazebo**.
 
 ---
 
+<!-- .slide: class="center" -->
 ## Gazebo World
 
 ---?image=assets/figures/bulk/gazebo_simulation_env.png&size=contain
 
 ---
 
+<!-- .slide: class="center" -->
 ## Map-matching
 
 ---?image=assets/figures/bulk/simulation_map_match.png&size=contain
 
 ---
 
+<!-- .slide: class="center" -->
 ## Map-matching #2 - More obstacles
 
 ---?image=assets/figures/bulk/gazebo_simulation_env_more_obstacles.png&size=contain
@@ -1086,6 +1089,7 @@ We conducted multi-robot simulations in **Gazebo**.
 ---
 
 
+<!-- .slide: class="center" -->
 # Simulation Demo
 
 ---
@@ -1094,6 +1098,7 @@ We conducted multi-robot simulations in **Gazebo**.
 
 ---
 
+<!-- .slide: class="center" -->
 # Simulation Demo #2
 
 ---
@@ -1102,10 +1107,12 @@ We conducted multi-robot simulations in **Gazebo**.
 
 ---
 
+<!-- .slide: class="center" -->
 ## Experimental Results
 
 ---
 
+<!-- .slide: class="center" -->
 ### Experiment - Around the pool
 
 ---?image=assets/figures/bulk/online_integration_nickkoukubuntu2.png&size=contain
