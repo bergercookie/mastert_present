@@ -833,7 +833,7 @@ Mention why we acquired the ground-truth
 
 #### Configuring Robot for real-time graphSLAM
 
-<div style="font-size:0.8em"/>
+<div style="font-size:1.0em"/>
 
 Generic way to define the processes that are launched in each of the
 running robots. Account for:
@@ -846,9 +846,11 @@ running robots. Account for:
   <li>Various utilities (dataset recording)</li>
   <li>Software config (deciders/optimizer to use)</li>
 </ul>
+</div>
 
 <br> <br>
 
+<div>
 Take care of multiple configurations (robot type, laser type)
 </div>
 
@@ -913,8 +915,8 @@ corresponding processes.
 
 
 note:
-
-Previous bullets are quite to the point. Do describe what happens for each one of them and why it is needed
+Previous bullets are quite to the point. Do describe what happens for each one
+of them and why it is needed
 
 ---
 
@@ -970,7 +972,8 @@ Example: Configuring an agent to join the ad-hoc network
 ### Multi-hypothesis Map-matching
 
 - Used to find the relative transformation from the robot's frame to the
-    neighbor's frame. If found the incoming measurements can be integrated in
+    neighbor's frame.
+- If found, the incoming measurements can be integrated in
     own map
 - Code implementation is provided via the MRPT `maps::CGridmapAligner`
     class.
@@ -979,15 +982,14 @@ Example: Configuring an agent to join the ad-hoc network
 
 ### Multi-hypothesis Map-matching
 
-<div style="font-size:0.8em">
+<div style="font-size:1.0em">
   <ul>
-    <li> Multi-hypothesis approach; Provides a multi-modal probability
-    distribution for the transformation between two grid maps.</li>
-    <li> Based on a modified RANSAC scheme; Non-deterministic algorithm</li>
-    <li> Consists of a two-step matching procedure:
+    <li> Multi-hypothesis approach</li>
+    <li> Based on a modified RANSAC scheme, non-deterministic algorithm</li>
+    <li> Two-step matching procedure:
     <ul>
-      <li> Grid-to-grid matching without any a priori information</li>
-      <li> Point maps matching to refine the latter grid-matching estimation</li>
+      <li> Grid-to-grid matching without prior information</li>
+      <li> Point maps matching, refine latter grid-matching estimation</li>
     </ul>
   </ul>
 </div>
