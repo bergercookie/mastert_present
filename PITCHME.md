@@ -64,8 +64,6 @@ Master Thesis Presentation
 - Large-scale mapping applications (UAV Atmos) |
 - Space applications (NASA Planetary Rovers) |
 
----
-
 ---?image=assets/figures/bulk/roomba.jpg&size=contain
 <!-- .slide: data-background-transition="none" -->
 ---?image=assets/figures/bulk/stanley.jpg&size=contain
@@ -792,6 +790,7 @@ examples!
 ---
 
 # Simulation Demo
+
 ---
 
 ![](https://www.youtube.com/embed/Pv0yvlzrcXk)
@@ -1027,7 +1026,6 @@ I didn't write this module. Say in short what it does and skip
 
 ---
 
-
 ## Example with 2 agents
 
 ---?image=assets/figures/bulk/map_merger_node_2_robots.png&size=contain
@@ -1068,6 +1066,7 @@ We conducted multi-robot simulations in **Gazebo**.
   </ul>
 </ul>
 </div>
+
 ---
 
 ## Gazebo World
@@ -1212,7 +1211,7 @@ server](http://controlsystemslab.gr/code).
 
 ## References
 
-<div style="font-size:0.5em;">
+<div style="font-size:0.5em;float:left">
   <li> (Saeedi2016) Multiple-Robot Simultaneous Localization and Mapping: A Review
     - Saeedi, Sajad and Trentini, Michael and Seto, Mae and Li, Howard
   </li>

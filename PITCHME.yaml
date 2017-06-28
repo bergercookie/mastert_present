@@ -10,7 +10,7 @@ revealjs: 3.4.1
 
 
 #logo: assets/figures/MoreGraphics/csl_ntua.jpg
-slide-number: false
+slide-number: true
 
 # Overrides the default "git-repository" text
 footnote: "Multi-robot graphSLAM"
@@ -24,7 +24,7 @@ loop: false
 mousewheel: false
 
 # https://github.com/gitpitch/gitpitch/wiki/Vertical-Center-Setting
-vertical-center : true
+vertical-center : false
 
 highlight: monokai # mono-blue
 
