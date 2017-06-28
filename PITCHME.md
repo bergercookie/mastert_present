@@ -14,11 +14,11 @@ Control Systems Laboratory<br>
 
 ### Design and Development of SLAM Algorithms
 
-<div style="color:gray; font-size:2em; font-size: 1em">
+<div style="color:gray; font-size: 2.0em">
 Nikos Koukis<br>
 </div>
-<div style="color:gray; font-size:2em; font-size: 0.8em">
-Master Thesis Presentation
+<div style="color:gray; font-size: 1.5em; position: fixed; bottom: 0">
+Master Thesis
 </div>
 
 
